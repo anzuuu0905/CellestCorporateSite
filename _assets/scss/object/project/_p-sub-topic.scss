@@ -1,0 +1,15 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-topic__box {
+  margin: 6.4rem auto 0;
+}
+
+.p-sub-topic__title {
+  margin-top: 1.6rem;
+}
+
+.p-sub-topic__text {
+  margin-top: 6.4rem;
+}
+

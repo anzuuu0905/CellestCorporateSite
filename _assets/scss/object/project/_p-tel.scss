@@ -1,0 +1,27 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-tel{
+  padding: 0.8rem 1.6rem;
+  color: $text-color2;
+  border:1px solid $text-color2;
+  border-radius: 1.6rem;
+  line-height: 1.5;
+  margin-top: 2.4rem;
+  @include sptb{
+    margin-top: 0;
+  }
+}
+
+.p-tel__text{
+  font-size: 1.4rem;
+  text-align: center;
+  @include sptb{
+  }
+}
+
+.p-tel__no{
+  padding-top: 0;
+  text-align: center;
+  font-size: 2rem;
+}

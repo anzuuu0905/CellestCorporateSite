@@ -1,0 +1,28 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-top{
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: $z-index-top;
+  display: none;
+  @include sptb {
+    right: 4.5rem;
+    bottom: 4.5rem;
+}
+.c-top__link {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: $background;
+  border-radius: 50%;
+  background-color: $text-color2;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+}

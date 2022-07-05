@@ -1,0 +1,58 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-timetable{
+  width: inherit;
+  max-width: inherit;
+  border: none;
+}
+
+.c-timetable th{
+  background-color: $text-color2;
+  color: $background;
+  border: none;
+  border-right: 0.1rem solid $background;
+  text-align: center;
+}
+
+.c-timetable th:last-of-type{
+  border: none;
+}
+
+.c-timetable th:first-of-type{
+  border-radius: 1rem 0 0;
+}
+
+.c-timetable th:last-of-type{
+  border-radius: 0 1rem 0 0;
+}
+
+.c-timetable__title{
+  width: 30%;
+  @include pc{
+  width: 44%;
+  }
+} 
+
+.c-timetable__text{
+  width: 10%;
+  @include pc{
+    width: 8%;
+  }
+}
+
+.c-timetable td{
+  text-align: center;
+  border: 0.1rem solid $border-color;
+  border-bottom: none;
+}
+
+.c-timetable td:first-of-type{
+  border: none;
+  border-top:  0.1rem solid $border-color;
+}
+
+.c-timetable td:last-of-type{
+  border: none;
+  border-top:  0.1rem solid $border-color;
+}

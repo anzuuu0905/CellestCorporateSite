@@ -1,0 +1,22 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-footer{
+}
+.p-footer__inner{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+
+}
+
+.p-footer__copyright{
+  display: flex;
+  justify-content: center;
+  margin-top: 2.4rem;
+}
+
+.p-footer__logo{
+  margin-top: 4.8rem;
+  max-width: 80%;
+  width: 30rem;
+}

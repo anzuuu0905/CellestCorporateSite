@@ -1,0 +1,32 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-consultation{
+  // width: 100%;
+  max-width: 100%;
+@include pc{
+  width: calc(50% - 40px);
+  }
+}
+
+.p-consultation__table{
+  border: 1px solid $border-color;
+  display: inline-block;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 3.2rem;
+  @include pc{
+    width: 40rem;
+  }
+
+}
+
+.p-consultation__textbox{
+    margin-top: 1.6rem;
+}
+
+.p-consultation__title{
+  text-align: center;
+}

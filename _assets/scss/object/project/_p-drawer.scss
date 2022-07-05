@@ -1,0 +1,32 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-drawer-menu {
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	display: none;
+	position: relative;
+	background-color: $background;
+}
+
+.p-drawer-menu__items {
+	margin-top: 2rem;
+}
+
+.p-drawer-menu__item {
+	border-left: 0.5rem solid $text-color2;
+	border-bottom: 0.1rem solid $border-color;
+}
+
+.p-drawer-menu__item a {
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2rem;
+	color: $text-color;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	padding: 1.5rem;
+	line-height: 1;
+}

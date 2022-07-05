@@ -1,0 +1,59 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-about{
+  animation-name: fadeup;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  background: $background2;
+  padding: 2.4rem 0;
+}
+
+.p-about__inner{
+  width: $l-inner;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.p-about__title{
+  text-align: center;
+}
+
+.p-about__text{
+  text-align: center;
+}
+
+.p-about__feature{
+  margin-top: 2.4rem;
+}
+
+.p-about__btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.p-about__wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem;
+  @include tbpc{
+    flex-direction: initial;
+  }
+}
+
+.p-about__img{
+  @include tbpc{
+    margin-right: 2.5rem;
+    }
+}
+
+.p-about__img img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.p-about__textbox{
+  margin-top: 2.4rem;
+}

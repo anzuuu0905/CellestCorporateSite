@@ -1,0 +1,16 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-common-text{
+  color: $black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: calc(26/14);
+
+  // font-family: "Roboto";
+  @include pc{
+    font-size: 2.4rem;
+    line-height: calc(48/24);
+  }
+}
+

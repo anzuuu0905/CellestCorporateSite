@@ -1,0 +1,109 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-header{
+}
+
+.p-header__box,
+.p-header__sp
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	background: $background;
+}
+
+.p-header__sp.m_fixed {
+	position: fixed;
+	top: 0;
+	z-index: $z-index-top;
+}
+
+.p-header__logo{
+  font-size: 2.4rem;
+	max-width: 22rem;
+  width: 100%;
+	@include tbpc{
+		max-width: 25rem;
+	}
+}
+
+.p-header__title{
+  text-align: center;
+  font-size: 1rem;
+}
+
+.p-header__menutext{
+  line-height: 1;
+}
+
+.p-header__menutext span{
+  font-size: 1rem;
+  color:$text-color2;
+}
+
+
+.p-header__drawer span{
+  margin: 0 auto;
+}
+
+.p-header__overlay {
+	background-color: rgba($color: $background, $alpha: 0.6);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	display: none;
+}
+
+.p-header__nav{
+  display: flex;
+  justify-content:center;
+	height: inherit;
+	padding-right: $padding-sp;
+	padding-left: $padding-sp;
+	@include sptb {
+		padding-right: $padding-pc;
+		padding-left: $padding-pc;
+	}
+
+}
+.p-header__spbox{
+	display: flex;
+	justify-content: center;
+}
+
+.p-header__sptel{
+	display: flex;
+	flex-direction: column;
+	font-size: 2.4rem;
+	line-height: 1;
+	// border:1px solid black;
+	color:$text-color2;
+	background-color: $background2;
+	padding: 0.4rem 1rem;
+}
+
+.p-header__sptel a{
+	font-size: 1.6rem;
+	color:$text-color2;
+}
+
+.p-header__sptel span{
+	padding-top: 0.4rem;
+}
+
+.p-header__menubox{
+	margin-left: 0.8rem;
+	padding-top: 0.4rem;
+	background-color: $background2;
+
+}
+
+.p-header__sptel span{
+  font-size: 1rem;
+  color:$text-color2;
+}

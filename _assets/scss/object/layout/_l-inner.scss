@@ -1,0 +1,15 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.l-inner {
+  width: 100%;
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $l-inner + strip-unit($padding-pc) * 2;
+  @include sp {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}

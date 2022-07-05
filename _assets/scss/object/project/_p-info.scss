@@ -1,0 +1,31 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-info__inner{
+  margin: 0 auto;
+}
+
+.p-info__title{
+  text-align: center;
+}
+
+.p-info__cards{
+  margin-top: 1.6rem;
+}
+
+.p-info__cards .c-card__img{
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.p-info__cards a:hover .c-card__img img{
+  transform: scale(1.1);/* 拡大 */
+  transition-duration: 0.3s;
+  opacity: 0.6;
+}
+
+.p-info__btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 1.6rem;
+}

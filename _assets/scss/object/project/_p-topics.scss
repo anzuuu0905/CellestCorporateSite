@@ -1,0 +1,24 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-topics__item{
+  margin: 2.4rem auto 0;
+}
+
+.p-topics__title{
+  text-align: center;
+}
+
+.p-topics{
+  background-color: $background2;
+}
+
+.p-topics__inner{
+    padding: 4.8rem;
+}
+
+.p-topics__btn{
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+}

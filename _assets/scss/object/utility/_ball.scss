@@ -1,0 +1,210 @@
+$radius: 50vw;
+$radius-y: 25vw;
+
+
+.ball__box{
+  // display: flex;
+  // height: 2000px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -5;
+
+}
+.ball__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  filter: url('#gaussian');
+  // z-index: -1;
+}
+
+
+.ball { 
+  width: $radius;
+  height: $radius-y;
+  position: absolute;
+  top: -60%;
+  left: 0;
+  // top: calc(70% - #{$radius/2});
+  // left: calc(10% - #{$radius/2});
+
+  &:before {
+    background: #EEE1F6;
+    ;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    filter: blur(5vw);
+  }
+  
+
+  &:nth-child(1) {
+    animation: x-axis-1 30s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-1 30s infinite .1s alternate ease-in-out;
+    }
+  }
+
+  
+  &:nth-child(2) {
+    animation: x-axis-2 35s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-2 235s infinite .1s alternate ease-in-out;
+    }
+  }
+  
+  &:nth-child(3) {
+    animation: x-axis-3 11s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-3 11s infinite .1s alternate ease-in-out;
+    }
+  }
+}
+
+
+@keyframes x-axis-21 {
+  0% { transform: translate(-10vw); }
+  100% { transform: translate(70vw); }
+
+}
+
+@keyframes y-axis-1 {
+  0% { transform: translateY(20vh) scale(1);} 
+  100% { transform: translateY(70vh) scale(1);}
+}
+
+@keyframes x-axis-2 {
+  0% { transform: translate(60vw); }
+  100% { transform: translate(-10vw); }
+}
+
+@keyframes y-axis-2 {
+  // 0% { transform: translateY($radius*0.7) scale(3); }
+  // 100% { transform: translateY(-$radius*0.7) scale(3);}
+  0% { transform: translateY(70vh) scale(1); }
+  100% { transform: translateY(10vh) scale(1); }
+
+}
+
+@keyframes x-axis-3 {
+  // 0% { transform: translate($radius*2.8); }
+  // 100% { transform: translate(-$radius*0.1); }
+  0% { transform: translate(20vw) scale(1);  }
+  100% { transform: translate(40vw) scale(1);  }
+}
+
+@keyframes y-axis-3 {
+  // 0% { transform: translateY($radius*0.7) scale(3); }
+  // 100% { transform: translateY(-$radius*0.7) scale(3); }
+  0% { transform: translateY(50vh) scale(1); }
+  100% { transform: translateY(60vh) scale(1); }
+}
+
+.ball2 { 
+  width: $radius;
+  height: $radius-y;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  // top: calc(70% - #{$radius/2});
+  // left: calc(10% - #{$radius/2});
+
+  &:before {
+    background: #8DA8E9
+    ;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    filter: blur(7vw);
+  }
+  
+
+  &:nth-child(1) {
+    animation: x-axis-21 20s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-21 20s infinite .1s alternate ease-in-out;
+    }
+  }
+
+  
+  &:nth-child(2) {
+    animation: x-axis-22 25s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-22 25s infinite .1s alternate ease-in-out;
+    }
+  }
+  
+  &:nth-child(3) {
+    animation: x-axis-23 11s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-23 11s infinite .1s alternate ease-in-out;
+    }
+  }
+  &:nth-child(4) {
+    animation: x-axis-24 10s infinite alternate ease-in-out;
+    &:before {
+      animation: y-axis-24 10s infinite .1s alternate ease-in-out;
+    }
+  }
+
+}
+
+@keyframes x-axis-21 {
+  0% { transform: translate(-10vw); }
+  100% { transform: translate(70vw); }
+
+}
+
+@keyframes y-axis-21 {
+  0% { transform: translateY(20vh) scale(1);} 
+  100% { transform: translateY(70vh) scale(1);}
+}
+
+@keyframes x-axis-22 {
+  0% { transform: translate(60vw); }
+  100% { transform: translate(-10vw); }
+}
+
+@keyframes y-axis-22 {
+  // 0% { transform: translateY($radius*0.7) scale(3); }
+  // 100% { transform: translateY(-$radius*0.7) scale(3);}
+  0% { transform: translateY(70vh) scale(1); }
+  100% { transform: translateY(10vh) scale(1); }
+
+}
+
+@keyframes x-axis-23 {
+  // 0% { transform: translate($radius*2.8); }
+  // 100% { transform: translate(-$radius*0.1); }
+  0% { transform: translate(20vw) scale(1);  }
+  100% { transform: translate(40vw) scale(1);  }
+}
+
+@keyframes y-axis-23 {
+  // 0% { transform: translateY($radius*0.7) scale(3); }
+  // 100% { transform: translateY(-$radius*0.7) scale(3); }
+  0% { transform: translateY(50vh) scale(1); }
+  100% { transform: translateY(60vh) scale(1); }
+}
+@keyframes x-axis-24 {
+  0% { transform: translate(70vw); }
+  100% { transform: translate(-10vw); }
+
+}
+
+@keyframes y-axis-24 {
+  0% { transform: translateY(70vh) scale(1);}
+  100% { transform: translateY(20vh) scale(1);} 
+}
+

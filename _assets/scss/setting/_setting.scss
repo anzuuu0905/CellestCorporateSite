@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+// placeholder色
+$placeholderColor: #c3c3c3;
+
+// メディアクエリの基準幅
+// tabがない場合は、bp-spとbp-pcを1px差で設定すること
+$bp-sp: 375px;
+$bp-pc: 768px;
+// $bp-tab: $bp-pc - 1px;
+
+// 共通余白設定
+$padding-pc:24px;
+$padding-sp:16px;
+$l-inner:1000px;
+
+
+// vwの基準となる幅 →320px=スマホ最小
+$vw_standard_width: 375;
+
+// transition
+$transition01: 0.3s ease-in-out;
+
+
+// 以下削除予定
+$background: #fff; // 背景
+$background2: #F0FCE5; // 背景
+$text-color: #333; // テキスト色
+$text-color2: #333; // テキスト色
+$border-color:#d2d2d2;
+$burger-color: #8ac343; // テキスト色
+// 以上削除予定
+
+
+// color
+$black: #06070E; // テキスト色
+$blue: #618ABE; // テキスト色
+$white: #FFFFFF; // テキスト色
+$gray:#707070; // 背景
+$light-gray:#EBEBEB
+$orange:#F5BD8D;
+
+
+// z-index
+$z-index-top:1000;
+

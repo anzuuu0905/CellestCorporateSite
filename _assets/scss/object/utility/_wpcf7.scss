@@ -1,0 +1,13 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.wpcf7-spinner{
+  display:none;
+}
+.wpcf7-list-item{
+  margin-left:0;
+}
+
+// .wpcf7-response-output{
+//   display: none;
+// }

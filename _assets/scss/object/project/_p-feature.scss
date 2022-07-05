@@ -1,0 +1,42 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-feature{
+  background: $background;
+  padding: 2.4rem;
+  border-radius: 2.5rem;
+}
+
+.p-feature__textbox{
+  padding-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include tbpc{
+    flex-direction:initial;
+    flex-wrap: wrap;
+  }
+}
+.p-feature__title{
+  font-size: 2.0rem;
+  text-align: center;
+}
+
+.p-feature__rightbox,
+.p-feature__leftbox{
+  width: 30rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.p-feature__rightbox{
+  @include pc{
+    margin-left: 8rem;
+  }
+}
+.p-feature__text{
+  font-size: 1.6rem;
+  @include pc{
+  }
+}

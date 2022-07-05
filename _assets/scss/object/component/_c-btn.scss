@@ -1,0 +1,44 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-btn{
+  display: inline-block;
+
+}
+.c-btn a {
+  font-size: 1.6rem;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.2rem 9.3rem;
+  background-color: $black;
+  border-radius: 5rem;
+  border:1px solid $black;
+  position: relative;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.005em;
+}
+
+.c-btn a::after{
+  content: '';
+  width: 40px;
+  height: 8px;
+  right: 2.3rem;
+  position: absolute;
+  border-bottom: 1px solid $white;
+  border-right: 1px solid $white;
+  transform: skew(60deg) translateY(-50%);
+}
+
+.c-btn a:hover {
+  background-color: $text-color2;
+  color: $background;
+}
+
+.c-btn a:hover::after {
+  border-color: $background;
+}

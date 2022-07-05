@@ -1,0 +1,28 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-contact-textarea {
+
+}
+
+.c-contact-textarea__text {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid $border-color;
+	border-radius: 0;
+	color: inherit;
+	font-family: inherit;
+	font-size: 1.6rem;
+	height: 21rem;
+	padding: 0.5rem 1rem ;
+	width: 100%;
+}
+
+.c-contact-textarea__text:focus {
+	border: 1px solid $border-color;
+	box-shadow: none;
+	outline: none;
+}

@@ -1,0 +1,9 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.l-top-about{
+  margin-top: 10rem;
+  @include pc{
+    margin-top: 23rem;
+  }
+}

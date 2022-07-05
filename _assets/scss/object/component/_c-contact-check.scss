@@ -1,0 +1,56 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-contact-check__item {
+	// display: none;
+}
+
+.c-contact-check__item + span {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0.2em 0;
+	padding: 0 0 0 1.2em;
+	position: relative;
+	font-size: 1.4rem;
+	letter-spacing: 0.04em;
+	line-height: calc(24/14);
+	@include sptb{
+    font-size: 1.6rem;
+  }
+}
+
+.c-contact-check__item + span::before {
+	-webkit-transform: translateY(-50%);
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.16);
+	border-radius: 2px;
+	content: "";
+	display: block;
+	height: 1em;
+	left: 0;
+	position: absolute;
+	top: 0;
+	// transform: translateY(-50%);
+	width: 1em;
+}
+
+.c-contact-check__item + span::after {
+	-webkit-transform: translateY(-50%) rotate(-45deg);
+	border-bottom: 3px solid #000;
+	border-left: 3px solid #000;
+	content: "";
+	display: block;
+	height: 0.6em;
+	left: -8px;
+	margin-top: -0.2em;
+	opacity: 0;
+	position: absolute;
+	top: 14px;
+	transform: translateY(-50%) rotate(-45deg);
+	transition: all 0.3s ease 0s;
+	width: 1em;
+}
+
+.c-contact-check__item:checked + span::after {
+	opacity: 1;
+}

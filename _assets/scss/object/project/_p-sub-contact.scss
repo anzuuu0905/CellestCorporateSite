@@ -1,0 +1,74 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-contact {
+  padding-bottom: 8.0rem;
+}
+
+.p-sub-contact__text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  letter-spacing: 0.04em;
+  @include tbpc {
+    font-size: 1.6rem;
+  }
+}
+
+.p-sub-contact__textBox {
+  margin-top: 4.8rem;
+}
+
+.p-sub-contact__contents {
+  margin-top: 5.0rem;
+}
+.p-sub-contact__content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // @include pc{
+  //   flex-direction: initial;
+  // }
+  
+}
+
+.p-sub-contact__content + .p-sub-contact__content {
+  margin-top: 4.0rem;
+}
+
+.p-sub-contact__head {
+  display: flex;
+  align-items: center;
+}
+
+.p-sub-contact__title {
+  font-size: 1.6rem;
+  line-height: 1;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  margin-right: 1.0rem;
+}
+
+.p-sub-contact__required {
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.3rem 0.5rem;
+  background-color: $text-color2;
+  color: $background;
+}
+
+.p-sub-contact__item {
+  margin-top: 1.0rem;
+  // display: flex;
+  // justify-content: left;
+  // justify-content: center;
+}
+
+.p-sub-contact__content--bottun {
+  text-align: center;
+}
+
+.p-sub-contact__content--center {
+  @include tbpc {
+    text-align: center;
+  }
+}

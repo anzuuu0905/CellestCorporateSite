@@ -1,0 +1,30 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-top-live{
+}
+
+.p-top-live__title{
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: calc(49/38);
+  letter-spacing: -0.1em;
+  @include pc{
+    font-size: 10rem;
+    line-height: calc(135/100);
+  }
+}
+
+.p-top-live__img{
+  margin-top: 6.4rem;
+  width: 100%;
+  @include pc{
+    max-width: 144rem;
+    margin-top: 22rem;
+  }
+}
+
+.p-top-live__text{
+  margin-top: 3.6rem;
+  letter-spacing: -0.07em;
+}

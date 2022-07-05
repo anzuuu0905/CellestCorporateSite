@@ -1,0 +1,13 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+
+.c-contact-button__submit:hover,
+.c-contact-button__submit:focus {
+	outline: none;
+}
+
+.c-contact-button__submit::-moz-foucus-inner {
+	border: none;
+	padding: 0;
+}

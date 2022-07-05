@@ -1,0 +1,37 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-top-about{
+
+}
+
+.p-top-about__title{
+  @include pc{
+    font-size: 10rem;
+    line-height: calc(135/100);
+  }
+}
+
+.p-top-about__subtitle{
+  margin-top: 2.2rem;
+}
+
+.p-top-about__img{
+  margin-top: 4.4rem;
+  width: 100%;
+  @include pc{
+    max-width: 144rem;
+    margin-top: 22rem;
+  }
+}
+
+.p-top-about__text{
+  margin-top: 3.6rem;
+  letter-spacing: -0.07em;
+}
+
+.p-top-about__btn{
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+}

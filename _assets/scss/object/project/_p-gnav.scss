@@ -1,0 +1,67 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-gnav{
+
+}
+
+.p-gnav__menu{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: $l-inner;
+}
+
+.p-gnav__items{
+  display: flex;
+  justify-content: center;
+}
+
+.p-gnav__item{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: calc(100% / 5);
+  text-align: center;
+  color:$text-color;
+  border-left: 1px solid $border-color;
+}
+
+.p-gnav__item a{
+  position: relative;
+}
+.p-gnav__item a::after{
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 0.2rem;
+  background:$text-color2;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+
+.p-gnav__item a:hover::after{
+  transform: scale(1, 1);
+}
+
+.p-gnav__item:last-child{
+  border-right: 1px solid $border-color;
+}
+
+.p-gnav__item a{
+  width: 100%;
+  display: inline-block;
+}
+
+.p-gnav{
+  position: static;
+  z-index: $z-index-top;
+  width: 100%;
+  background-color: white;
+}
+
+.p-gnav.m_fixed {
+	position: fixed;
+	top: 0;
+}
