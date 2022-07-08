@@ -8,6 +8,7 @@ import $ from "@modules/jquery";
 import '@modules/slick-carousel';
 // gsap テキストアニメーション
 import gsap from "@modules/gsap/";
+import TweenMax from "@modules/gsap/";
 
 ("use strict");
 
@@ -136,28 +137,6 @@ $('.p-slick').slick({
 });
 
 
-var textWrap = document.querySelectorAll(".js-mv__text");
-textWrap.forEach(
-  (t) => (t.innerHTML = t.textContent.replace(/\S/g, "<span>$&</span>"))
-); //スペースを無しにする
-
-// GSAPでのアニメーション
-gsap.fromTo(
-  ".js-mv__text span",
-  {
-    opacity: 0,
-    x: "-10px",
-    scale: 5,
-  },
-  {
-    scale: 1,
-    x: 0,
-    delay: 1.5,
-    opacity: 1,
-    stagger: 0.2,
-  }
-);
-
 var
 cursor = $(".cursor"),
 follower = $(".follower"),
@@ -209,6 +188,3 @@ $("a").on({
     follower.removeClass("is-active");
   }
 });
-
-
-Resources

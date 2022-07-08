@@ -21,13 +21,13 @@ body {
   width: 8px;
   height: 8px;
   background-color: #000;
-  z-index: 1001; //どの要素よりも一番上になるようにする
+  z-index: 9999; //どの要素よりも一番上になるようにする
 }
  
 .follower {
   width: 40px;
   height: 40px;
   background-color: #fdfe00;
-  z-indes: 1000; //カーソルの次に上になるようにする
+  z-indes: 9998; //カーソルの次に上になるようにする
 }
  

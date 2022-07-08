@@ -40,8 +40,9 @@
     </div>
 </footer>
 <?php wp_footer(); ?>
+<div class="btn"><a href="">Button</a></div>
+<div class="cursor"></div>
+<div class="follower"></div>
 
-<div id="stalker"></div>
-<div id="cursor"></div>
 </body>
 </html>

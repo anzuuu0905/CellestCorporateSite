@@ -2757,7 +2757,7 @@ input[type=radio]:checked + span::after {
 }
 .ball2:before {
   background-color: #8DA8E9;
-  background-image: url(../img/common/mv-layar.png);
+  /* background-image: url(../img/common/mv-layar.png); */
   border-radius: 100%;
   position: absolute;
   top: 0;
@@ -2769,7 +2769,7 @@ input[type=radio]:checked + span::after {
           filter: blur(7vw);
 }
 .ball2:after {
-  background-image: url(../img/common/mv-layar.png);
+  /* background-image: url(../img/common/mv-layar.png); */
   border-radius: 100%;
   position: absolute;
   top: 0;
