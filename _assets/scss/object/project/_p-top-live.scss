@@ -27,4 +27,11 @@
 .p-top-live__text{
   margin-top: 3.6rem;
   letter-spacing: -0.07em;
+  @include pc{
+    margin-top: 15rem;
+    width: 68.6rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+  }
 }

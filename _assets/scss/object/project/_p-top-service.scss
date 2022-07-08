@@ -5,26 +5,104 @@
   padding: 9rem 0;
   background: $light-gray;
   border-radius: 4.8rem;
+  @include pc{
+    padding: 17rem 0;
+  }
 }
 
 .p-top-service__title{
+  display: flex;
+  justify-content: center;
   @include pc{
-    font-size: 10rem;
+    font-size: 5rem;
     line-height: calc(135/100);
   }
 }
 
 .p-top-service__subtitle{
-  margin-top: 2.2rem;
+  margin-top: 2rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: $black2;
+  @include pc{
+    margin-top: 5.4rem;
+    font-size: 4rem;
+  }
 }
 
-.p-top-service__img{
-  margin-top: 4.4rem;
-  width: 100%;
+.p-top-service__items{
+  margin-top: 2.1rem;
+    @include pc{
+      margin-top: 7.5rem;
+      width: 140rem;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      justify-content:space-between;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
+
+.p-top-service__item:nth-child(n+2){
+  margin-top: 4rem;
   @include pc{
-    max-width: 144rem;
-    margin-top: 22rem;
+    margin-top: 0;
+    margin-left: 2.4rem;
   }
+}
+
+
+
+.p-top-service__img{
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 4.8rem;
+  @include pc{
+    max-width: 59.2rem;
+  }
+}
+
+.p-top-service__img:before{
+  padding-top: 101%;
+  @include pc {
+    padding-top: 106%;
+  }
+}
+
+
+.p-top-service__img:hover img{
+  transform: scale(1.1);/* 拡大 */
+  transition-duration: 0.3s;
+  filter: brightness(30%);
+  // opacity: 0.6;
+}
+
+.p-top-service__img .p-top-service__mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	transition:		all 0.2s ease;
+}
+
+.p-top-service__img:hover .p-top-service__mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+.p-top-service__img .p-top-service__caption {
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		50%;
+	color:			#fff;
 }
 
 .p-top-service__text{
@@ -33,7 +111,10 @@
 }
 
 .p-top-service__btn{
-  margin-top: 2.4rem;
+  margin-top: 5.9rem;
   display: flex;
   justify-content: center;
+  @include pc{
+    margin-top: 8.5rem;
+  }
 }

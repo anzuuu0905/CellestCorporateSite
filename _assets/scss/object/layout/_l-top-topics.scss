@@ -1,0 +1,9 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.l-top-topics{
+  margin-top: 10.4rem;
+  @include pc{
+    margin-top: 23rem;
+  }
+}

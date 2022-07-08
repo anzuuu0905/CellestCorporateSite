@@ -1,0 +1,13 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+.p-background{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // position: absolute;
+  background: $white;
+  background: linear-gradient(to bottom, transparent,20%,transparent,35%, $white);
+  // z-index: -10;
+}

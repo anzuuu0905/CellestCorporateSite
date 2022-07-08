@@ -5,9 +5,27 @@
 
 }
 
+.p-top-about__wrapper{
+  @include pc{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 168rem;
+    max-width: 100%;
+  }
+}
+
+.p-top-about__textwrapper{
+  @include pc{
+    width: 83.1rem;
+    max-width: 100%;
+  }
+}
+
 .p-top-about__title{
   @include pc{
-    font-size: 10rem;
+    // font-size: 10rem;
     line-height: calc(135/100);
   }
 }
@@ -20,18 +38,29 @@
   margin-top: 4.4rem;
   width: 100%;
   @include pc{
-    max-width: 144rem;
-    margin-top: 22rem;
+    max-width: 71rem;
+    margin-top: 0;
+    margin-left: 13.9rem;
   }
 }
 
 .p-top-about__text{
   margin-top: 3.6rem;
   letter-spacing: -0.07em;
+  @include pc{
+    margin-top: 8.7rem;
+  }
 }
 
 .p-top-about__btn{
   margin-top: 2.4rem;
   display: flex;
   justify-content: center;
+}
+
+.p-top-about__btn a{
+  @include pc{
+    margin-right: 0;
+    margin-left: auto;
+  }
 }

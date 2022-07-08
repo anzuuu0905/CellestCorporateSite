@@ -1,0 +1,31 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-top-topics{
+  // padding: 9rem 0;
+  // background: $light-gray;
+  border-radius: 4.8rem;
+}
+
+.p-top-topics__items{
+  margin-top: 3.6rem;
+}
+
+.p-top-topics__title{
+  display: flex;
+  justify-content: center;
+  @include pc{
+    font-size: 10rem;
+    line-height: calc(135/100);
+  }
+}
+
+
+.p-top-topics__btn{
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  @include pc{
+    margin-top: 8.5rem;
+  }
+}

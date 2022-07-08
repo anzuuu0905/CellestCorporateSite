@@ -22,6 +22,16 @@ html {
   word-break: break-all;
   z-index: -10;
   position: relative;
+
+    @include max(1600) {
+      font-size: vw(strip-unit($l-inner), 16);
+      font-size: (10/1200) * 100vw;
+
+    }
+    @include sp {
+      font-size: 62.5%; // 1em = 10px
+    }
+
 }
 
 body {

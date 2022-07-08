@@ -3,16 +3,14 @@
 
 .c-hamburger{
   z-index:9999;
-  // background: $burger-color;
 }
  
 .c-hamburger span {
   position: relative;
   display: block;
-  height: 0.2rem;
+  height: 0.1rem;
   width: 3rem;
-  background: $burger-color;
-  // background: $background;
+  background: $black;
   transition: ease .3s;
 }
  
@@ -21,16 +19,20 @@
 }
 
 .c-hamburger span:nth-child(2) {
-  margin-top: 0.6rem;
-  margin-bottom: 0.6rem;
+  margin-top: 0.65rem;
+  margin-bottom: 0.65rem;
 }
 
 .c-hamburger span:nth-child(3) {
   top: 0;
 }
 /*OPEN時の動き*/
+.c-hamburger.open{
+  // clip-path: circle(125vw at top 70px right 100px);
+  // background:$black;
+}
 .c-hamburger.open span:nth-child(1) {
-  top: 0.7rem;
+  top: 0.65rem;
   transform: rotate(315deg);
 }
 
@@ -40,6 +42,6 @@
 }
 
 .c-hamburger.open span:nth-child(3) {
-  top: -0.9rem;
+  top: -0.85rem;
   transform: rotate(-315deg);
 }

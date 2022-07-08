@@ -7,13 +7,7 @@
   font-size: 2.4rem;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
-  font-style: normal;
   @include pc{
     font-size: 5rem;
   }
-}
-
-.c-common-title.white{
-  color: $white;
-  background-color: $black;
 }

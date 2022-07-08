@@ -9,18 +9,30 @@
   // z-index: -1;
 }
 
+
 .p-mv__title{
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   font-weight: 700;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top:19.3%;
+  left: 9.6%;
+  // width: 80%;
   mix-blend-mode: difference;
   z-index: 10;
   font-family: futura-pt, sans-serif;
   font-weight: 600;
   font-style: normal;
+  @include pc{
+    top: 20vh;
+    left: 13.3%;
+    font-size: 8rem;
+  }
+  @include min(1600){
+    top: 32.7vh;
+    left: 13.3%;
+    font-size: 12.7rem;
+  }
 }
 // ._p-mv{
 //   background-repeat: no-repeat;

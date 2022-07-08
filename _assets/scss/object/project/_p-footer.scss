@@ -2,21 +2,87 @@
 @use '../../setting/setting' as *;
 
 .p-footer{
+  background: $black;
+  color: $white;
+  padding-top: 15rem;
+  padding-bottom: 9.5rem;
+  margin-top: -5.4rem;
+  position: relative;
+  z-index: -1;
 }
-.p-footer__inner{
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
+// .p-footer__inner{
+//   padding-top: 0.8rem;
+//   padding-bottom: 0.8rem;
 
+// }
+
+// .p-footer__copyright{
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 2.4rem;
+// }
+
+.p-footer__logobox{
+  // width: 30.8rem; 
+  // display: none;
 }
 
-.p-footer__copyright{
-  display: flex;
-  justify-content: center;
-  margin-top: 2.4rem;
+.p-footer__box{
+  @include pc{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
 
 .p-footer__logo{
-  margin-top: 4.8rem;
-  max-width: 80%;
-  width: 30rem;
+  @include pc{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-footer__logo small{
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.8rem;
+  @include pc{
+    font-size: 1.5rem;
+    margin-top: 2.8rem;
+    text-align: center;
+  }
+}
+
+.p-footer__logo a img{
+  // margin-top: 4.8rem;
+  max-width: 100%;
+  width: 13.4rem;
+  @include pc{
+    width: 16vw;
+    // width: 30.8rem;
+  }
+}
+
+.p-footer__nav{
+  margin-top: 2rem;
+  @include pc{
+    margin-top: 0;
+  }
+}
+
+.p-footer__policy{
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  @include pc{
+    // margin-top: 6rem;
+    padding: 5rem;
+    margin-top: 1rem;
+  }
+
+}
+.p-footer__policy a{
+  color: $white;
+  text-transform: uppercase;
 }

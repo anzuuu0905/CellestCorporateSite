@@ -5,14 +5,15 @@ $placeholderColor: #c3c3c3;
 
 // メディアクエリの基準幅
 // tabがない場合は、bp-spとbp-pcを1px差で設定すること
-$bp-sp: 375px;
+$bp-sp: 767px;
 $bp-pc: 768px;
 // $bp-tab: $bp-pc - 1px;
 
 // 共通余白設定
 $padding-pc:24px;
 $padding-sp:16px;
-$l-inner:1000px;
+// $l-inner:1920px;
+$l-inner:1680px;
 
 
 // vwの基準となる幅 →320px=スマホ最小
@@ -33,11 +34,14 @@ $burger-color: #8ac343; // テキスト色
 
 
 // color
-$black: #06070E; // テキスト色
-$blue: #618ABE; // テキスト色
-$white: #FFFFFF; // テキスト色
-$gray:#707070; // 背景
-$light-gray:#EBEBEB
+$black: #06070E;
+$black2:#6A7777; 
+$blue: #618ABE; 
+$white: #FFFFFF;
+$gray:#707070;
+$gray2:#EFEFEF;
+$gray3:#656565;
+$light-gray:#EBEBEB;
 $orange:#F5BD8D;
 
 

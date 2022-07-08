@@ -1,14 +1,6 @@
 <?php get_header(); ?>
-<!-- 
-  <div class="p-top-mv__img">
-    <picture>
-      <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv.png"
-              media="(min-width: 768px)">
-      <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv.png" alt="" />
-    </picture>
-  </div> -->
-
-<div class="p-mv">
+<div class="p-background">
+<section class="p-mv">
   <div class="ball__box">
     <div class="ball__wrapper">
       <div class="ball"></div>
@@ -36,7 +28,9 @@
   THE ENTERTAINMENT<br>
   OF NEXT GENERATION 
   </h1>
-</div>
+  <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
+
+</section>
 
 <!-- ライブコマース -->
 <section class="l-top-live p-top-live">
@@ -63,65 +57,46 @@
 <!-- About us -->
 <section class="l-top-about p-top-about">
   <div class="l-inner">
-    <h2 class="p-top-about__title c-common-title">
-    ABOUT US
-    </h2>
-    <p class="p-top-about__subtitle c-common-subtitle">
-    ライブコマースの先駆者が<br>
-    圧倒的な経験と実績で<br>
-    次世代のエンタメを創る<br>
-    </p>
+    <div class="p-top-about__wrapper">
+      <div class="p-top-about__textwrapper">
+        <h2 class="p-top-about__title c-common-title">
+        ABOUT US
+        </h2>
+        <p class="p-top-about__subtitle c-common-subtitle">
+        ライブコマースの先駆者が<br>
+        圧倒的な経験と実績で<br>
+        次世代のエンタメを創る<br>
+        </p>
+        <div class="p-top-about__text u-hidden-sp">
+          <p class="c-common-text">
+          ライブコマースは世界的に普及していますが、日本では最近ようやく注目され始めてきた程度で、まだまだ日常に溶け込んでいません。私たちは日本でライブコマースが始まった2017年にいち早くこの可能性に気づき、これまで継続してきました。
+          </p>
+        </div>
+        <!-- ボタン -->
+        <div class="p-top-about__btn c-btn u-hidden-sp">
+          <a href="<?php echo $about ?>">VIEW MORE</a>
+        </div>
+      </div>
 
-    <div class="p-top-about__img">
-      <picture>
-        <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/about-pc.png"
-                media="(min-width: 768px)">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="" />
-      </picture>
-    </div>
-    <div class="p-top-about__text">
-      <p class="c-common-text">
-      ライブコマースは世界的に普及していますが、日本では最近ようやく注目され始めてきた程度で、まだまだ日常に溶け込んでいません。私たちは日本でライブコマースが始まった2017年にいち早くこの可能性に気づき、これまで継続してきました。
-      </p>
-    </div>
-    <!-- ボタン -->
-    <div class="p-top-about__btn c-btn">
-      <a href="<?php echo $about ?>">VIEW MORE</a>
+      <div class="p-top-about__img">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/about-pc.png"
+                  media="(min-width: 768px)">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="" />
+        </picture>
+      </div>
+      <div class="p-top-about__text u-hidden-pc">
+        <p class="c-common-text">
+        ライブコマースは世界的に普及していますが、日本では最近ようやく注目され始めてきた程度で、まだまだ日常に溶け込んでいません。私たちは日本でライブコマースが始まった2017年にいち早くこの可能性に気づき、これまで継続してきました。
+        </p>
+      </div>
+      <!-- ボタン -->
+      <div class="p-top-about__btn c-btn u-hidden-pc">
+        <a href="<?php echo $about ?>">VIEW MORE</a>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- About us -->
-<section class="l-top-about p-top-about">
-  <div class="l-inner">
-    <h2 class="p-top-about__title c-common-title">
-    ABOUT US
-    </h2>
-    <p class="p-top-about__subtitle c-common-subtitle">
-    ライブコマースの先駆者が<br>
-    圧倒的な経験と実績で<br>
-    次世代のエンタメを創る<br>
-    </p>
-
-    <div class="p-top-about__img">
-      <picture>
-        <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/about-pc.png"
-                media="(min-width: 768px)">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="" />
-      </picture>
-    </div>
-    <div class="p-top-about__text">
-      <p class="c-common-text">
-      ライブコマースは世界的に普及していますが、日本では最近ようやく注目され始めてきた程度で、まだまだ日常に溶け込んでいません。私たちは日本でライブコマースが始まった2017年にいち早くこの可能性に気づき、これまで継続してきました。
-      </p>
-    </div>
-    <!-- ボタン -->
-    <div class="p-top-about__btn c-btn">
-      <a href="<?php echo $about ?>">VIEW MORE</a>
-    </div>
-  </div>
-</section>
-
 
 <!-- Service -->
 <section class="l-top-service p-top-service">
@@ -129,32 +104,127 @@
     <h2 class="p-top-service__title c-common-title">
     Service
     </h2>
-    <div class="p-top-service__img">
-      <picture>
-        <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-pc.png"
-                media="(min-width: 768px)">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="" />
-      </picture>
-    </div>
-    <div class="p-top-service__text">
-      <p class="c-common-text">
-      ライブコマースは世界的に普及していますが、日本では最近ようやく注目され始めてきた程度で、まだまだ日常に溶け込んでいません。私たちは日本でライブコマースが始まった2017年にいち早くこの可能性に気づき、これまで継続してきました。
-      </p>
+    <div class="p-top-service__items">
+      <div class="p-top-service__item">
+        <a href="" class="p-top-service__img">
+        <!-- <div class="p-top-service__img"> -->
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-pc.png"
+                    media="(min-width: 768px)">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="" />
+          </picture>
+          <div class="p-top-service__mask">
+          <div class="p-top-service__caption">View Details</div>
+        </div>
+        </a>
+        <!-- </div> -->
+        <h3 class="p-top-service__subtitle">
+        ライブコマース販売事業
+        </h3>
+      </div>
+      <div class="p-top-service__item">
+        <a href="" class="p-top-service__img">
+        <!-- <div class="p-top-service__img"> -->
+          <picture>
+            <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-pc.png"
+                    media="(min-width: 768px)">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-sp.png" alt="" />
+          </picture>
+        <!-- </div> -->
+        <div class="p-top-service__mask">
+          <div class="p-top-service__caption">View Details</div>
+        </div>
+        </a>
+        <h3 class="p-top-service__subtitle">
+        ライブコマースエージェント事務所
+        </h3>
+      </div>
     </div>
     <!-- ボタン -->
     <div class="p-top-service__btn c-btn">
-      <a href="<?php echo $service ?>">VIEW MORE</a>
+      <a href="<?php echo $about ?>">VIEW MORE</a>
     </div>
   </div>
 </section>
-<div class="">
-  <h2 class="c-common-title common-title white">About us</h2>
-  <p class="c-common-subtitle">
-  ライブコマースの先駆者が<br>
-  圧倒的な経験と実績で<br>
-  次世代のエンタメを創る<br>
-  </p>
+
+
+<!-- TOPICS -->
+<section class="l-top-topics p-top-topics">
+  <div class="l-inner">
+    <h2 class="p-top-topics__title c-common-title">
+    Topics
+    </h2>
+    <div class="p-top-topics__items">
+      <?php
+        $topics_query = new WP_Query(
+          array(
+            'post_type'      => 'post',
+            'posts_per_page' => 3,
+          )
+        );
+      ?>
+    <?php if ( $topics_query->have_posts() ) : ?>
+        <?php while ( $topics_query->have_posts() ) : ?>
+          <?php $topics_query->the_post(); ?>
+          <div class= "p-top-topics__item p-top-topic">
+            <!-- <a href="<?php //the_permalink(); ?>" class="p-top-topics__item p-top-topic u-hidden-sp"> -->
+              <div class="p-top-topic__img">
+                <?php the_post_thumbnail('full'); ?>
+              </div>
+              <div class="p-top-topic__wrapper">
+                <div class="p-top-topic__textbox">
+                  <time datetime="<?php the_time('c'); ?>" class="p-top-topic__date"><?php the_time('Y.m.d'); ?>
+                  </time>
+                  <h3 class="p-top-topic__title"><?php the_title(); ?></h3>
+                  <div class="p-top-topic__text"><?php the_content(); ?></div>
+                </div>
+                <!-- ボタン -->
+                <div class="p-top-topic__btn c-btn__circle u-hidden-sp">
+                  <a href="<?php the_permalink(); ?>"></a>
+                </div>
+              </div>
+            <!-- </a> -->
+          </div>
+        <?php endwhile; ?>
+      <?php endif; ?>
+      <?php wp_reset_postdata(); ?>
+    </div>
+
+    <!-- ボタン -->
+    <div class="p-top-topics__btn c-btn">
+      <a href="<?php echo $topics ?>">VIEW MORE</a>
+    </div>
+
+
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="l-contact p-contact">
+  <div class="p-contact__wrapper">
+    <div class="p-contact__textwrapper">
+      <h2 class="p-contact__title">
+        Contact
+      </h2>
+      <div class="p-contact__subtitle">
+        <h3 class="">
+          お問い合わせやご相談など、<br class="u-hidden-pc">
+          是非お気軽にご連絡ください。
+        </h3>
+      </div>
+      <div class="p-contact__text">
+        <p class="">
+          弊社のサービス内容に関してなど、お気軽にご連絡<br class="u-hidden-pc">
+          ください。まずはお話だけという方もお待ちしています。
+        </p>
+      </div>
+    </div>
+    <!-- ボタン -->
+    <div class="p-contact__btn c-btn__circle">
+      <a href="<?php echo $contact ?>"></a>
+    </div>
+  </div>
+</section>
 </div>
-
-
 <?php get_footer(); ?>

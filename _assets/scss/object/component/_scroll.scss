@@ -1,0 +1,75 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.c-scroll{
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+color: $gray;
+  // letter-spacing: -0.08em;
+  position: absolute;
+  left: 11.5rem;
+  bottom: 230px;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+// .c-scroll span{
+//   position: relative;
+// }
+
+// .c-scroll span::after{
+//   position: absolute;
+//   content: "";
+//   width: 50px;
+//   height: 1px;
+//   display: inline-block;
+//   border: 1px solid #FFF;
+//   right: -61px;
+//   bottom: 6px;
+//   animation: pathmove 1.4s ease-in-out infinite;
+// }
+
+// .scrolldown1{
+//   /*描画位置※位置は適宜調整してください*/
+// position:absolute;
+// left:50%;
+// bottom:10px;
+//   /*全体の高さ*/
+// height:50px;
+// }
+
+/* 線の描写 */
+.c-scroll::after{
+  content: "";
+    /*描画位置*/
+  position: absolute;
+  left:50px;
+  top: 15px;
+    /*線の形状*/
+  width: 311px;
+  height: 1px;
+  background: $gray;
+  /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+  // transform: translateY(-50%);
+}
+
+@keyframes pathmove{
+  0%{
+    width:0;
+    left:50px;
+    opacity: 0;
+  }
+  30%{
+    width:200px;
+    opacity: 1;
+  }
+  100%{
+    width:0;
+    left:311px;
+    opacity: 0;
+  }
+}

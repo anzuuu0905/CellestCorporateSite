@@ -1,8 +1,0 @@
-@use '../../mixin/mixin' as *;
-@use '../../setting/setting' as *;
-
-.l-header{
-  @include pc{
-    padding: 0.8rem 0 0;
-  }
-}
