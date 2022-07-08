@@ -8,6 +8,7 @@
   font-family: futura-pt, sans-serif;
   font-weight: 500;
   @include pc{
-    font-size: 5rem;
+    // font-size: 5rem;
+    font-size: min(5rem, calc(50 / 1920 * 100vw));
   }
 }

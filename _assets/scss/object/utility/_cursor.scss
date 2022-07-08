@@ -2,32 +2,42 @@
 @use '../../setting/setting' as *;
 
 	
-body {
-  position: relative;
-  cursor: none; //もともとあるカーソルは見えなくなるようにする
-}
- 
-.cursor,
+
+// .cursor,
 .follower {
   border-radius: 50%;
-  position: absolute; //bodyの一番左上になるように配置する
+  position: absolute;
   top: 0;
   left: 0; 
-  cursor: none; //もともとあるカーソルは見えなくなるようにする
-  posinter-events: none; //他の要素がクリックできなくならないように
+  pointer-events: none;
 }
- 
-.cursor {
-  width: 8px;
-  height: 8px;
-  background-color: #000;
-  z-index: 9999; //どの要素よりも一番上になるようにする
-}
- 
+
+// .cursor {
+//   width: 8px;
+//   height: 8px;
+//   z-index: 10001;
+//   background-color: black;
+// }
+
 .follower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #fdfe00;
-  z-indes: 9998; //カーソルの次に上になるようにする
+  background-color: rgba($black, .3);
+  z-index: 100000;
+  transition: transform ease .1s;
+  text-align: center;
+  span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transform: scale(0);
+  }
+  &.is-active {
+    background: $black;
+    transform: scale(3);
+    mix-blend-mode:difference;
+  }
 }
- 

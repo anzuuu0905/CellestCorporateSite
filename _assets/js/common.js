@@ -7,8 +7,9 @@ import $ from "@modules/jquery";
 // Slickスライダー
 import '@modules/slick-carousel';
 // gsap テキストアニメーション
-import gsap from "@modules/gsap/";
-import TweenMax from "@modules/gsap/";
+// import gsap from "@modules/gsap/";
+// import TweenMax from "@modules/gsap/";
+import { TweenMax } from "@modules/gsap/";
 
 ("use strict");
 
@@ -110,22 +111,24 @@ $('.js-hamburger').on('click', function () {
   if ($('.js-hamburger').hasClass('open')) {
     $('.js-drawer-menu').fadeOut();
     $('.js-overlay').fadeOut();
+    // $('.js-overlay').removeClass('open');
     $(this).removeClass('open');
     $("html").removeClass("is-fixed");  // 背景固定解除！
   } else {
     $('.js-drawer-menu').fadeIn();
     $('.js-overlay').fadeIn();
+    // $('.js-overlay').addClass('open');
     $('.js-hamburger').addClass('open');
     $("html").addClass("is-fixed");     // 背景固定！
   }
 });
 
 // ナビバートグル
-$('.js-overlay').on('click', function () {
-  $('.js-drawer-menu').fadeOut();
-  $('.js-overlay').fadeOut();
-  $('.js-hamburger').removeClass('open');
-});
+// $('.js-overlay').on('click', function () {
+//   $('.js-drawer-menu').fadeOut();
+//   $('.js-overlay').removeClass('open');
+//   $('.js-hamburger').removeClass('open');
+// });
 
 // スライダー（slick）
 $('.p-slick').slick({
@@ -137,20 +140,19 @@ $('.p-slick').slick({
 });
 
 
-var
-cursor = $(".cursor"),
-follower = $(".follower"),
-cWidth = 8, //カーソルの大きさ
-fWidth = 40, //フォロワーの大きさ
-delay = 10, //数字を大きくするとフォロワーがより遅れて来る
-mouseX = 0, //マウスのX座標
-mouseY = 0, //マウスのY座標
-posX = 0, //フォロワーのX座標
-posY = 0; //フォロワーのX座標
+const cursor = $(".cursor")
+const follower = $(".follower");
+let cWidth = 8; //カーソルの大きさ
+let fWidth = 40; //フォロワーの大きさ
+let delay = 10; //数字を大きくするとフォロワーがより遅れて来る
+let mouseX = 0; //マウスのX座標
+let mouseY = 0; //マウスのY座標
+let posX = 0; //フォロワーのX座標
+let posY = 0; //フォロワーのX座標
 
 //カーソルの遅延アニメーション
 //ほんの少ーーーしだけ遅延させる 0.001秒
-TweenMax.to({}, .001, {
+TweenMax.to({}, 0.005, {
   repeat: -1,
   onRepeat: function() {
     posX += (mouseX - posX) / delay;
@@ -188,3 +190,22 @@ $("a").on({
     follower.removeClass("is-active");
   }
 });
+
+const stalker = document.getElementById('mouse-stalker');
+let hovFlag = false;
+
+document.addEventListener('mousemove', function (e) {
+    stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+});
+
+const linkElem = document.querySelectorAll('a:not(.no_stick_)');
+for (let i = 0; i < linkElem.length; i++) {
+    linkElem[i].addEventListener('mouseover', function (e) {
+        hovFlag = true;
+        stalker.classList.add('is_active');
+    });
+    linkElem[i].addEventListener('mouseout', function (e) {
+        hovFlag = false;
+        stalker.classList.remove('is_active');
+    });
+}

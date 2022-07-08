@@ -10,7 +10,8 @@
   line-height: calc(49/38);
   letter-spacing: -0.1em;
   @include pc{
-    font-size: 10rem;
+    font-size: calc(100 / 1920 * 100vw);
+    // font-size: 10rem;
     line-height: calc(135/100);
   }
 }
@@ -19,7 +20,9 @@
   margin-top: 6.4rem;
   width: 100%;
   @include pc{
-    max-width: 144rem;
+    width: 84.523%;
+    max-width: calc(1420 / 1920 * 100vw);
+    // max-width: 144rem;
     margin-top: 22rem;
   }
 }

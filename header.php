@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/pql8zrv.css">
   <?php wp_head(); ?>
 </head>
- 
+
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <?php
@@ -96,6 +96,8 @@
 
         </div>
       </div>
+      <!-- <div class="p-header__overlay js-overlay"></div> -->
       <div class="p-header__overlay js-overlay"></div>
+      
     </div>
   </header>
