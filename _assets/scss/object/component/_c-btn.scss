@@ -3,6 +3,7 @@
 
 .c-btn{
   display: inline-block;
+  // background-color: #06070E;
 
 }
 .c-btn a {
@@ -35,12 +36,12 @@
 }
 
 .c-btn a:hover {
-  background-color: $text-color2;
-  color: $background;
+  // background-color: $text-color2;
+  // color: $background;
 }
 
 .c-btn a:hover::after {
-  border-color: $background;
+  // border-color: $background;
 }
 
 

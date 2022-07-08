@@ -39,10 +39,10 @@
       </div>
     </div>
 </footer>
-<?php wp_footer(); ?>
-<div class="btn"><a href="">Button</a></div>
-<div class="cursor"></div>
+<!-- <div class="cursor"></div> -->
 <div class="follower"></div>
+
+<?php wp_footer(); ?>
 
 </body>
 </html>

@@ -11,7 +11,7 @@
 
 
 .p-mv__title{
-  font-size: 3rem;
+  // font-size: 3rem;
   color: white;
   font-weight: 700;
   position: absolute;
@@ -24,15 +24,18 @@
   font-weight: 600;
   font-style: normal;
   @include pc{
-    top: 20vh;
-    left: 13.3%;
-    font-size: 8rem;
+    font-size: calc(127 / 1920 * 100vw);
+    top: calc(357 / 1920 * 100vw);
+    left: calc(256 / 1920 * 100vw);
+    // top: 20vh;
+    // left: 13.3%;
+    // font-size: 8rem;
   }
-  @include min(1600){
-    top: 32.7vh;
-    left: 13.3%;
-    font-size: 12.7rem;
-  }
+  // @include min(1600){
+  //   top: 32.7vh;
+  //   left: 13.3%;
+  //   font-size: 12.7rem;
+  // }
 }
 // ._p-mv{
 //   background-repeat: no-repeat;

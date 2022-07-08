@@ -27,13 +27,13 @@
   top: 0;
 }
 /*OPEN時の動き*/
-.c-hamburger.open{
-  // clip-path: circle(125vw at top 70px right 100px);
-  // background:$black;
+.c-hamburger.open span{
+  background:$white;
 }
 .c-hamburger.open span:nth-child(1) {
   top: 0.65rem;
   transform: rotate(315deg);
+  // background-color: $white;
 }
 
 .c-hamburger.open span:nth-child(2) {
@@ -44,4 +44,5 @@
 .c-hamburger.open span:nth-child(3) {
   top: -0.85rem;
   transform: rotate(-315deg);
+  // background-color: $white;
 }
