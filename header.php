@@ -101,3 +101,37 @@
       
     </div>
   </header>
+  <div class="p-background">
+    <section class="p-mv">
+      <div class="ball__box">
+        <div class="ball__wrapper">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <div class="ball__wrapper">
+          <div class="ball2"></div>
+          <div class="ball2"></div>
+          <div class="ball2"></div>
+          <div class="ball2"></div>
+        </div>
+        <svg>
+          <defs>
+            <filter id="filter">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+              <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="p-mv__img">
+        <picture>
+          <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-pc.png"
+                  media="(min-width: 768px)">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="" />
+        </picture>
+      </div>
+
+      <div class="c-scroll u-hidden-sp"><span>scroll</span></div>

@@ -2,7 +2,8 @@
 @use '../../setting/setting' as *;
 
 .l-footer{
-  margin-top: -64px;
-  // position: absolute;
-  // top: -54px;
+  margin-top: calc(-64 / 375 * 100vw);
+  @include pc{
+    margin-top: max(calc(-161 / 1920 * 100vw), -16.1rem);
+  }
 }

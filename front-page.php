@@ -1,35 +1,12 @@
 <?php get_header(); ?>
-<div class="p-background">
-<section class="p-mv">
-  <div class="ball__box">
-    <div class="ball__wrapper">
-      <div class="ball"></div>
-      <div class="ball"></div>
-      <div class="ball"></div>
-    </div>
-    <div class="ball__wrapper">
-      <div class="ball2"></div>
-      <div class="ball2"></div>
-      <div class="ball2"></div>
-      <div class="ball2"></div>
-    </div>
-    <svg>
-      <defs>
-        <filter id="filter">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
-          <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-        </filter>
-      </defs>
-    </svg>
-  </div>
-  <h1 class="p-mv__title">
-  CREATING<br>
-  THE ENTERTAINMENT<br>
-  OF NEXT GENERATION 
-  </h1>
-  <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
 
+  <div class="p-mv__titlebox">
+    <h1 class="p-mv__top-title">
+      CREATING<br>
+      THE ENTERTAINMENT<br>
+      OF NEXT GENERATION 
+    </h1>
+  </div>
 </section>
 
 <!-- ライブコマース -->
@@ -200,31 +177,4 @@
   </div>
 </section>
 
-<!-- Contact -->
-<section class="l-contact p-contact">
-  <div class="p-contact__wrapper">
-    <div class="p-contact__textwrapper">
-      <h2 class="p-contact__title">
-        Contact
-      </h2>
-      <div class="p-contact__subtitle">
-        <h3 class="">
-          お問い合わせやご相談など、<br class="u-hidden-pc">
-          是非お気軽にご連絡ください。
-        </h3>
-      </div>
-      <div class="p-contact__text">
-        <p class="">
-          弊社のサービス内容に関してなど、お気軽にご連絡<br class="u-hidden-pc">
-          ください。まずはお話だけという方もお待ちしています。
-        </p>
-      </div>
-    </div>
-    <!-- ボタン -->
-    <div class="p-contact__btn c-btn__circle">
-      <a href="<?php echo $contact ?>"></a>
-    </div>
-  </div>
-</section>
-</div>
 <?php get_footer(); ?>

@@ -4,16 +4,13 @@
 .p-top-topic{
   display: block;
   border-bottom: 1px solid $gray2;
-  padding-bottom: 2.2rem;
+  padding-bottom: calc(22 / 375 * 100vw);
   @include pc{
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 168rem;
     width: 139.6rem;
     max-width: 100%;
-    // padding-left: 14.2rem;
-    // padding-right: 14.2rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -21,15 +18,13 @@
 }
 
 .p-top-topic:nth-child(n+2){
-  margin-top: 2.2rem;
+  margin-top: min(calc(22 / 375 * 100vw), 2.2rem);
 }
 
 .p-top-topic__wrapper{
   @include pc{
-    // margin-left: 8.3rem;
-    margin-left: calc(83 / 1680 * 100vw);
+    margin-left: min(calc(83 / 1680 * 100vw), 8.3rem);
     display: flex;
-    // width: 91.1rem;
     width: calc(911 / 1680 * 100vw);
     max-width: 100%;
     justify-content: center;
@@ -40,10 +35,8 @@
 .p-top-topic__img{
   display: block;
   width: 100%;
-  // max-width: 100%;
   position: relative;
   @include pc{
-    // width: 40.2rem;
     width: calc(402 / 1680 * 100vw);
     max-width: 100%;
   }
@@ -68,47 +61,41 @@
 }
 
 .p-top-topic__date{
-  margin-top: 1.6rem;
+  margin-top: calc(16 / 375 * 100vw);
   display: block;
   color: $blue;
-  font-size: 1.1rem;
+  font-size: calc(11 / 375 * 100vw);
   font-weight: 500;
   font-family: futura-pt, sans-serif;
   @include pc{
     margin-top: inherit;
-    font-size: 3rem;
-    font-size:calc(30 / 1680 * 100vw);
+    font-size: min(calc(30 / 1920 * 100vw), 3rem);
   }
 }
 
 .p-top-topic__title{
-  font-size: 1.5rem;
+  font-size: calc(15 / 375 * 100vw);
   font-weight: 700;
   line-height: calc(18/15);
-  margin-top: 0.8rem;
+  margin-top: min(calc(8 / 375 * 100vw), 0.8rem);
   letter-spacing: -0.08em;
   @include pc{
-    font-size: 2.4rem;
-    font-size:calc(24 / 1920 * 100vw);
+    font-size: min(calc(24 / 1920 * 100vw), 2.4rem);
   }
 }
 
 .p-top-topic__text{
-  font-size: 1.2rem;
+  font-size: calc(12 / 375 * 100vw);
   font-weight: 500;
   line-height: 1.1;
-  margin-top: 1.3rem;
+  margin-top: calc(13 / 375 * 100vw);
   letter-spacing: -0.08em;
   @include pc{
-    // width: 80rem;
     width: calc(800 / 1680 * 100vw);
     max-width: 100%;
-    // font-size: 1.3rem;
-    font-size: calc(13 / 1920 * 100vw);
-
+    font-size: min(calc(13 / 1920 * 100vw), 1.3rem);
   }
 }
-
 
 .p-top-topic__btn{
   margin-top: 3.5rem;
@@ -121,8 +108,7 @@
   height: 5.6rem;
   @include pc{
     margin-top: inherit;
-    width: calc(56 / 1920 * 100vw);
-    height: calc(56 / 1920 * 100vw);
-
+    width: min(calc(56 / 1920 * 100vw) , 5.6rem);
+    height: min(calc(56 / 1920 * 100vw) , 5.6rem);
   }
 }

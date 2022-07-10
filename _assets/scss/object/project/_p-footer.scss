@@ -4,27 +4,15 @@
 .p-footer{
   background: $black;
   color: $white;
-  padding-top: 15rem;
-  padding-bottom: 9.5rem;
-  // margin-top: -5.4rem;
-  position: relative;
+  padding-top: calc(150 / 375 * 100vw);
+  padding-bottom: calc(95 / 1375 * 100vw);
+position: relative;
   z-index: 0;
-}
-// .p-footer__inner{
-//   padding-top: 0.8rem;
-//   padding-bottom: 0.8rem;
-
-// }
-
-// .p-footer__copyright{
-//   display: flex;
-//   justify-content: center;
-//   margin-top: 2.4rem;
-// }
-
-.p-footer__logobox{
-  // width: 30.8rem; 
-  // display: none;
+  @include pc{
+    padding-top: min(calc(268 / 1920 * 100vw), 26.8rem);
+    padding-bottom: min(calc(156 / 1920 * 100vw), 15.6rem);
+  
+  }
 }
 
 .p-footer__box{
@@ -44,45 +32,38 @@
 
 .p-footer__logo small{
   display: block;
-  font-size: 0.9rem;
-  margin-top: 0.8rem;
+  font-size: calc(9 / 375 * 100vw);
+  margin-top: calc(8 / 375 * 100vw);
   @include pc{
-    // font-size: 1.5rem;
-    // margin-top: 2.8rem;
-    margin-top: calc(28 / 1920 * 100vw);
-    font-size: calc(15 / 1920 * 100vw);
+    margin-top: min(calc(28 / 1920 * 100vw), 2.8rem);
+    font-size: min(calc(15 / 1920 * 100vw), 1.5rem);
     text-align: center;
   }
 }
 
 .p-footer__logo a img{
-  // margin-top: 4.8rem;
   max-width: 100%;
-  width: 13.4rem;
+  width: calc(134 / 375 * 100vw);
   @include pc{
-    // width: 16vw;
-    width: calc(308 / 1920 * 100vw);
-    // width: 30.8rem;
+    width: min(calc(308 / 1920 * 100vw), 30.8rem);
   }
 }
 
 .p-footer__nav{
-  margin-top: 2rem;
+  margin-top: calc(20 / 375 * 100vw);
   @include pc{
     margin-top: 0;
   }
 }
 
 .p-footer__policy{
-  font-size: 2rem;
-  margin-top: 2rem;
+  font-size: calc(20 / 375 * 100vw);
+  margin-top: calc(20 / 375 * 100vw);
   font-family: futura-pt, sans-serif;
   font-weight: 600;
   @include pc{
-    // padding: 5rem;
-    // margin-top: 1rem;
-    padding: calc(50 / 1920 * 100vw);
-    margin-top: calc(10 / 1920 * 100vw);
+    padding: min(calc(50 / 1920 * 100vw), 5rem);
+    margin-top: min(calc(10 / 1920 * 100vw), 1rem);
 
   }
 

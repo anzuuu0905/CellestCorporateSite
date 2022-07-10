@@ -2,8 +2,8 @@
 @use '../../setting/setting' as *;
 
 .l-contact{
-  margin-top: 11.2rem;
+  margin-top: calc(112 / 375 * 100vw);
   @include pc{
-    margin-top: 23rem;
+    margin-top: min(calc(230 / 1920 * 100vw), 23rem);
   }
 }

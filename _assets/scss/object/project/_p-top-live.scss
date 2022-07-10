@@ -10,7 +10,7 @@
   line-height: calc(49/38);
   letter-spacing: -0.1em;
   @include pc{
-    font-size: calc(100 / 1920 * 100vw);
+    font-size: min(calc(100 / 1920 * 100vw), 10rem);
     // font-size: 10rem;
     line-height: calc(135/100);
   }

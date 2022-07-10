@@ -1,14 +1,32 @@
-<footer class="l-footer p-footer">
-  <div class="p-footer__inner l-inner">
-    <div class="p-footer__wrapper">
-      <div class="p-footer__logo">
-
+<!-- Contact -->
+<section class="l-contact p-contact">
+  <div class="p-contact__wrapper">
+    <div class="p-contact__textwrapper">
+      <h2 class="p-contact__title">
+        Contact
+      </h2>
+      <div class="p-contact__subtitle">
+        <h3 class="">
+          お問い合わせやご相談など、<br class="u-hidden-pc">
+          是非お気軽にご連絡ください。
+        </h3>
       </div>
-      <div class="p-footer__nav">
-
+      <div class="p-contact__text">
+        <p class="">
+          弊社のサービス内容に関してなど、お気軽にご連絡<br class="u-hidden-pc">
+          ください。まずはお話だけという方もお待ちしています。
+        </p>
       </div>
     </div>
+    <!-- ボタン -->
+    <div class="p-contact__btn c-btn__circle">
+      <a href="<?php echo $contact ?>"></a>
+    </div>
+  </div>
+</section>
 
+<footer class="l-footer p-footer">
+  <div class="p-footer__inner l-inner">
     <div class="p-footer__box ">
         <div class="p-footer__logo">
           <div class="p-footer__logobox">
