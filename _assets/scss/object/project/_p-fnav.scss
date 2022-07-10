@@ -1,0 +1,40 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-fnav{
+  color: $white;
+}
+
+.p-fnav__item{
+  margin-top: 2rem;
+	font-family: futura-pt, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+  font-size: 2rem;
+  @include pc{
+    font-size: min(calc(20 / 1920 * 100vw), 2rem);
+    // padding: calc(50 / 1920 * 100vw);
+    // padding: 1.2rem clamp(1rem, calc(50 / 1920 * 100vw), 5rem) 2rem clamp(1rem, calc(50 / 1920 * 100vw), 5rem);
+    padding: clamp(1rem, calc(50 / 1920 * 100vw), 5rem);
+
+  }
+  // @include min(768){
+  //   padding: 5rem clamp(1rem, 2vw, 3rem) 5rem clamp(1rem, 2vw, 3rem);
+  // }
+  // @include min(1300){
+  //   padding: 5rem clamp(1rem, 2.6vw, 5rem) 5rem clamp(1rem, 2.6vw, 5rem);
+  //   text-align: center;
+  // }
+}
+
+.p-fnav__item a{
+  color: $white;
+  text-transform: uppercase;
+}
+
+.p-fnav__items{
+  @include pc{
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,53 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-service-result{
+  padding: calc(22 / 375 * 100vw) 0;
+  border-top: 1px solid $white;
+  border-bottom: 1px solid $white;
+  @include pc{
+    padding: min(calc(39.5 / 1920 * 100vw), 3.95rem) 0;
+  }
+}
+
+.p-sub-service-result__title{
+  font-size: calc(18 / 375 * 100vw);
+  font-weight: 700;
+  @include pc{
+    font-size: min(calc(43 / 1920 * 100vw), 4.3rem);
+  }
+}
+
+.p-sub-service-result__list{
+  margin-top: calc(12 / 375 * 100vw);
+  margin-left: calc(14.2 / 375 * 100vw);
+  @include pc{
+    margin-top: min(calc(20 / 1920 * 100vw), 2rem);
+    margin-left: min(calc(34 / 1920 * 100vw), 3.4rem);
+  
+  }
+}
+
+.p-sub-service-result__list li{
+  // list-style: inside;
+  text-align: left;
+  position: relative;
+}
+
+.p-sub-service-result__list li:before{
+  content: "";
+  position: absolute;
+  width: calc(8.91 / 375 * 100vw);
+  height: calc(8.91 / 375 * 100vw);
+  border-radius: 50%;
+  background: $blue;
+  top: calc(26 / 2 / 375 * 100vw);
+  left: cakc( -14 / 375 * 100vw);
+  transform: translateY(-50%);
+  @include pc{
+    top: min(calc(48 / 2 / 1920 * 100vw), 4.8rem);
+    width: min(calc(14 / 1920 * 100vw), 1.4rem);
+    height: min(calc(14 / 1920 * 100vw), 1.4rem);
+    left: min(calc(-27 / 1920 * 100vw), -2.7rem);
+  }
+}
