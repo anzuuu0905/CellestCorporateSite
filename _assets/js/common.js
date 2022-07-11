@@ -9,7 +9,10 @@ import '@modules/slick-carousel';
 // gsap テキストアニメーション
 // import gsap from "@modules/gsap/";
 // import TweenMax from "@modules/gsap/";
+// import { gsap, ScrollTrigger, TweenMax } from "@modules/gsap/";
+import { gsap } from "@modules/gsap/";
 import { TweenMax } from "@modules/gsap/";
+import { ScrollTrigger } from "@modules/gsap/";
 
 ("use strict");
 
@@ -209,3 +212,21 @@ for (let i = 0; i < linkElem.length; i++) {
         stalker.classList.remove('is_active');
     });
 }
+
+
+
+
+
+
+// const tl = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".trigger",
+//     start: "center bottom",
+//     end: "center top",
+//     scrub: true,
+//     markers: true
+//   }
+// });
+// tl.to(".box", {yPercent: 350, duration: 1})
+// tl.to(".box", {rotation: 360, duration: 3})
+// tl.to(".box", {xPercent: 350, duration: 1})

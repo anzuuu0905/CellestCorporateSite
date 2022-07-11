@@ -1,0 +1,15 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-company{
+
+}
+
+.p-sub-company__history,
+.p-sub-company__access{
+  margin-top: calc(112 / 375 * 100vw);
+  @include pc{
+    margin-top: min(calc(230 / 375 * 100vw), 23rem);
+  }
+}
+
