@@ -1,0 +1,57 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-company-info__title{
+  text-align: center;
+}
+
+.p-sub-company-info__contents{
+  margin-top: calc(40 / 375 * 100vw);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  @include pc{
+    margin-top: min(calc(120 / 1920 * 100vw), 12rem);
+    max-width: 111.2rem;
+  }
+  table{
+    width: 100%;
+  }
+  tr{
+    width: 100%;
+    display: flex;
+  }
+  th, td{
+    font-size: calc(14 / 375 * 100vw);
+    font-weight: 500;
+    line-height: 1.2;
+    padding-top: calc(20 / 375 * 100vw);
+    padding-bottom: calc(20 / 375 * 100vw);
+    @include pc{
+      font-size: min(calc(24 / 1920 * 100vw), 2.4rem);
+      padding-top: min(calc(54 / 1920 * 100vw), 5.4rem);
+      padding-bottom:  min(calc(54 / 1920 * 100vw), 5.4rem);
+    }
+  }
+  th{
+    width: calc(88 / 375 * 100vw);
+    text-align: left;
+    border-bottom: 1px solid $blue;
+    @include pc{
+      width: min(calc(284 / 1920 * 100vw), 28.4rem);
+    }
+  }
+  td{
+    display: block;
+    padding-left: calc(44 / 375 * 100vw);
+    width: calc(100% - 88 / 375 * 100vw);
+    border-bottom: 1px solid $gray2;
+    @include pc{
+      width: min(calc(100% - 284 / 1920 * 100vw), 82.8rem);
+      padding-left: min(calc(142 / 1920 * 100vw), 14.2rem);
+    }
+  }
+}
+
+
+

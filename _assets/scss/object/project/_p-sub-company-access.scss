@@ -1,0 +1,44 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-company-access__title{
+  text-align: center;
+}
+
+.p-sub-company-access__wrapper{
+  margin-top: calc(40 / 375 * 100vw);
+  @include pc{
+    margin-top: min(calc(120 / 1920 * 100vw), 12rem);
+  }
+}
+
+.p-sub-company-access__iframe{
+  margin-top: rem(24);
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  @include pc{
+    max-width: 139.6rem;
+  }
+}
+
+.p-sub-company-access__iframe::after{
+  content: "";
+  display: block;
+  padding-top: 90.67%;
+  @include pc{
+    padding-top: 51.64756%;
+  }
+}
+
+.p-sub-company-access__iframe iframe{
+  position: absolute;
+  height: 100%;//100%を145%などとすることで+-のボタンを消すことができる
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4.8rem;
+}

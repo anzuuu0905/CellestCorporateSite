@@ -1,0 +1,80 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-company-content{
+  display: flex;
+  @include pc{
+  }
+}
+
+.p-sub-company-content__year{
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: calc(12 / 375 * 100vw);
+  width: calc(69 / 375 * 100vw);
+  border-right: calc(2 / 375 * 100vw) solid $white;
+  position: relative;
+  @include pc{
+    font-size: min(calc(43 / 1920 * 100vw), 4.3rem);
+    width: min(calc(300 / 1920 * 100vw), 30rem);
+    border-right: min(calc(5 / 1920 * 100vw), 0.5rem) solid $white;
+  }
+}
+
+.p-sub-company-content:last-child .p-sub-company-content__year{
+  border-right: none;
+
+}
+
+.p-sub-company-content__year:after{
+  position: absolute;
+  top: 0;
+  right: calc(-6 / 375 * 100vw);
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background: #B5B5B5;
+  border-radius: 50%;
+  @include pc{
+    width: min(calc(32 / 1920 * 100vw), 3.2rem);
+    height: min(calc(32 / 1920 * 100vw), 3.2rem);
+    right: max(calc(-18.5 / 1920 * 100vw), -1.85rem);
+  }
+}
+
+.p-sub-company-content__wrapper{
+  width: calc(100% - 69 / 375 * 100vw);
+  padding-left: calc(26 / 375 * 100vw);
+  padding-bottom: calc(25 / 375 * 100vw);
+  font-size: calc(13 / 375 * 100vw);
+  font-weight: 500;
+  letter-spacing: -0.1em;
+  line-height: 1.17;
+  @include pc{
+    font-size: min(calc(29 / 1920 * 100vw), 2.9rem);
+    padding-left: min(calc(106 / 1920 * 100vw), 10.6rem);
+    padding-bottom: min(calc(130 / 1920 * 100vw), 13rem);
+    width: min(100% - calc(300 / 1920 * 100vw), 81.2rem);
+  }
+}
+
+.p-sub-company-content__box{
+  display: inline-block;
+  background: $white;
+  border-radius: 2.4rem;
+  box-shadow: 12px 6px 27px #D5D5D5;
+  padding: calc(13 / 375 * 100vw) calc(21 / 375 * 100vw);
+  @include pc{
+    padding: min(calc(48 / 1920 * 100vw), 4.8rem) min(calc(72 / 1920 * 100vw), 7.2rem);
+  }
+}
+.p-sub-company-content__box img{
+  width: initial;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// .p-sub-company-content__text{
+//   display: inline;
+// }

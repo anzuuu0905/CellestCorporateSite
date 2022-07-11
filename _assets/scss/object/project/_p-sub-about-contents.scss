@@ -1,0 +1,7 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sub-about-contents__title{
+  position: sticky;
+  top:300px;
+}

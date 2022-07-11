@@ -31,7 +31,7 @@
 }
 
 .p-top-about__subtitle{
-  margin-top: 22 / 375 * 100vw;
+  margin-top: calc(22 / 375 * 100vw);
   @include pc{
     margin-top: min(calc(22 / 1920 * 100vw), 2.2rem);
   }

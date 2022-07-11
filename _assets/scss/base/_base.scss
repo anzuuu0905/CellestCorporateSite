@@ -8,10 +8,11 @@ input,
 textarea,
 select,
 button {
-  font-family: "Roboto", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
+
 
 html {
   color: #000;
@@ -169,6 +170,54 @@ dl,dt,dd {
 }
 
 //独自font-family読み込み
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../font/NotoSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../font/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../font/NotoSansJP-Regular.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../font/NotoSansJP-Medium.otf");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../font/NotoSansJP-Bold.otf");
+}
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
