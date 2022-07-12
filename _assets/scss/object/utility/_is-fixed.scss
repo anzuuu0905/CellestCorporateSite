@@ -1,10 +1,11 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
-html.is-fixed,
-html.is-fixed body {
-  height: 100%;
-  width: 100%;
+.is-fixed
+// .is-fixed body 
+{
+  height: 100vw;
+  width: 100vw;
   // overflow: hidden;
   position: fixed;
 }
