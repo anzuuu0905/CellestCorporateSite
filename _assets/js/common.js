@@ -12,7 +12,7 @@ import '@modules/slick-carousel';
 // import { gsap, ScrollTrigger, TweenMax } from "@modules/gsap/";
 import { gsap } from "@modules/gsap/";
 import { TweenMax } from "@modules/gsap/";
-import { ScrollTrigger } from "@modules/gsap/";
+import { ScrollTrigger } from "@modules/gsap/ScrollTrigger";
 
 ("use strict");
 
@@ -194,6 +194,17 @@ $("a").on({
   }
 });
 
+$("input").on({
+  "mouseenter": function() {
+    cursor.addClass("is-active");
+    follower.addClass("is-active");
+  },
+  "mouseleave": function() {
+    cursor.removeClass("is-active");
+    follower.removeClass("is-active");
+  }
+});
+
 const stalker = document.getElementById('mouse-stalker');
 let hovFlag = false;
 
@@ -218,15 +229,34 @@ for (let i = 0; i < linkElem.length; i++) {
 
 
 
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".trigger",
-//     start: "center bottom",
-//     end: "center top",
-//     scrub: true,
-//     markers: true
-//   }
-// });
-// tl.to(".box", {yPercent: 350, duration: 1})
-// tl.to(".box", {rotation: 360, duration: 3})
-// tl.to(".box", {xPercent: 350, duration: 1})
+
+gsap.registerPlugin(ScrollTrigger)
+
+ScrollTrigger.create({
+  trigger: ".p-sub-about__contents",
+  // markers: true,
+  start: "top bottom",
+  end: "bottom 90%",
+  toggleClass: { targets: ".p-sub-about-content__list", className: "is-active" },
+});
+ScrollTrigger.create({
+  trigger: ".js-sub-about-content1",
+  // markers: true,
+  start: "top 90%",
+  end: "bottom 90%",
+  toggleClass: { targets: ".js-sub-about-content__title1", className: "current" },
+});
+ScrollTrigger.create({
+  trigger: ".js-sub-about-content2",
+  // markers: true,
+  start: "top 90%",
+  end: "bottom 90%",
+  toggleClass: { targets: ".js-sub-about-content__title2", className: "current" },
+});
+ScrollTrigger.create({
+  trigger: ".js-sub-about-content3",
+  // markers: true,
+  start: "top 90%",
+  end: "bottom 90%",
+  toggleClass: { targets: ".js-sub-about-content__title3", className: "current" },
+});

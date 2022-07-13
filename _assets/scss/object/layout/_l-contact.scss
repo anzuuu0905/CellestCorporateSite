@@ -4,6 +4,6 @@
 .l-contact{
   margin-top: calc(112 / 375 * 100vw);
   @include pc{
-    margin-top: min(calc(230 / 1920 * 100vw), 23rem);
+    margin-top: min(calc(320 / 1920 * 100vw), 23rem);
   }
 }

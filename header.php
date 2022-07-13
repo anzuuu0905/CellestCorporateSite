@@ -24,8 +24,8 @@
     $topics = esc_url(home_url('/topics/'));
     $career = esc_url(home_url('/career/'));
     $contact = esc_url(home_url('/contact/'));    
+    $policy = esc_url(home_url('/policy/'));    
   ?>
-  
   <header class="p-header">
     <div class="p-header__inner">
       <!-- PCの場合使用 -->

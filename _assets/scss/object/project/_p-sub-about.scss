@@ -1,3 +1,29 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
+.p-sub-about{
+  position: relative;
+  background: $gray2;
+  border-radius: 4.8rem;
+  padding-top: calc(300/ 375 * 100vw);
+  @include pc{
+    background: initial;
+    padding-top: min(calc(514 / 1920 * 100vw), 30rem);
+    padding-bottom: min(calc(430 / 1920 * 100vw), 43rem);
+  }
+}
+
+.p-sub-about__content{
+  padding-left: calc(27 / 375 * 100vw);
+  @include pc{
+    padding-left: min(calc(562 / 1920 * 100vw), 56.2rem);
+  }
+}
+
+.p-sub-about__content{
+  padding-bottom: calc(65 / 375 * 100vw);
+  @include pc{
+    padding-bottom: min(calc(235 / 1920 * 100vw), 23.5rem);
+  }
+}
+

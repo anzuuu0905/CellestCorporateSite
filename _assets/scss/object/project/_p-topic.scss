@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   padding: 0.8rem;
-  border-bottom: 1px solid $border-color;  
+  border-bottom: 1px solid $gray2;  
   @include pc{
     flex-direction:initial;
   }

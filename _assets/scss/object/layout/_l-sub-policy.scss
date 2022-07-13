@@ -1,9 +1,9 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
-.l-sub-company{
+.l-sub-policy{
   margin-top: calc(112 /375 * 100vw);
   @include pc{
-    margin-top: min(calc(23 /1920 * 100vw), 23rem);
+    margin-top: min(calc(230 /1920 * 100vw), 23rem);
   }
 }

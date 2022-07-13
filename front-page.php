@@ -143,8 +143,8 @@
     <?php if ( $topics_query->have_posts() ) : ?>
         <?php while ( $topics_query->have_posts() ) : ?>
           <?php $topics_query->the_post(); ?>
-          <div class= "p-top-topics__item p-top-topic">
-            <!-- <a href="<?php //the_permalink(); ?>" class="p-top-topics__item p-top-topic u-hidden-sp"> -->
+          <div>
+            <a href="<?php the_permalink(); ?>" class= "p-top-topics__item p-top-topic">
               <div class="p-top-topic__img">
                 <?php the_post_thumbnail('full'); ?>
               </div>
@@ -156,11 +156,12 @@
                   <div class="p-top-topic__text"><?php the_content(); ?></div>
                 </div>
                 <!-- ボタン -->
-                <div class="p-top-topic__btn c-btn__circle u-hidden-sp">
-                  <a href="<?php the_permalink(); ?>"></a>
+                <div class="p-top-topic__btn c-btn-circle u-hidden-sp">
+                  <div class="c-btn-circle__item"></div>
+                <!-- <a href="<?php //the_permalink(); ?>"></a> -->
                 </div>
               </div>
-            <!-- </a> -->
+            </a>
           </div>
         <?php endwhile; ?>
       <?php endif; ?>

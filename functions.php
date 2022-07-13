@@ -155,14 +155,22 @@ function my_excerpt_more( $more ) {
 add_filter( 'excerpt_more', 'my_excerpt_more' );
 
 // Thanksページ
-add_action( 'wp_footer', 'add_thanks_page' );
-function add_thanks_page() {
-echo <<< EOD
-<script>
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-	location = 'http://hirodentalcrinic.local/thanks/'; /* 遷移先のURL */
-}, false );
-</script>
-EOD;
-}
+// add_action( 'wp_footer', 'add_thanks_page' );
+// function add_thanks_page() {
+// echo <<< EOD
+// <script>
+// document.addEventListener( 'wpcf7mailsent', function( event ) {
+// 	location = 'http://hirodentalcrinic.local/thanks/'; /* 遷移先のURL */
+// }, false );
+// </script>
+// EOD;
+// }
 
+/*
+ * Contact Form 7で自動挿入されるpタグやbrタグを削除する
+ * 参考サイトhttps://junpei-sugiyama.com/contact-form7-autop/
+ */
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false() {
+  return false;
+} 
