@@ -25,7 +25,7 @@ input[type="time"] {
 	margin: 0;
 	padding: 4px;
 	// border: 1px solid #ccc;
-	border: 1px solid $border-color;
+	border: 1px solid $gray2;
 	outline: none;
 	font-size: 16px;
 }
@@ -44,7 +44,7 @@ select {
 	margin-right: 0;
 	margin-left: 0;
 	padding: 4px;
-	border: 1px solid $border-color;
+	border: 1px solid $gray2;
 	border-radius: 0;
 	outline: none;
 	background: none;
@@ -72,13 +72,13 @@ select {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
-	background: $background;
+	background: $white;
 }
 .select select {
 	width: 100%;
 	padding-right: 24px;
 	// border: 1px solid #ccc;
-	border: 1px solid $border-color;
+	border: 1px solid $gray2;
 	background: none;
 	// text-overflow: "";
 	cursor: pointer;
@@ -94,7 +94,7 @@ select {
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	// border-top: 6px solid #666;
-	border-top: 1px solid $border-color;
+	border-top: 1px solid $gray2;
 	pointer-events: none;
 }
 
@@ -125,15 +125,15 @@ input[type="checkbox"] + span::before {
 	content: "";
 	margin-top: -8px;
 	// border: 1px solid #ccc;
-	border: 1px solid $border-color;
-	background: $background;
+	border: 1px solid $gray2;
+	background: $white;
 }
 
 /* fieldset */
 fieldset {
 	padding: 8px 16px;
 	// border: 1px solid #ccc;
-	border: 1px solid $background;
+	border: 1px solid $white;
 }
 legend {
 	padding: 0 8px;
@@ -157,11 +157,11 @@ button {
 	// font-size: 20px;
 	cursor: pointer;
 	padding: 1rem 3rem;
-  color: $text-color2;
+  color: $black;
   font-size: 1.6rem;
-  background-color: $background;
+  background-color: $white;
   border-radius: 2.5rem;
-  border:0.1rem solid $text-color2;
+  border:0.1rem solid $black;
 
 }
 
@@ -237,7 +237,7 @@ input[type="checkbox"] + span:hover::after {
 	height: 8px;
 	margin-top: -4px;
 	// background: #ccc;
-	background: $background;
+	background: $white;
 	
 }
 
@@ -245,13 +245,13 @@ input[type="checkbox"] + span:hover::after {
 input[type="radio"]:checked + span,
 input[type="checkbox"]:checked + span {
 	// color: #3498db;
-	color: $text-color2;
+	color: $black;
 
 }
 input[type="radio"]:checked + span::before,
 input[type="checkbox"]:checked + span::before {
 	// border-color: #3498db;
-	border-color: $text-color2;
+	border-color: $black;
 
 }
 input[type="radio"]:checked + span::after,
@@ -264,7 +264,7 @@ input[type="checkbox"]:checked + span::after {
 	height: 8px;
 	margin-top: -4px;
 	// background: #3498db;
-	background: $text-color2;
+	background: $black;
 
 }
 
@@ -283,16 +283,16 @@ button:hover {
 	// border-color: #3498db;
 	// background: #3498db;
 	// color: #fff;
-	border-color: $text-color2;
-  background-color: $text-color2;
-  color: $background;
+	border-color: $black;
+  background-color: $black;
+  color: $white;
 }
 
 /* focus */
 input:focus,
 textarea:focus {
 	// border-color: #3498db;
-	border-color: $text-color2;
+	border-color: $black;
 
 }
 input[type="submit"]:focus,
@@ -307,18 +307,18 @@ input:disabled,
 input:disabled:hover,
 textarea:disabled,
 textarea:disabled:hover {
-	border-color: $border-color;
+	border-color: $gray2;
 	background: #eee;
 	cursor: not-allowed;
 }
 input[type="radio"]:disabled + span,
 input[type="checkbox"]:disabled + span  {
-	color: $border-color;
+	color: $gray2;
 	cursor: not-allowed;
 }
 input[type="radio"]:disabled + span::before,
 input[type="checkbox"]:disabled + span::before {
-	border-color: $border-color;
+	border-color: $gray2;
 	cursor: not-allowed;
 }
 

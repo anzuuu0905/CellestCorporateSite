@@ -2,7 +2,7 @@
 @use '../../setting/setting' as *;
 
 .p-contact{
-  padding: calc(66 / 375 * 100vw) 0;
+  // padding: calc(66 / 375 * 100vw) 0;
   color: $white ;
   background-image: url(../img/common/contact-sp.png);
   background-repeat: no-repeat;
@@ -12,18 +12,49 @@
   @include pc{
     border-radius: 4.8rem 0 0 4.8rem;
     margin-left: min(calc(262 / 1920 * 100vw), 26.2rem);
-    padding: min(calc(114 / 1920 * 100vw), 11.4rem) 0;
-    padding: calc(114 / 1920 * 100vw) 0;
+    // padding: min(calc(114 / 1920 * 100vw), 11.4rem) 0;
+    // padding: calc(114 / 1920 * 100vw) 0;
     display: flex;
     background-image: url(../img/common/contact-pc.png);
   }
 }
+
+.p-contact:hover{
+  filter: brightness(120%);
+}
+
+// .p-contact::before{
+//   // background: rgba(255, 255, 255, .5);/* マスクの色(黒の50%) */
+//   bottom: 0;
+//   content: '';
+//   height: auto;
+//   left: 0;
+//   opacity: 0;/* 最初は透明（非表示） */
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   transition: opacity .6s ease;/* ゆっくりopacityのみへ変化させる */
+//   width: 100%;
+//   z-index: 1;
+//   filter: brightness(120%);
+// }
+
+// .p-contact:hover::before{
+//   opacity: 1;
+// }
+// .p-contact__wrapper a:hover{
+//   filter: brightness(200%);
+// }
+
 .p-contact__wrapper{
+  padding-top: calc(66 / 375 * 100vw) ;
+  padding-bottom: calc(66 / 375 * 100vw) ;
   @include pc{
     width: calc(1455 / 1920 * 100vw);
     max-width: 100%;
     padding-right: min(calc(24 / 1920 * 100vw), 2.4rem);
-    padding-right: calc(24 / 1920 * 100vw);
+    padding-top: min(calc(114 / 1920 * 100vw), 11.4rem);
+    padding-bottom: min(calc(114 / 1920 * 100vw), 11.4rem);
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -4,7 +4,9 @@
 .p-top-topic{
   display: block;
   border-bottom: 1px solid $gray2;
-  padding-bottom: calc(22 / 375 * 100vw);
+  //  border-bottom: 1px solid red;
+  // border-top: 1px solid gray;
+  padding: calc(24 / 375 * 100vw) 0;
   @include pc{
     display: flex;
     justify-content: center;
@@ -13,32 +15,41 @@
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    padding-bottom: min(calc(22 / 1920 * 100vw), 2.2rem);
+  // padding: calc(24 / 375 * 100vw) 0;
   }
 }
 
-.p-top-topic:nth-child(n+2){
-  margin-top: min(calc(22 / 375 * 100vw), 2.2rem);
-}
+// .p-top-topic:nth-child(1){
+//   border-top: 1px solid $gray2;
+// }
+
+// .p-top-topic:nth-child(n+2){
+//   margin-top: min(calc(22 / 375 * 100vw), 2.2rem);
+// }
 
 .p-top-topic__wrapper{
   @include pc{
     margin-left: min(calc(83 / 1680 * 100vw), 8.3rem);
     display: flex;
-    width: calc(911 / 1680 * 100vw);
-    max-width: 100%;
+    // width: calc(911 / 1680 * 100vw);
+    width: calc(911 / 1920 * 100vw);
+    max-width: 91.1rem;
     justify-content: center;
     align-items: center;
   }
 }
 
 .p-top-topic__img{
+  border-radius: 48px;
   display: block;
   width: 100%;
   position: relative;
+  overflow: hidden;
   @include pc{
-    width: calc(402 / 1680 * 100vw);
-    max-width: 100%;
+    // width: calc(402 / 1680 * 100vw);
+    width: calc(402 / 1920 * 100vw);
+    max-width: 40.2rem;
   }
 }
 
@@ -57,9 +68,20 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: clamp(10px, 3vw, 4.8rem);
+  border-radius: 48px;
+  // border-radius: clamp(10px, 3vw, 4.8rem);
 }
+.p-top-topic__img:hover img{
+  transition-duration: 0.3s;
+  transform-origin:center center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.1);/* 拡大 */
+  width: 100%;
+  height: 100%;
 
+}
 .p-top-topic__date{
   margin-top: calc(16 / 375 * 100vw);
   display: block;
@@ -96,6 +118,11 @@
     font-size: min(calc(13 / 1920 * 100vw), 1.3rem);
   }
 }
+.p-top-topic__textbox{
+  @include pc{
+    width: min(calc(851 / 1920 * 100vw), 85.1rem);
+  }
+}
 
 .p-top-topic__btn{
   margin-top: 3.5rem;
@@ -104,11 +131,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5.6rem;
-  height: 5.6rem;
   @include pc{
     margin-top: inherit;
-    width: min(calc(56 / 1920 * 100vw) , 5.6rem);
-    height: min(calc(56 / 1920 * 100vw) , 5.6rem);
+    width: min(calc(60 / 1920 * 100vw) , 6rem);
+    height: min(calc(60 / 1920 * 100vw) , 6rem);
   }
 }

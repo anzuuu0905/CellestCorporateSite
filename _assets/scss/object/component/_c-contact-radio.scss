@@ -40,7 +40,7 @@ input[type="radio"] + span::before {
 
 input[type="radio"] + span::after {
 	-webkit-transform: translateY(-50%);
-	background: $background;
+	background: $white;
 	border: 1px solid transparent;
 	border-radius: 50%;
 	content: "";

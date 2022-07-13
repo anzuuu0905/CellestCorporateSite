@@ -34,7 +34,8 @@
   }
 }
 
-.p-sub-about-content__title.current{
+.p-sub-about-content__title.current,
+.p-sub-about-content__list .p-sub-about-content__title.current{
 // .p-sub-about-content__list ul li.current{
   font-size: calc(18 / 375 * 100vw);
   color: $blue;
@@ -68,9 +69,10 @@
   margin-left: auto;
   margin-right: auto;
   transform-origin: left;
+  transform: translate(-50%,-50%);
   @include pc{
     top: min(calc(48 / 2 / 375 * 100vw), 2.4rem);
-    left: -224px;
+    left: max(calc(-224 / 2 / 1920 * 100vw), -22.4rem);
     width: min(calc(10 / 1920 * 100vw), 1rem);
     height: min(calc(10 / 1920 * 100vw), 1rem);
     background: $gray2;

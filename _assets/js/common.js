@@ -194,6 +194,17 @@ $("a").on({
   }
 });
 
+$("input").on({
+  "mouseenter": function() {
+    cursor.addClass("is-active");
+    follower.addClass("is-active");
+  },
+  "mouseleave": function() {
+    cursor.removeClass("is-active");
+    follower.removeClass("is-active");
+  }
+});
+
 const stalker = document.getElementById('mouse-stalker');
 let hovFlag = false;
 
@@ -223,28 +234,28 @@ gsap.registerPlugin(ScrollTrigger)
 
 ScrollTrigger.create({
   trigger: ".p-sub-about__contents",
-  markers: true,
+  // markers: true,
   start: "top bottom",
   end: "bottom 90%",
   toggleClass: { targets: ".p-sub-about-content__list", className: "is-active" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content1",
-  markers: true,
+  // markers: true,
   start: "top 90%",
   end: "bottom 90%",
   toggleClass: { targets: ".js-sub-about-content__title1", className: "current" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content2",
-  markers: true,
+  // markers: true,
   start: "top 90%",
   end: "bottom 90%",
   toggleClass: { targets: ".js-sub-about-content__title2", className: "current" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content3",
-  markers: true,
+  // markers: true,
   start: "top 90%",
   end: "bottom 90%",
   toggleClass: { targets: ".js-sub-about-content__title3", className: "current" },

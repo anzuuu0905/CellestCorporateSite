@@ -8,10 +8,10 @@
 }
 
 .c-timetable th{
-  background-color: $text-color2;
-  color: $background;
+  background-color: $black;
+  color: $white;
   border: none;
-  border-right: 0.1rem solid $background;
+  border-right: 0.1rem solid $white;
   text-align: center;
 }
 
@@ -43,16 +43,16 @@
 
 .c-timetable td{
   text-align: center;
-  border: 0.1rem solid $border-color;
+  border: 0.1rem solid $gray2;
   border-bottom: none;
 }
 
 .c-timetable td:first-of-type{
   border: none;
-  border-top:  0.1rem solid $border-color;
+  border-top:  0.1rem solid $gray2;
 }
 
 .c-timetable td:last-of-type{
   border: none;
-  border-top:  0.1rem solid $border-color;
+  border-top:  0.1rem solid $gray2;
 }

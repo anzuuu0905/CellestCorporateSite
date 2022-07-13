@@ -13,13 +13,6 @@
   }
 }
 
-// .p-sub-about__contents{
-//   margin-left: calc(41 / 375 * 100vw);
-//   @include pc{
-//     margin-left: min(calc(562 / 1920 * 100vw), 56.2rem);
-//   }
-// }
-
 .p-sub-about__content{
   padding-left: calc(27 / 375 * 100vw);
   @include pc{

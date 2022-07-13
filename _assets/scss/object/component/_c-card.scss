@@ -2,7 +2,7 @@
 @use '../../setting/setting' as *;
 
 .c-card {
-  background-color: $background;
+  background-color: $white;
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +21,7 @@
 
 .c-card__category {
   padding: 0.8rem;
-  background-color: $text-color2;
+  background-color: $black;
   font-size: 1.2rem;
 }
 

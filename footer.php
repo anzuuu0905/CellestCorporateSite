@@ -1,5 +1,18 @@
+<?php
+    $home = esc_url(home_url('/'));
+    $about = esc_url(home_url('/about/'));
+    $service = esc_url(home_url('/service/'));
+    $company = esc_url(home_url('/company/'));
+    $topics = esc_url(home_url('/topics/'));
+    $career = esc_url(home_url('/career/'));
+    $contact = esc_url(home_url('/contact/'));    
+    $policy = esc_url(home_url('/policy/'));    
+  ?>
+
+
 <!-- Contact -->
 <section class="l-contact p-contact">
+<a href="<?php echo $contact ?>" >
   <div class="p-contact__wrapper">
     <div class="p-contact__textwrapper">
       <h2 class="p-contact__title">
@@ -19,10 +32,12 @@
       </div>
     </div>
     <!-- ボタン -->
-    <div class="p-contact__btn c-btn__circle">
-      <a href="<?php echo $contact ?>"></a>
+    <div class="p-contact__btn c-btn-circle">
+      <!-- <a href="<?php //echo $contact ?>" class="c-btn-circle__item"></a> -->
+    <div class="c-btn-circle__item"></div>
     </div>
   </div>
+  </a>
 </section>
 
 <footer class="l-footer p-footer">
@@ -36,6 +51,11 @@
             <small>&copy; Cellest,Inc.All rights reserved.</small>
           </div>
         </div>
+
+        <?php 
+          global $home;
+          global $policy;
+        ?>
         <div class="p-footer__linkbox">
           <div class="p-footer__nav p-fnav">
             <nav class="p-fnav__menu">
@@ -52,6 +72,7 @@
           </div>
           <div class="p-footer__policy">
             <a href="<?php echo $policy ?>">Pryvacy Policy</a>
+            
           </div>
         </div>
       </div>
