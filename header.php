@@ -26,7 +26,14 @@
     $contact = esc_url(home_url('/contact/'));    
     $policy = esc_url(home_url('/policy/'));    
   ?>
-  <header class="p-header">
+    <!-- ローディング画面 -->
+    <div id="loader">
+  </div>
+
+  <header class="p-header" id="loader-header">
+  <!-- ローディング画面 -->
+  <!-- <div id="loader">
+  </div> -->
     <div class="p-header__inner">
       <!-- PCの場合使用 -->
       <div class="p-header__box l-inner u-hidden-sp">
@@ -39,13 +46,13 @@
         <div class="p-header__nav p-gnav ">
           <nav class="p-gnav__menu">
             <ul class="p-gnav__items">
-              <li class="p-gnav__item"><a href="<?php echo $home ?>">Top</a></li>
-              <li class="p-gnav__item"><a href="<?php echo $about ?>">About Us</a></li>
-              <li class="p-gnav__item"><a href="<?php echo $service ?>">Service</a></li>
-              <li class="p-gnav__item"><a href="<?php echo $company ?>">Company</a></li>
-              <li class="p-gnav__item"><a href="<?php echo $topics ?>">Topics</a></li>
+              <li class="p-gnav__item"><a <?php if( is_front_page() ): ?>class="current-page"<?php endif; ?> href="<?php echo $home ?>">Top</a></li>
+              <li class="p-gnav__item"><a <?php if( is_page('about')): ?>class="current-page"<?php endif; ?> href="<?php echo $about ?>">About Us</a></li>
+              <li class="p-gnav__item"><a <?php if( is_page('service')): ?>class="current-page"<?php endif; ?> href="<?php echo $service ?>">Service</a></li>
+              <li class="p-gnav__item"><a <?php if( is_page('company')): ?>class="current-page"<?php endif; ?> href="<?php echo $company ?>">Company</a></li>
+              <li class="p-gnav__item"><a <?php if( is_home() ) : ?>class="current-page"<?php endif; ?> href="<?php echo $topics ?>">Topics</a></li>
               <li class="p-gnav__item"><a href="<?php echo $career ?>">Career</a></li>
-              <li class="p-gnav__item"><a href="<?php echo $contact ?>">Contact</a></li>
+              <li class="p-gnav__item"><a <?php if( is_page('contact')): ?>class="current-page"<?php endif; ?> href="<?php echo $contact ?>">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -100,8 +107,10 @@
       <div class="p-header__overlay js-overlay"></div>
       
     </div>
+
   </header>
   <div class="p-background">
+
     <section class="p-mv">
       <div class="ball__box">
         <div class="ball__wrapper">
@@ -119,7 +128,8 @@
           <defs>
             <filter id="filter">
               <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-              <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+              <!-- <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" /> -->
+              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
               <feComposite in="SourceGraphic" in2="filter" operator="atop" />
             </filter>
           </defs>

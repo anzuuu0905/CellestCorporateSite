@@ -1,0 +1,57 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  
+  to {
+      opacity: 0;
+      // display: none;
+      // visibility: hidden;
+
+  }
+}
+#loader{
+  // width: 100vw;
+  // height: 100vh;
+  position: relative;
+  background: initial;
+  z-index: 11;
+
+}
+
+// #loader::before{
+//   background-color: black;
+//   position: absolute;
+//   content: "";
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+#loader:after{
+  background-color: black;
+  background: url(../img/common/loader-pc.png);
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  // transform: translate(-50%, -50%);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  width: 100vw;
+  height: 100vh;
+  // display: block;
+  z-index: -11;
+}
+
+#loader.loaded {
+  animation: fadeOut 3s forwards;
+  // transition : all 0.5s;
+}
+

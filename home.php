@@ -1,18 +1,16 @@
 <?php get_header(); ?>
+<div class="p-mv__titlebox">
+  <h1 class="p-mv__sub-title">
+    TOPICS
+  </h1> 
+  <p class="p-mv__jp-title">
+  お知らせ
+  </p>
+</div>
+</section>
+
 <section class="p-sub-topics">
-  <!-- 共通タイトル -->
-  <div class="c-comon-title">
-    <div class="c-comon-title__inner">
-      <h2 class="c-comon-title__title">お知らせ</h2>
-    </div>
-  </div>
   <div class="p-sub-topics__inner l-inner">
-    <div class="l-breadcrumb">
-      <?php if(function_exists('bcn_display'))
-        {
-            bcn_display();
-        }?>
-    </div>
     <div class="p-sub-topics__list">
       <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post();?>
