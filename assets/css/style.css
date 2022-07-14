@@ -1659,6 +1659,7 @@ input[type=radio]:checked + span::after {
   width: 28.8rem;
   margin-left: auto;
   margin-right: auto;
+  color: #FFFFFF;
 }
 
 .p-contact__title {
@@ -3689,7 +3690,6 @@ button {
     margin-left: 8rem;
   }
   .p-fnav__item {
-    font-size: min(1.0416666667vw, 2rem);
     padding: clamp(1rem, 2.6041666667vw, 5rem);
   }
   .p-fnav__items {

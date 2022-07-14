@@ -64,6 +64,7 @@
   width: 28.8rem;
   margin-left: auto;
   margin-right: auto;
+  color: $white;
   @include pc{
     margin-left: min(calc(203 / 1920 * 100vw), 20.3rem);
     margin-left: calc(203 / 1920 * 100vw);
