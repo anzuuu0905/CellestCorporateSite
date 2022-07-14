@@ -1140,6 +1140,7 @@ input[type=radio]:checked + span::after {
 
 .c-hamburger {
   z-index: 9999;
+  position: relative;
 }
 
 .c-hamburger span {
@@ -1242,7 +1243,7 @@ input[type=radio]:checked + span::after {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
-  z-index: 101;
+  z-index: 10001;
   display: none;
 }
 .c-top .c-top__link {
@@ -1982,7 +1983,7 @@ input[type=radio]:checked + span::after {
   padding-bottom: 2.4rem;
   width: 100%;
   position: relative;
-  z-index: 101;
+  z-index: 10001;
 }
 
 .p-header__logo {
