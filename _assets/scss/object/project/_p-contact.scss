@@ -9,6 +9,8 @@
   background-size: cover;
   position: relative;
   z-index: $z-index-hover;
+  border-radius: 48px;
+  width: 100%;
   @include pc{
     border-radius: 4.8rem 0 0 4.8rem;
     margin-left: min(calc(262 / 1920 * 100vw), 26.2rem);

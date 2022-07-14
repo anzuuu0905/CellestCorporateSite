@@ -1644,6 +1644,8 @@ input[type=radio]:checked + span::after {
   background-size: cover;
   position: relative;
   z-index: 10;
+  border-radius: 48px;
+  width: 100%;
 }
 
 .p-contact:hover {
@@ -3691,6 +3693,7 @@ button {
     margin-left: 8rem;
   }
   .p-fnav__item {
+    font-size: min(1.0416666667vw, 2rem);
     padding: clamp(1rem, 2.6041666667vw, 5rem);
   }
   .p-fnav__items {
@@ -3744,6 +3747,7 @@ button {
     margin-top: 0;
   }
   .p-footer__policy {
+    font-size: min(1.0416666667vw, 2rem);
     padding: min(2.6041666667vw, 5rem);
     margin-top: min(0.5208333333vw, 1rem);
   }

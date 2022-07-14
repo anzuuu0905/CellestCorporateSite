@@ -64,6 +64,7 @@
   font-family: futura-pt, sans-serif;
   font-weight: 600;
   @include pc{
+    font-size: min(calc(20 / 1920 * 100vw), 2rem);
     padding: min(calc(50 / 1920 * 100vw), 5rem);
     margin-top: min(calc(10 / 1920 * 100vw), 1rem);
 
