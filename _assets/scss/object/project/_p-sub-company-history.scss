@@ -2,7 +2,8 @@
 @use '../../setting/setting' as *;
 
 .p-sub-company-history{
-  background: $gray2;
+  // background: (gray2, 0.5);
+  background: transparent;
   border-radius: 4.8rem;
   padding: calc(90 / 375 * 100vw) 0;
   @include pc{

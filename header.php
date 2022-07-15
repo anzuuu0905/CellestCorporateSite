@@ -10,7 +10,10 @@
   <!-- fontawesomを使用する -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://use.typekit.net/bgn4fum.css"> -->
-  <link rel="stylesheet" href="https://use.typekit.net/pql8zrv.css">
+  <!-- <link rel="stylesheet" href="https://use.typekit.net/pql8zrv.css"> -->
+  <link rel="stylesheet" href="https://use.typekit.net/bgn4fum.css">
+
+
   <?php wp_head(); ?>
 </head>
 
@@ -116,8 +119,11 @@
     </div>
 
   </header>
-  <div class="p-background">
-
+  <?php if(is_page('contact')): ?>
+    <div class="p-background--contact">
+  <?php else: ?>
+    <div class="p-background">
+  <?php endif; ?>
     <section class="p-mv">
       <div class="p-mv__inner l-inner">
         <div class="ball__box">

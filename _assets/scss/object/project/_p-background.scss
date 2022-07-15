@@ -12,3 +12,17 @@
   background: linear-gradient(to bottom, transparent,20%,transparent,35%, $white);
   // z-index: 9999;
 }
+
+.p-background--contact{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  // position: absolute;
+  // background: $white;
+  // background: linear-gradient(to bottom, transparent,30%,transparent,60%, $white);
+  background: linear-gradient(to transparent,60%, $white);
+  // z-index: 9999;
+}

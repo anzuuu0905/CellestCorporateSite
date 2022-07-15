@@ -1638,6 +1638,17 @@ input[type=radio]:checked + span::after {
   background: linear-gradient(to bottom, transparent, 20%, transparent, 35%, #FFFFFF);
 }
 
+.p-background--contact {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: -webkit-gradient(linear, transparent, from(60%), to(#FFFFFF));
+  background: linear-gradient(to transparent, 60%, #FFFFFF);
+}
+
 .p-contact {
   color: #FFFFFF;
   z-index: 10;
@@ -1964,12 +1975,15 @@ input[type=radio]:checked + span::after {
 }
 
 .p-header.loaded {
-  -webkit-animation: fadeIn 5s forwards;
-          animation: fadeIn 5s forwards;
+  -webkit-animation: fadeIn 2s forwards;
+          animation: fadeIn 2s forwards;
 }
 
 @-webkit-keyframes fadeIn {
-  from {
+  0% {
+    opacity: 0;
+  }
+  80% {
     opacity: 0;
   }
   to {
@@ -1978,7 +1992,10 @@ input[type=radio]:checked + span::after {
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
+    opacity: 0;
+  }
+  80% {
     opacity: 0;
   }
   to {
@@ -2148,16 +2165,14 @@ input[type=radio]:checked + span::after {
   font-style: normal;
   font-size: 8vw;
   line-height: 1.2;
-  letter-spacing: -0.05em;
 }
 
 .p-mv__sub-title {
-  font-family: futura-pt, sans-serif;
+  font-family: futura-pt;
   font-weight: 600;
   font-style: normal;
   font-size: 11.2vw;
   padding-top: 4.5333333333vw;
-  letter-spacing: -0.05em;
   position: relative;
 }
 
@@ -2363,7 +2378,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-sub-company-history {
-  background: #EFEFEF;
+  background: transparent;
   border-radius: 4.8rem;
   padding: 24vw 0;
 }
@@ -3494,7 +3509,7 @@ input[type=radio]:checked + span::after {
           align-items: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(6, 7, 14, 0.3);
+  background-color: rgba(112, 112, 112, 0.6);
   z-index: 1000;
   -webkit-transition: -webkit-transform ease 0.1s;
   transition: -webkit-transform ease 0.1s;
@@ -3527,19 +3542,19 @@ input[type=radio]:checked + span::after {
 }
 
 @-webkit-keyframes fadeOut {
-  from {
+  50% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
   }
 }
 
 @keyframes fadeOut {
-  from {
+  50% {
     opacity: 1;
   }
-  to {
+  100% {
     opacity: 0;
   }
 }

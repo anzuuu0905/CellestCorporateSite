@@ -59,7 +59,7 @@
   font-style: normal;
   font-size: calc(30 / 375 * 100vw);
   line-height: 1.2;
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.05em;
   @include pc{
     left: calc(256 / 1920 * 100vw);
     line-height: 1.15;
@@ -68,12 +68,12 @@
 }
 
 .p-mv__sub-title{
-  font-family: futura-pt, sans-serif;
+  font-family: futura-pt;
   font-weight: 600;
   font-style: normal;
   font-size: calc(42 / 375 * 100vw);
   padding-top: calc(17 / 375 * 100vw);
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.05em;
   position: relative;
   @include pc{
     font-size: min(calc(124 / 1920 * 100vw), 12.4rem);

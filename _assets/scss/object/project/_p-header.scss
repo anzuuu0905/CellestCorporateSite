@@ -14,10 +14,13 @@
 	opacity: 1;
 }
 .p-header.loaded {
-  animation: fadeIn 5s forwards;
+  animation: fadeIn 2s forwards;
 }
 @keyframes fadeIn {
-  from {
+  0% {
+		opacity: 0;
+}
+  80% {
       opacity: 0;
   }
   
