@@ -71,7 +71,7 @@
             </nav>
           </div>
           <div class="p-footer__policy">
-            <a href="<?php echo $policy ?>">Pryvacy Policy</a>
+            <a href="<?php echo $policy ?>">Privacy Policy</a>
             
           </div>
         </div>

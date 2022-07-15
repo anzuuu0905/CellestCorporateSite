@@ -8,8 +8,7 @@
 }
 
 .p-top-topics__items{
-  margin-top: 1.6rem;
-  margin-top: calc(16 / 375 * 100vw);
+  margin-top: calc(14 / 375 * 100vw);
   @include pc{
     margin-top: min(calc(82 / 1920 * 100vw), 8.2rem);
   }
