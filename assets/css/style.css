@@ -2600,7 +2600,7 @@ input[type=radio]:checked + span::after {
   height: 6.9333333333vw;
 }
 
-.p-sub-service-item__iconbox a:nth-child(n+2) {
+.p-sub-service-item__iconbox a:nth-of-type(1) {
   margin-left: 2.4vw;
 }
 
@@ -2657,6 +2657,10 @@ input[type=radio]:checked + span::after {
 .p-sub-service__img {
   margin-top: 11.7333333333vw;
   width: 100%;
+}
+
+.p-sub-service__img img {
+  border-radius: 48px;
 }
 
 .p-sub-service__text {
@@ -3949,7 +3953,7 @@ button {
     text-align: left;
   }
   .p-sub-service-item:nth-child(1) {
-    margin-top: min(7.96875vw, 15.3rem);
+    margin-top: min(0.5208333333vw, 1rem);
   }
   .p-sub-service-item:nth-child(1) .p-sub-service-item__img {
     width: min(29.7916666667vw, 57.2rem);
@@ -3985,17 +3989,18 @@ button {
     width: min(4.1145833333vw, 7.9rem);
     height: min(4.1145833333vw, 7.9rem);
   }
-  .p-sub-service-item__iconbox a:nth-child(n+2) {
-    margin-left: min(1.40625vw, 2.7rem);
+  .p-sub-service-item__iconbox a:nth-of-type(1) {
+    margin-left: auto;
   }
-  .p-sub-service-item__textbox:nth-child(1) {
-    width: min(38.1770833333vw, 73.3rem);
-    margin-left: min(20.7291666667vw, 39.8rem);
+  .p-sub-service-item:nth-of-type(1) .p-sub-service-item__textbox {
+    width: min(38.4895833333vw, 73.9rem);
+    margin-left: auto;
+    margin-top: min(7.1875vw, 13.8rem);
   }
-  .p-sub-service-item .p-sub-service-item__textbox:nth-child(2) {
-    width: min(37.0833333333vw, 71.9rem);
-    margin-left: min(13.5416666667vw, 26rem);
+  .p-sub-service-item:nth-of-type(2) .p-sub-service-item__textbox {
+    width: min(38.4895833333vw, 71.9rem);
     margin-top: min(14.21875vw, 27.3rem);
+    margin-left: auto;
   }
   .p-sub-service-item__imgbox {
     width: min(29.7916666667vw, 57.2rem);
@@ -4033,8 +4038,6 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto;
-    width: 180rem;
-    max-width: 100%;
   }
   .p-sub-service__textwrapper {
     width: 84rem;
@@ -4051,10 +4054,10 @@ button {
     font-size: min(3.3854166667vw, 6.5rem);
   }
   .p-sub-service__img {
-    width: 68.8rem;
-    max-width: 35.8333333333vw;
+    width: 66.6rem;
+    max-width: 34.6875vw;
     margin-top: 0;
-    margin-left: min(27.2rem, 14.1666666667vw);
+    margin-left: auto;
   }
   .p-sub-service__text {
     margin-top: min(4.53125vw, 8.7rem);

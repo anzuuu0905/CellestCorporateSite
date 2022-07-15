@@ -21,8 +21,8 @@
     align-items: center;
     margin-left: auto;
     // margin-right: auto;
-    width: 180rem;
-    max-width: 100%;
+    // width: 180rem;
+    // max-width: 100%;
   }
 }
 
@@ -59,11 +59,15 @@
   margin-top: calc(44 / 375 * 100vw);
   width: 100%;
   @include pc{
-    width: 68.8rem;
-    max-width: calc(688 / 1920 * 100vw);
+    width: 66.6rem;
+    max-width: calc(666 / 1920 * 100vw);
     margin-top: 0;
-    margin-left: min(27.2rem, calc(272 / 1920 * 100vw));
+    margin-left: auto;
   }
+}
+
+.p-sub-service__img img{
+  border-radius: 48px;
 }
 
 .p-sub-service__text{
