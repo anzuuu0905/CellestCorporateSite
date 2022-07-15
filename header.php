@@ -39,8 +39,15 @@
       <div class="p-header__box l-inner u-hidden-sp">
         <div class="p-header__logo">
           <a href="<?php echo $home ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.png" alt="" loading="lazy">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-pc.png"
+                      media="(min-width: 768px)">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-sp.png" alt="" />
+            </picture>
           </a>
+
+
+
         </div>
         <!-- PCのみ表示 -->
         <div class="p-header__nav p-gnav ">

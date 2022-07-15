@@ -1906,10 +1906,8 @@ input[type=radio]:checked + span::after {
 }
 
 .p-gnav__menu {
-  width: 124rem;
   max-width: calc(100vw - 19rem);
   width: 75vw;
-  max-width: 160rem;
 }
 
 .p-gnav__items {
@@ -3760,7 +3758,8 @@ button {
     margin-top: min(0.5208333333vw, 1rem);
   }
   .p-header__logo {
-    width: 9.8958333333vw;
+    width: min(9.8958333333vw, 19rem);
+    width: 19rem;
   }
   .p-mv {
     height: 100vh;
