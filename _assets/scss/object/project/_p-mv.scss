@@ -15,13 +15,13 @@
 
 .p-mv__img{
   position: absolute;
-  // right: 1.6rem;
-  right: 0;
+  right: 1.6rem;
+  // right: 0;
   top: calc(88 / 375 * 100vw);
   @include pc{
     top: calc(175 / 1920 * 100vw);
     // right: calc(120 / 1920 * 100vw);
-    right: 0;
+    right: 2.4rem;
   }
 }
 

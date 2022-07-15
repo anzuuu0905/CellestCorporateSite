@@ -2122,7 +2122,7 @@ input[type=radio]:checked + span::after {
 
 .p-mv__img {
   position: absolute;
-  right: 0;
+  right: 1.6rem;
   top: 23.4666666667vw;
 }
 
@@ -3743,20 +3743,14 @@ button {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
-  .p-footer__logo {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .p-footer__logo small {
     margin-top: min(1.4583333333vw, 2.8rem);
     font-size: min(0.78125vw, 1.5rem);
     text-align: center;
+  }
+  .p-footer__logobox {
+    margin-top: 1.6rem;
+    padding-top: clamp(1rem, 2.6041666667vw, 5rem);
   }
   .p-footer__logo a img {
     width: min(16.0416666667vw, 30.8rem);
@@ -3778,7 +3772,7 @@ button {
   }
   .p-mv__img {
     top: 9.1145833333vw;
-    right: 0;
+    right: 2.4rem;
   }
   .p-mv__img img {
     width: 44.375vw;
@@ -4024,13 +4018,6 @@ button {
     width: min(0.7291666667vw, 1.4rem);
     height: min(0.7291666667vw, 1.4rem);
     left: min(-1.40625vw, -2.7rem);
-  }
-  .p-sub-service__wrapper.l-inner {
-    margin-right: 0;
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 192rem;
-    width: 100%;
   }
   .p-sub-service__wrapper {
     display: -webkit-box;

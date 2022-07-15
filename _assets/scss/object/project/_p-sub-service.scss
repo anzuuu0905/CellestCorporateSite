@@ -5,15 +5,15 @@
 
 }
 
-.p-sub-service__wrapper.l-inner{
-  @include pc{
-    margin-right: 0;
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 192rem;
-    width: 100%;
-  }
-}
+// .p-sub-service__wrapper.l-inner{
+//   @include pc{
+//     margin-right: 0;
+//     padding-right: 0;
+//     padding-left: 0;
+//     max-width: 192rem;
+//     width: 100%;
+//   }
+// }
 .p-sub-service__wrapper{
   @include pc{
     display: flex;

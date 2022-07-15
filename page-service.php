@@ -15,9 +15,9 @@
   <!-- <div class=""> -->
     <div class="p-sub-service__wrapper l-inner">
       <div class="p-sub-service__textwrapper">
-        <h2 class="p-sub-service__title c-common-title">
+        <h2class="p-sub-service__title c-common-title">
         ABOUT LIVE COMMERCE
-        </h2>
+        </h2class=>
         <p class="p-sub-service__subtitle c-common-subtitle">
           ネットショッピングで<br>
           イメージ通りの買い物ができる
@@ -50,7 +50,7 @@
         Service
         </h2>
         <div class="p-sub-service__items">
-          <div class="p-sub-service__item p-sub-service-item">
+          <div id="live-commerce" class="p-sub-service__item p-sub-service-item">
             <div class="p-sub-service-item__imgbox">
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service1-pc.png"
@@ -94,7 +94,7 @@
               </div>
             </div>
           </div>
-          <div class="p-sub-service__item p-sub-service-item">
+          <div id="live-agent" class="p-sub-service__item p-sub-service-item">
             <picture>
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service2-pc.png"
                       media="(min-width: 768px)">

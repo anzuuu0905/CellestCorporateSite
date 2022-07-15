@@ -27,8 +27,8 @@
 
 .p-footer__logo{
   @include pc{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 }
 
@@ -50,6 +50,10 @@
 
 .p-footer__logobox{
   display: inline-block;
+  @include pc{
+    margin-top: 1.6rem;
+    padding-top: clamp(1rem, calc(50 / 1920 * 100vw), 5rem);
+  }
 }
 
 .p-footer__logo a img{

@@ -10,6 +10,17 @@
   </div>
 </section>
 
+<?php
+    $home = esc_url(home_url('/'));
+    $about = esc_url(home_url('/about/'));
+    $service = esc_url(home_url('/service/'));
+    $company = esc_url(home_url('/company/'));
+    $topics = esc_url(home_url('/topics/'));
+    $career = esc_url(home_url('/career/'));
+    $contact = esc_url(home_url('/contact/'));    
+    $policy = esc_url(home_url('/policy/'));    
+  ?>
+
 <!-- ライブコマース -->
 <section class="l-top-live p-top-live">
   <div class="l-inner">
@@ -84,7 +95,7 @@
     </h2>
     <div class="p-top-service__items">
       <div class="p-top-service__item">
-        <a href="" class="p-top-service__img">
+        <a href="<?php echo $service ?>/#live-commerce" class="p-top-service__img">
         <!-- <div class="p-top-service__img"> -->
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-pc.png"
@@ -101,7 +112,7 @@
         </h3>
       </div>
       <div class="p-top-service__item">
-        <a href="" class="p-top-service__img">
+        <a href="<?php echo $service ?>/#live-agent" class="p-top-service__img">
         <!-- <div class="p-top-service__img"> -->
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-pc.png"
@@ -120,7 +131,7 @@
     </div>
     <!-- ボタン -->
     <div class="p-top-service__btn c-btn">
-      <a href="<?php echo $about ?>">VIEW MORE</a>
+      <a href="<?php echo $service ?>">VIEW MORE</a>
     </div>
   </div>
 </section>
