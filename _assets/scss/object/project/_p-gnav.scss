@@ -2,7 +2,9 @@
 @use '../../setting/setting' as *;
 
 .p-gnav{
-  width: 100%;
+  // width: 100%;
+  width: calc(100% - 19rem);
+
   display: flex;
   justify-content: end;
 }
@@ -22,18 +24,18 @@
 .p-gnav__items{
   display: flex;
   justify-content: end;
+  // width: calc(100% - 19rem);
   width: 100%;
-
 }
 
 .p-gnav__item{
   // font-size: 2rem;
-  font-size: calc(20 / 1920 * 100vw);
+  font-size: min(calc(20 / 1920 * 100vw), 2rem);
   // font-size: clamp(1rem, 1vw, 2rem); 
   // padding: 3.6rem 2.6vw 4.4rem 2.6vw ;
   // padding: 1.2rem clamp(1rem, 2.6vw, 5rem) 2rem clamp(1rem, 2.6vw, 5rem);
   padding: 1.2rem clamp(1rem, calc(50 / 1920 * 100vw), 5rem) 2rem clamp(1rem, calc(50 / 1920 * 100vw), 5rem);
-
+  // padding: min(calc(50 / 1920 * 100vw), 5rem);
   text-align: center;
   color:$black;
   text-transform: uppercase;
@@ -42,6 +44,10 @@
 
   // }
 }
+.p-gnav__item:last-child{
+  padding-right: 0;
+}
+
 
 .p-gnav__item a{
   position: relative;

@@ -5,10 +5,11 @@
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
-color: $gray;
+  color: $gray;
   // letter-spacing: -0.08em;
   position: absolute;
-  left: 11.5rem;
+  padding-left: $padding-pc;
+  left: 0;
   bottom: 230px;
   transform: rotate(90deg);
   text-transform: uppercase;

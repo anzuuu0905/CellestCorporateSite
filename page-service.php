@@ -1,12 +1,13 @@
-<?php get_header(); ?>
-<div class="p-mv__titlebox">
-  <h1 class="p-mv__sub-title">
-    Service
-  </h1> 
-  <p class="p-mv__jp-title">
-  事業紹介
-  </p>
-</div>
+    <?php get_header(); ?>
+    <div class="p-mv__titlebox">
+      <h1 class="p-mv__sub-title">
+        Service
+      </h1> 
+      <p class="p-mv__jp-title">
+      事業紹介
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- Service -->

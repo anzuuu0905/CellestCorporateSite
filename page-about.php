@@ -1,13 +1,14 @@
   <?php get_header(); ?>
 
-  <div class="p-mv__titlebox">
-    <h1 class="p-mv__sub-title">
-      About Us
-    </h1> 
-    <p class="p-mv__jp-title">
-      私たちについて
-    </p>
-  </div>
+      <div class="p-mv__titlebox">
+        <h1 class="p-mv__sub-title">
+          About Us
+        </h1> 
+        <p class="p-mv__jp-title">
+          私たちについて
+        </p>
+      </div>
+    </div>
   </section>
 
 <!-- About Us -->

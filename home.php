@@ -7,6 +7,7 @@
   お知らせ
   </p>
 </div>
+</div>
 </section>
 
 <section class="p-sub-topics">

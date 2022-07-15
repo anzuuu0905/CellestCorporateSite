@@ -1,14 +1,15 @@
 <?php get_header(); ?>
 
 
-<div class="p-mv__titlebox">
-  <h1 class="p-mv__sub-title">
-  CONTACT
-  </h1> 
-  <p class="p-mv__jp-title">
-  お問い合わせ
-  </p>
-</div>
+    <div class="p-mv__titlebox">
+      <h1 class="p-mv__sub-title">
+      CONTACT
+      </h1> 
+      <p class="p-mv__jp-title">
+      お問い合わせ
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- policy -->

@@ -1,11 +1,12 @@
 <?php get_header(); ?>
 
-  <div class="p-mv__titlebox">
-    <h1 class="p-mv__top-title">
-      CREATING<br>
-      THE ENTERTAINMENT<br>
-      OF NEXT GENERATION 
-    </h1>
+    <div class="p-mv__titlebox">
+      <h1 class="p-mv__top-title">
+        CREATING<br>
+        THE ENTERTAINMENT<br>
+        OF NEXT GENERATION 
+      </h1>
+    </div>
   </div>
 </section>
 

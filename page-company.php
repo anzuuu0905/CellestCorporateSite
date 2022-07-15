@@ -1,12 +1,13 @@
 <?php get_header(); ?>
-<div class="p-mv__titlebox">
-  <h1 class="p-mv__sub-title">
-    Company
-  </h1> 
-  <p class="p-mv__jp-title">
-  会社概要
-  </p>
-</div>
+    <div class="p-mv__titlebox">
+      <h1 class="p-mv__sub-title">
+        Company
+      </h1> 
+      <p class="p-mv__jp-title">
+      会社概要
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- Company -->

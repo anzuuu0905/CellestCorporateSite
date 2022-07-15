@@ -15,12 +15,13 @@
 
 .p-mv__img{
   position: absolute;
-  right: 1.6rem;
+  // right: 1.6rem;
+  right: 0;
   top: calc(88 / 375 * 100vw);
   @include pc{
     top: calc(175 / 1920 * 100vw);
-    right: calc(120 / 1920 * 100vw);
-    // left: ;
+    // right: calc(120 / 1920 * 100vw);
+    right: 0;
   }
 }
 
@@ -43,10 +44,12 @@
   z-index: 10;
   text-transform: uppercase;
   top: calc(129 / 375 * 100vw);
-  left: calc(36 / 375 * 100vw);
+  left: calc(20 / 375 * 100vw);
   @include pc{
     top: calc(367 / 1920 * 100vw);
-    left: calc(256 / 1920 * 100vw);
+    left: min(calc(143 / 1920 * 100vw), 14.3rem);
+    // left: 0;
+
   }
 }
 
@@ -90,4 +93,11 @@
     // padding-top: calc(93 / 1920 * 100vw);
   }
 
+}
+
+.p-mv__inner{
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }
