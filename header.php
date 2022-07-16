@@ -9,10 +9,18 @@
   <meta name="format-detection" content="telephone=no">
   <!-- fontawesomを使用する -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/bgn4fum.css"> -->
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/pql8zrv.css"> -->
-  <link rel="stylesheet" href="https://use.typekit.net/bgn4fum.css">
-
+<!-- TEST START -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'rqn8hln',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<!-- TEST END -->
 
   <?php wp_head(); ?>
 </head>

@@ -78,7 +78,8 @@
   }
 }
 .p-contact__textwrapper{
-  width: 28.8rem;
+  // width: 28.8rem;
+  width: calc(288 / 375 * 100vw);
   margin-left: auto;
   margin-right: auto;
   color: $white;
@@ -107,7 +108,7 @@
   margin-left: auto;
   margin-right: auto;
   // width: calc(233 / 375 * 100vw);
-  width: min(calc(255 / 375 * 100vw), 25.5rem);
+  width: calc(255 / 375 * 100vw);
   @include pc{
     width: initial;
     margin-left: 0;
@@ -117,10 +118,12 @@
     font-size: calc(18 / 375 * 100vw);
     font-family: futura-pt, sans-serif;
     font-weight: 500;
+    width: calc(255 / 375 * 100vw);
     // letter-spacing: -0.08em;
     line-height: calc(24/18);
     @include pc{
       font-size: min(calc(36 / 1920 * 100vw), 3.6rem);
+      width: 100%;
     }
   }
 }
@@ -152,7 +155,7 @@
   justify-content: center;
   text-align: left;
   width: min(calc(56 / 375 * 100vw), 5.6rem);
-  height: calc(56 / 375 * 100vw);
+  height: min(calc(56 / 375 * 100vw), 5.6rem);
   @include pc{
     margin: 0;
     margin-right: min(calc(187 / 1920 * 100vw), 18.7rem);

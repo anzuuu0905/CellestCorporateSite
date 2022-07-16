@@ -7,7 +7,7 @@ input,
 textarea,
 select,
 button {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -153,69 +153,6 @@ main {
 dl, dt, dd {
   padding: 0;
   margin: 0;
-}
-@font-face {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../font/NotoSans-Regular.ttf");
-}
-@font-face {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../font/NotoSans-Medium.ttf");
-}
-@font-face {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../font/NotoSans-Bold.ttf");
-}
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../font/NotoSansJP-Regular.otf");
-}
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../font/NotoSansJP-Medium.otf");
-}
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../font/NotoSansJP-Bold.otf");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../font/Roboto-Regular.ttf");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../font/Roboto-Medium.ttf");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../font/Roboto-Bold.ttf");
 }
 .c-svg {
   display: inline-block;
@@ -1360,6 +1297,10 @@ input[type=radio]:checked + span::after {
   margin-top: 29.8666666667vw;
 }
 
+.l-sub-contact {
+  margin-top: 29.8666666667vw;
+}
+
 .l-sub-policy {
   margin-top: 29.8666666667vw;
 }
@@ -1669,7 +1610,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-contact__textwrapper {
-  width: 28.8rem;
+  width: 76.8vw;
   margin-left: auto;
   margin-right: auto;
   color: #FFFFFF;
@@ -1688,12 +1629,13 @@ input[type=radio]:checked + span::after {
   margin-top: 6.9333333333vw;
   margin-left: auto;
   margin-right: auto;
-  width: min(68vw, 25.5rem);
+  width: 68vw;
 }
 .p-contact__subtitle h3 {
   font-size: 4.8vw;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
+  width: 68vw;
   line-height: 1.3333333333;
 }
 
@@ -1723,7 +1665,7 @@ input[type=radio]:checked + span::after {
           justify-content: center;
   text-align: left;
   width: min(14.9333333333vw, 5.6rem);
-  height: 14.9333333333vw;
+  height: min(14.9333333333vw, 5.6rem);
 }
 
 .p-contact__btn a {
@@ -2135,8 +2077,8 @@ input[type=radio]:checked + span::after {
 }
 
 .p-mv__img img {
-  width: 19.65rem;
-  height: 19.16rem;
+  width: 52.4vw;
+  height: 51.0933333333vw;
   opacity: 0.3;
 }
 
@@ -2159,7 +2101,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-mv__sub-title {
-  font-family: futura-pt;
+  font-family: futura-pt, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 11.2vw;
@@ -2731,17 +2673,6 @@ input[type=radio]:checked + span::after {
   font-size: 2rem;
 }
 
-.p-top-about__inner {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .p-top-about__subtitle {
   margin-top: 5.8666666667vw;
 }
@@ -2809,7 +2740,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-top-service__items {
-  margin-top: 2.1rem;
+  margin-top: 6.6666666667vw;
 }
 
 .p-top-service__item {
@@ -2823,13 +2754,15 @@ input[type=radio]:checked + span::after {
 
 .p-top-service__img {
   width: 100%;
+  max-width: 59.2rem;
   position: relative;
   display: block;
   overflow: hidden;
   border-radius: 4.8rem;
   z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .p-top-service__img img {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -2878,7 +2811,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-top-service__text {
-  margin-top: 3.6rem;
+  margin-top: min(1.875vw, 3.6rem);
 }
 
 .p-top-service__btn {
@@ -3535,23 +3468,34 @@ input[type=radio]:checked + span::after {
 @-webkit-keyframes fadeOut {
   50% {
     opacity: 1;
+    position: fixed;
+    overflow: hidden;
   }
   100% {
     opacity: 0;
+    position: absolute;
+    overflow: auto;
   }
 }
 
 @keyframes fadeOut {
   50% {
     opacity: 1;
+    position: fixed;
+    overflow: hidden;
   }
   100% {
     opacity: 0;
+    position: absolute;
+    overflow: auto;
   }
 }
 #loader {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
-  position: relative;
+  height: 100vh;
   background: initial;
   z-index: 11;
 }
@@ -3633,6 +3577,9 @@ button {
   .l-sub-company {
     margin-top: min(1.1979166667vw, 23rem);
   }
+  .l-sub-contact {
+    margin-top: min(11.9791666667vw, 23rem);
+  }
   .l-sub-policy {
     margin-top: min(11.9791666667vw, 23rem);
   }
@@ -3640,16 +3587,16 @@ button {
     margin-top: min(11.9791666667vw, 23rem);
   }
   .l-top-about {
-    margin-top: 23rem;
+    margin-top: min(11.9791666667vw, 23rem);
   }
   .l-top-live {
-    margin-top: 23rem;
+    margin-top: min(11.9791666667vw, 23rem);
   }
   .l-top-service {
-    margin-top: 23rem;
+    margin-top: min(11.9791666667vw, 23rem);
   }
   .l-top-topics {
-    margin-top: 23rem;
+    margin-top: min(11.9791666667vw, 23rem);
   }
   .p-contact {
     border-radius: 4.8rem 0 0 4.8rem;
@@ -3691,6 +3638,7 @@ button {
   }
   .p-contact__subtitle h3 {
     font-size: min(1.875vw, 3.6rem);
+    width: 100%;
   }
   .p-contact__text {
     margin: 0;
@@ -3892,7 +3840,7 @@ button {
   }
   .p-sub-company-history__contents {
     margin-top: min(6.25vw, 12rem);
-    max-width: 111.2rem;
+    max-width: 116 rem;
   }
   .p-sub-company-history__contents th, .p-sub-company-history__contents td {
     font-size: min(1.25vw, 2.4rem);
@@ -4045,8 +3993,8 @@ button {
     margin-left: auto;
   }
   .p-sub-service__textwrapper {
-    width: 84rem;
-    max-width: 43.75vw;
+    width: 91rem;
+    max-width: 47.3958333333vw;
   }
   .p-sub-service__title {
     line-height: 1.35;
@@ -4083,12 +4031,9 @@ button {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: min(87.5vw, 168rem);
-    max-width: 100%;
   }
   .p-top-about__textwrapper {
-    width: min(43.28125vw, 83.1rem);
-    max-width: 100%;
+    width: min(46.875vw, 90rem);
   }
   .p-top-about__title {
     line-height: 1.35;
@@ -4126,17 +4071,17 @@ button {
     margin-right: 0;
   }
   .p-top-service {
-    padding: 17rem 0;
+    padding: min(8.8541666667vw, 17rem) 0;
   }
   .p-top-service__title {
     line-height: 1.35;
   }
   .p-top-service__subtitle {
-    margin-top: 5.4rem;
-    font-size: 4rem;
+    margin-top: min(2.8125vw, 5.4rem);
+    font-size: min(2.0833333333vw, 4rem);
   }
   .p-top-service__items {
-    margin-top: 7.5rem;
+    margin-top: min(3.90625vw, 7.5rem);
     width: 140rem;
     max-width: 100%;
     display: -webkit-box;
@@ -4147,25 +4092,18 @@ button {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }
   .p-top-service__item:nth-child(n+2) {
     margin-top: 0;
-    margin-left: 2.4rem;
-  }
-  .p-top-service__img {
-    margin-left: auto;
+    margin-left: min(10.2604166667vw, 19.7rem);
   }
   .p-top-service__img:before {
     padding-top: 106%;
   }
   .p-top-service__btn {
-    margin-top: 8.5rem;
+    margin-top: min(4.4270833333vw, 8.5rem);
   }
   .p-top-topic {
     display: -webkit-box;
@@ -4238,7 +4176,7 @@ button {
     line-height: 1.35;
   }
   .p-top-topics__btn {
-    margin-top: 8.5rem;
+    margin-top: min(4.4270833333vw, 8.5rem);
   }
   .p-topic {
     -webkit-box-orient: initial;

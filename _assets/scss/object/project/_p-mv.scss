@@ -26,8 +26,8 @@
 }
 
 .p-mv__img img{
-  width: 19.65rem;
-  height: 19.16rem;
+  width: calc(196.5 / 375 * 100vw);
+  height: calc(191.6 / 375 * 100vw);
   opacity: 0.3;
   @include pc{
     width: min(calc(852 / 1920 * 100vw), 85.2rem);
@@ -68,7 +68,7 @@
 }
 
 .p-mv__sub-title{
-  font-family: futura-pt;
+  font-family: futura-pt, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: calc(42 / 375 * 100vw);

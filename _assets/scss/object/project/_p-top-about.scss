@@ -6,8 +6,8 @@
 }
 
 .p-top-about__inner{
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .p-top-about__wrapper{
@@ -16,17 +16,18 @@
     justify-content: space-between;
     // margin-left: auto;
     // margin-right: auto;
-    width: min(calc(1680 / 1920 * 100vw), 168rem);
+    // width: min(calc(1680 / 1920 * 100vw), 168rem);
     // width:168rem;
-    max-width: 100%;
+    // max-width: 100%;
+    // width: min(calc(1680 / 1920 * 100vw), 168rem);
   }
 }
 
 .p-top-about__textwrapper{
   @include pc{
     // width: 83.1rem;
-    width: min(calc(831 / 1920 * 100vw), 83.1rem);
-    max-width: 100%;
+    width: min(calc(900 / 1920 * 100vw), 90rem);
+    // max-width: 100%;
     // margin-right: auto;
   }
 }

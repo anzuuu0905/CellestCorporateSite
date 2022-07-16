@@ -29,6 +29,6 @@
   display: flex;
   justify-content: center;
   @include pc{
-    margin-top: 8.5rem;
+    margin-top: min(calc(85 / 1920 * 100vw), 8.5rem);
   }
 }

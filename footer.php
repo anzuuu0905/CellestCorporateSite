@@ -52,10 +52,6 @@
           </div>
         </div>
 
-        <?php 
-          global $home;
-          global $policy;
-        ?>
         <div class="p-footer__linkbox">
           <div class="p-footer__nav p-fnav">
             <nav class="p-fnav__menu">

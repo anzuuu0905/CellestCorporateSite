@@ -4,6 +4,6 @@
 .l-top-live{
   margin-top: 11rem;
   @include pc{
-    margin-top: 23rem;
+    margin-top: min(calc(230 / 1920 * 100vw), 23rem);
   }
 }

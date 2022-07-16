@@ -4,6 +4,7 @@
 .l-top-about{
   margin-top: 10rem;
   @include pc{
-    margin-top: 23rem;
+    margin-top: min(calc(230 / 1920 * 100vw), 23rem);
+
   }
 }
