@@ -22,7 +22,7 @@
   font-size: 1.4rem;
   font-weight: 700;
   line-height: calc(26/14);
-  letter-spacing: -0.08em;
+  // letter-spacing: -0.08em;
   text-decoration: underline;
     @include pc{
       margin-top: min(2.4rem, calc(24 / 1920 * 100vw));

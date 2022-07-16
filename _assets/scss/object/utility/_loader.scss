@@ -2,16 +2,6 @@
 @use '../../setting/setting' as *;
 
 @keyframes fadeOut {
-  // from {
-  //     opacity: 1;
-  // }
-  
-  // to {
-  //     opacity: 0;
-  // }
-  // 0% {
-  //   opacity: 1;
-  // }
   50% {
     opacity: 1;
   }
@@ -21,6 +11,7 @@
 
 }
 #loader{
+  // position: fixed;
   width: 100vw;
   // height: 100vh;
   position: relative;
@@ -28,16 +19,6 @@
   z-index: 11;
 
 }
-
-// #loader::before{
-//   background-color: black;
-//   position: absolute;
-//   content: "";
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-// }
 
 #loader:after{
   background-color: black;
@@ -54,7 +35,7 @@
   width: 100vw;
   height: 100vh;
   // display: block;
-  z-index: -11;
+  z-index: 10;
 }
 
 #loader.loaded {

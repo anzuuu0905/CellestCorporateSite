@@ -45,7 +45,7 @@
 
 <!-- About us -->
 <section class="l-top-about p-top-about">
-  <div class="l-inner">
+  <div class="p-top-about__inner l-inner">
     <div class="p-top-about__wrapper">
       <div class="p-top-about__textwrapper">
         <h2 class="p-top-about__title c-common-title">
@@ -101,10 +101,10 @@
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-pc.png"
                     media="(min-width: 768px)">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="" />
-          </picture>
+          <!-- </picture> -->
           <div class="p-top-service__mask">
-          <div class="p-top-service__caption">View Details</div>
-        </div>
+            <div class="p-top-service__caption">View Details</div>
+          </div>
         </a>
         <!-- </div> -->
         <h3 class="p-top-service__subtitle">

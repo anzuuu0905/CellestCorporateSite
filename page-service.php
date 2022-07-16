@@ -116,7 +116,7 @@
               </div>
               <!-- ボタン -->
               <div class="p-sub-service-item__btn c-btn">
-                <a href="<?php echo $about ?>">VIEW MORE</a>
+                <a href="https://cellest.jp/live-commercer.html">VIEW MORE</a>
               </div>
             </div>
           </div>

@@ -30,8 +30,8 @@
   height: 19.16rem;
   opacity: 0.3;
   @include pc{
-    width: calc(852 / 1920 * 100vw);
-    height: calc(830 / 1920 * 100vw);
+    width: min(calc(852 / 1920 * 100vw), 85.2rem);
+    height: min(calc(830 / 1920 * 100vw), 83rem);
   }
 
 }
@@ -87,7 +87,7 @@
   font-style: normal;
   font-size: calc(22 / 375 * 100vw);
   // padding-top: calc(17 / 375 * 100vw);
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.05em;
   @include pc{
     font-size: min(calc(62 / 1920 * 100vw), 6.2rem);
     // padding-top: calc(93 / 1920 * 100vw);

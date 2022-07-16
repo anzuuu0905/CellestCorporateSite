@@ -72,7 +72,7 @@
 
 .p-sub-service__text{
   margin-top: calc(36 / 375 * 100vw);
-  letter-spacing: -0.07em;
+  // letter-spacing: -0.07em;
   @include pc{
     margin-top: min(calc(87 / 1920 * 100vw), 8.7rem);
   }

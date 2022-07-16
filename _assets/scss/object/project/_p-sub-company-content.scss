@@ -47,9 +47,9 @@
   width: calc(100% - 69 / 375 * 100vw);
   padding-left: calc(26 / 375 * 100vw);
   padding-bottom: calc(25 / 375 * 100vw);
-  font-size: calc(13 / 375 * 100vw);
+  font-size: calc(11 / 375 * 100vw);
   font-weight: 500;
-  letter-spacing: -0.1em;
+  // letter-spacing: -0.1em;
   line-height: 1.17;
   @include pc{
     font-size: min(calc(29 / 1920 * 100vw), 2.9rem);
@@ -64,7 +64,7 @@
   background: $white;
   border-radius: 2.4rem;
   box-shadow: 12px 6px 27px #D5D5D5;
-  padding: calc(13 / 375 * 100vw) calc(21 / 375 * 100vw);
+  padding: calc(13 / 375 * 100vw) calc(21 / 375 * 100vw);  
   @include pc{
     padding: min(calc(48 / 1920 * 100vw), 4.8rem) min(calc(72 / 1920 * 100vw), 7.2rem);
   }
@@ -73,8 +73,9 @@
   width: initial;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0.5rem;
 }
 
-// .p-sub-company-content__text{
-//   display: inline;
-// }
+.p-sub-company-content__text{
+  line-height: 1.5;
+}

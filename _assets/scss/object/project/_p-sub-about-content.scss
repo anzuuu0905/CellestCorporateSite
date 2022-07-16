@@ -30,7 +30,7 @@
   position: relative;
   display: block;
   @include pc{
-    width: calc(188 / 1920 * 100vw);
+    width: min(calc(188 / 1920 * 100vw), 18.8rem);
   }
 }
 

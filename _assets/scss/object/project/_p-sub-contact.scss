@@ -10,7 +10,8 @@
   margin-left: auto;
   margin-right: auto;
   @include pc{
-    width: min(calc(828 / 1920 * 100vw), 82.8rem);
+    max-width:82.8rem;
+    // width: min(calc(828 / 1920 * 100vw), 82.8rem);
   }
 }
 

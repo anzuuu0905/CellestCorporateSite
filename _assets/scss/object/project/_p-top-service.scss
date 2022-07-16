@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   @include pc{
-    font-size: 5rem;
+    // font-size: 5rem;
     line-height: calc(135/100);
   }
 }
@@ -24,7 +24,7 @@
   font-size: 1.9rem;
   font-weight: 700;
   text-align: center;
-  letter-spacing: -0.08em;
+  // letter-spacing: -0.08em;
   color: $black2;
   @include pc{
     margin-top: 5.4rem;
@@ -68,31 +68,38 @@
   display: block;
   overflow: hidden;
   border-radius: 4.8rem;
-  transition:		all 0.2s ease;
+  z-index: 1;
+  // transition:		all 0.2s ease;
   @include pc{
-    max-width: 59.2rem;
+    // margin-right: 0;
+    // width: min(calc(592 / 1920 * 100vw), 59.2rem);
+    // height: min(calc(648 / 1920 * 100vw), 64.8rem);
+    margin-left: auto;
+    // max-width: 59.2rem;
   }
 }
 
 .p-top-service__img img{
-  border-radius: 48px;
+  // border-radius: 48px;
+  transition:		all 0.6s ease;
+  // background: transparent;
 
 }
 
 
 .p-top-service__img:before{
   padding-top: 101%;
+  // background: transparent;
   @include pc {
     padding-top: 106%;
   }
 }
 
-
 .p-top-service__img:hover img{
   transform: scale(1.1);/* 拡大 */
-  transition-duration: 0.3s;
+  // transition-duration: 0.3s;
   filter: brightness(30%);
-  border-radius: 48px;
+  // border-radius: 48px;
   will-change: transform;
   z-index:1;
   position: relative;
@@ -101,20 +108,21 @@
 .p-top-service__img .p-top-service__mask {
 	width:			100%;
 	height:			100%;
-  border-radius: 48px;
+  // border-radius: 48px;
   will-change: transform;
 	position:		absolute;	/* 絶対位置指定 */
   z-index:1;
   top:			0;
 	left:			0;
 	opacity:		0;	/* マスクを表示しない */
-	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-  transition:		all 0.2s ease;
+	background-color:	rgba(0,0,0,0.6);	/* マスクは半透明 */
+  // transition:		all 0.2s ease;
 }
 
 .p-top-service__img:hover .p-top-service__mask {
+  // border-radius: 48px;
 	opacity:		1;	/* マスクを表示する */
-  transition:		all 0.2s ease;
+  // transition:		all 0.2s ease;
 }
 
 .p-top-service__img .p-top-service__caption {
@@ -122,11 +130,13 @@
 	text-align: 		center;
 	padding-top:		50%;
 	color:			#fff;
+  // background: transparent;
+  // border-radius: 48px;
 }
 
 .p-top-service__text{
   margin-top: 3.6rem;
-  letter-spacing: -0.07em;
+  // letter-spacing: -0.07em;
 }
 
 .p-top-service__btn{

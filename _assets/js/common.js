@@ -155,7 +155,7 @@ let posY = 0; //フォロワーのX座標
 
 //カーソルの遅延アニメーション
 //ほんの少ーーーしだけ遅延させる 0.001秒
-TweenMax.to({}, 0.005, {
+TweenMax.to({}, 0.01, {
   repeat: -1,
   onRepeat: function() {
     posX += (mouseX - posX) / delay;
@@ -266,7 +266,7 @@ window.onload = ()=>{
   const loader = document.getElementById('loader');
   loader.classList.add('loaded');
   const header = document.getElementById('loader-header');
-  loader-header.classList.add('loaded');
+  header.classList.add('loaded');
 }
 
 /* GSAP警告メッセージを非表示にする

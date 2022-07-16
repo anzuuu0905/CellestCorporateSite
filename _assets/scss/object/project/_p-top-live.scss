@@ -21,18 +21,18 @@
   width: 100%;
   @include pc{
     width: 84.523%;
-    max-width: calc(1420 / 1920 * 100vw);
+    max-width: min(calc(1420 / 1920 * 100vw), 142rem);
     // max-width: 144rem;
-    margin-top: 22rem;
+    margin-top: min(calc(220 / 1920 * 100vw), 22rem);
   }
 }
 
 .p-top-live__text{
   margin-top: 3.6rem;
-  letter-spacing: -0.07em;
+  // letter-spacing: -0.07em;
   @include pc{
-    margin-top: 15rem;
-    width: 68.6rem;
+    margin-top: min(calc(150 / 1920 * 100vw), 15rem);
+    width: min(686 / 1920 * 100vw, 68.6rem);
     max-width: 100%;
     margin-left: auto;
     margin-right: 0;

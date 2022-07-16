@@ -61,7 +61,7 @@
   z-index: $z-index-hover;
   border-radius: 48px;
   @include pc{
-    width: calc(1658 / 1920 * 100vw);
+    width: min(calc(1658 / 1920 * 100vw), 165.8rem);
     max-width: 100%;
     padding-right: min(calc(24 / 1920 * 100vw), 2.4rem);
     padding-top: min(calc(114 / 1920 * 100vw), 11.4rem);
@@ -85,7 +85,7 @@
   @include pc{
     margin-left: min(calc(203 / 1920 * 100vw), 20.3rem);
     // margin-left: calc(203 / 1920 * 100vw);
-    width: calc(1000 / 1920 * 100vw);
+    width: min(calc(1000 / 1920 * 100vw), 100rem);
   }
 }
 
@@ -106,7 +106,8 @@
   margin-top: calc(26 / 375 * 100vw);
   margin-left: auto;
   margin-right: auto;
-  width: calc(233 / 375 * 100vw);
+  // width: calc(233 / 375 * 100vw);
+  width: min(calc(255 / 375 * 100vw), 25.5rem);
   @include pc{
     width: initial;
     margin-left: 0;
@@ -116,7 +117,7 @@
     font-size: calc(18 / 375 * 100vw);
     font-family: futura-pt, sans-serif;
     font-weight: 500;
-    letter-spacing: -0.08em;
+    // letter-spacing: -0.08em;
     line-height: calc(24/18);
     @include pc{
       font-size: min(calc(36 / 1920 * 100vw), 3.6rem);
@@ -134,7 +135,7 @@
   p{
     font-size: calc(12 / 375 * 100vw);
     font-weight: 500;
-    letter-spacing: -0.08em;
+    // letter-spacing: -0.08em;
     line-height: calc(22/12);
     text-align: left;
     @include pc{
@@ -150,7 +151,7 @@
   display: flex;
   justify-content: center;
   text-align: left;
-  width: calc(56 / 375 * 100vw);
+  width: min(calc(56 / 375 * 100vw), 5.6rem);
   height: calc(56 / 375 * 100vw);
   @include pc{
     margin: 0;

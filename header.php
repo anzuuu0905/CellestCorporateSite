@@ -120,9 +120,9 @@
 
   </header>
   <?php if(is_page('contact')): ?>
-    <div class="p-background--contact">
+    <div id="loader-bg" class="p-background--contact">
   <?php else: ?>
-    <div class="p-background">
+    <div id="loader-bg" class="p-background">
   <?php endif; ?>
     <section class="p-mv">
       <div class="p-mv__inner l-inner">

@@ -48,8 +48,10 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  z-index: 1;
   @include pc{
     // width: calc(402 / 1680 * 100vw);
+    border-radius: min(calc(48 / 1920 * 100vw), 4.8rem);
     width: calc(402 / 1920 * 100vw);
     max-width: 40.2rem;
   }
@@ -71,10 +73,14 @@
   object-fit: cover;
   object-position: center;
   border-radius: 48px;
+  transition: transform .6s ease; /* ゆっくり変化させる */
   // border-radius: clamp(10px, 3vw, 4.8rem);
+  @include pc{
+    border-radius: min(calc(48 / 1920 * 100vw), 4.8rem);
+  }
 }
 .p-top-topic__img:hover img{
-  transition-duration: 0.3s;
+  // transition-duration: 0.3s;
   transform-origin:center center;
   top: 50%;
   left: 50%;
@@ -102,7 +108,7 @@
   font-weight: 700;
   line-height: calc(18/15);
   margin-top: min(calc(8 / 375 * 100vw), 0.8rem);
-  letter-spacing: -0.08em;
+  // letter-spacing: -0.08em;
   @include pc{
     font-size: min(calc(24 / 1920 * 100vw), 2.4rem);
   }
@@ -113,7 +119,7 @@
   font-weight: 500;
   line-height: 1.1;
   margin-top: calc(13 / 375 * 100vw);
-  letter-spacing: -0.08em;
+  // letter-spacing: -0.08em;
   @include pc{
     width: calc(800 / 1680 * 100vw);
     max-width: 100%;

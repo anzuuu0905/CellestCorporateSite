@@ -60,7 +60,7 @@
 	align-items: center;
 	@include pc{
 		width: min(calc(190 / 1920 * 100vw), 19rem);
-		width: 19rem;
+		// width: 19rem;
 	}
 }
 
