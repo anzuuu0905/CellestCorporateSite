@@ -74,7 +74,7 @@
       </div>
     </div>
 </footer>
-<!-- <div class="cursor"></div> -->
+<div class="cursor"></div>
 <div class="follower"></div>
 <?php wp_footer(); ?>
 </body>
