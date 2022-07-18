@@ -2580,8 +2580,6 @@ input[type=radio]:checked + span::after {
   margin-right: auto;
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .p-sub-about-content__list .p-sub-about-content__title:nth-child(n+2) {
@@ -4381,7 +4379,8 @@ button {
   }
   .p-sub-about-content__list .p-sub-about-content__title::before {
     top: min(6.4vw, 2.4rem);
-    left: max(-5.8333333333vw, -22.4rem);
+    left: max(-16.3541666667vw, -31.4rem);
+    left: max(-11.6666666667vw, -22.4rem);
     width: min(0.5208333333vw, 1rem);
     height: min(0.5208333333vw, 1rem);
     background: #EFEFEF;
