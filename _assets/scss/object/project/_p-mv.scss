@@ -12,7 +12,16 @@
   }
   // z-index: -1;
 }
-
+.p-mv::after{
+  content:"";
+  z-index: -10;
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .p-mv__img{
   position: absolute;
   right: 1.6rem;
@@ -38,8 +47,8 @@
 
 
 .p-mv__titlebox{
-  color: white;
   position: absolute;
+  color: white;
   mix-blend-mode: difference;
   z-index: 10;
   text-transform: uppercase;

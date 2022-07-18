@@ -17,6 +17,8 @@ $radius-y: 25vw;
   @include pc{
     height: 100vh;
   }
+  isolation: isolate; /* isolation がないと、背景色が考慮されてしまう */
+
   // background-image: url(../img/common/mv-layar.png);
 
 }
@@ -139,23 +141,23 @@ $radius-y: 25vw;
     content: '';
     filter: blur(7vw);
   }
-  &:after {
-    // background-color: #8DA8E9;
-    // background-image: url(../img/common/mv-layar.png);
-    border-radius: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    mix-blend-mode: overlay;
-    // filter: blur(2px);
-  }
+  // &:after {
+  //   // background-color: #8DA8E9;
+  //   // background-image: url(../img/common/mv-layar.png);
+  //   border-radius: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   content: '';
+  //   mix-blend-mode: overlay;
+  //   // filter: blur(2px);
+  // }
 
   &:nth-child(1) {
     animation: x-axis-21 20s infinite alternate ease-in-out;
-    &:before, &:after{
+    &:before{
       animation: y-axis-21 20s infinite .1s alternate ease-in-out;
     }
   }
@@ -163,20 +165,20 @@ $radius-y: 25vw;
   
   &:nth-child(2) {
     animation: x-axis-22 25s infinite alternate ease-in-out;
-    &:before, &:after{
+    &:before{
       animation: y-axis-22 25s infinite .1s alternate ease-in-out;
     }
   }
   
   &:nth-child(3) {
     animation: x-axis-23 11s infinite alternate ease-in-out;
-    &:before, &:after{
+    &:before{
       animation: y-axis-23 11s infinite .1s alternate ease-in-out;
     }
   }
   &:nth-child(4) {
     animation: x-axis-24 10s infinite alternate ease-in-out;
-    &:before, &:after{
+    &:before{
       animation: y-axis-24 10s infinite .1s alternate ease-in-out;
     }
   }

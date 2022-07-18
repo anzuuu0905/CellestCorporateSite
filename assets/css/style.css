@@ -2209,6 +2209,17 @@ input[type=radio]:checked + span::after {
   position: relative;
 }
 
+.p-mv::after {
+  content: "";
+  z-index: -10;
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
 .p-mv__img {
   position: absolute;
   right: 1.6rem;
@@ -2222,8 +2233,8 @@ input[type=radio]:checked + span::after {
 }
 
 .p-mv__titlebox {
-  color: white;
   position: absolute;
+  color: white;
   mix-blend-mode: difference;
   z-index: 10;
   text-transform: uppercase;
@@ -3242,6 +3253,8 @@ input[type=radio]:checked + span::after {
   height: 88.5vw;
   position: fixed;
   z-index: -5;
+  isolation: isolate;
+  /* isolation がないと、背景色が考慮されてしまう */
 }
 
 .ball__wrapper {
@@ -3436,21 +3449,11 @@ input[type=radio]:checked + span::after {
   -webkit-filter: blur(7vw);
           filter: blur(7vw);
 }
-.ball2:after {
-  border-radius: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  mix-blend-mode: overlay;
-}
 .ball2:nth-child(1) {
   -webkit-animation: x-axis-21 20s infinite alternate ease-in-out;
           animation: x-axis-21 20s infinite alternate ease-in-out;
 }
-.ball2:nth-child(1):before, .ball2:nth-child(1):after {
+.ball2:nth-child(1):before {
   -webkit-animation: y-axis-21 20s infinite 0.1s alternate ease-in-out;
           animation: y-axis-21 20s infinite 0.1s alternate ease-in-out;
 }
@@ -3458,7 +3461,7 @@ input[type=radio]:checked + span::after {
   -webkit-animation: x-axis-22 25s infinite alternate ease-in-out;
           animation: x-axis-22 25s infinite alternate ease-in-out;
 }
-.ball2:nth-child(2):before, .ball2:nth-child(2):after {
+.ball2:nth-child(2):before {
   -webkit-animation: y-axis-22 25s infinite 0.1s alternate ease-in-out;
           animation: y-axis-22 25s infinite 0.1s alternate ease-in-out;
 }
@@ -3466,7 +3469,7 @@ input[type=radio]:checked + span::after {
   -webkit-animation: x-axis-23 11s infinite alternate ease-in-out;
           animation: x-axis-23 11s infinite alternate ease-in-out;
 }
-.ball2:nth-child(3):before, .ball2:nth-child(3):after {
+.ball2:nth-child(3):before {
   -webkit-animation: y-axis-23 11s infinite 0.1s alternate ease-in-out;
           animation: y-axis-23 11s infinite 0.1s alternate ease-in-out;
 }
@@ -3474,7 +3477,7 @@ input[type=radio]:checked + span::after {
   -webkit-animation: x-axis-24 10s infinite alternate ease-in-out;
           animation: x-axis-24 10s infinite alternate ease-in-out;
 }
-.ball2:nth-child(4):before, .ball2:nth-child(4):after {
+.ball2:nth-child(4):before {
   -webkit-animation: y-axis-24 10s infinite 0.1s alternate ease-in-out;
           animation: y-axis-24 10s infinite 0.1s alternate ease-in-out;
 }
