@@ -17,8 +17,8 @@ button {
 
 
 html {
-  color: #000;
-  background: #fff;
+  color: $black;
+  background: #white;
   font-size: 16px;
   font-size: 62.5%;
   line-height: 1.6;
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: $white;
   margin: 0;
   font-size: 1.6rem ;
   position: relative;
@@ -66,7 +66,7 @@ p {
 }
 
 a {
-  color: #000;
+  color: $black;
   text-decoration: none;
   transition: $transition01;
   @include pc {

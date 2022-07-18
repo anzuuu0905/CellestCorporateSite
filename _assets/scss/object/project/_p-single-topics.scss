@@ -1,0 +1,39 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-single-topics__inner{
+  width: 100%;
+  max-width: 139.7rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-single-topics__sns{
+  margin-top: calc(100 / 375 * 100vw);
+}
+
+.p-single-topics__btn{
+  margin-top: calc(42.4 / 375 * 100vw);
+  @include pc{
+    margin-top: 0;
+  }
+}
+
+.p-single-topics__title{
+  color: $blue;
+  font-size: 2.4rem;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  @include pc{
+    // font-size: 5rem;
+    font-size: min(5rem, calc(50 / 1920 * 100vw));
+  }
+}
+
+.p-single-topics__related{
+	margin-top: calc(100 / 375 * 100vw);
+	@include pc{
+		margin-top: min(calc(224 / 1920 * 100vw), 22.4rem) ;
+	}
+}
+

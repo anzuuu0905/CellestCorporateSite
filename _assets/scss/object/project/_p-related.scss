@@ -1,0 +1,73 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-related{
+	background: $gray2;
+	padding-top: calc(90 / 375 * 100vw);
+	padding-bottom: calc(90 / 375 * 100vw);
+	@include pc{
+		padding-top: min(calc(114 / 1920 * 100vw), 11.4rem) ;
+		padding-bottom: min(calc(114 / 1920 * 100vw), 11.4rem) ;
+	}
+}
+
+
+.p-related__title{
+	font-family: futura-pt, sans-serif;
+	text-transform: uppercase;
+	color: $blue;
+	font-weight: 500;
+	font-style: normal;
+	font-size: min(calc(49 / 375 * 100vw), 4.9rem);
+	text-align: center;
+  @include pc{
+    font-size: 5rem;
+		text-align-last: left;
+  }
+}
+
+.p-related__post{
+	margin-top: calc(45 / 375 * 100vw);
+	width: 100%;
+  @include pc{
+    margin-top: min(calc(84 / 1920 * 100vw), 8.4rem);
+		display: flex;
+		align-items: stretch;
+  }
+}
+
+.p_related__card{
+		@include pc{
+		width: calc((100% - (95.5 / 1920 * 100vw) * 2) / 3);
+		margin-right: min(calc(95.5 / 1920 * 100vw), 9.55rem);
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.p_related__card:last-child{
+	margin-right: 0;
+}
+
+
+.p-related__btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(51.13 / 375 * 100vw);
+  height: calc(51.13 / 375 * 100vw);
+
+  @include pc{
+    width: min(calc(60 / 1920 * 100vw) , 6rem);
+    height: min(calc(60 / 1920 * 100vw) , 6rem);
+  }
+}
+
+.p_related__card{
+	margin-top: calc(50 / 375 * 100vw);
+  @include pc{
+    margin-top: initial;
+  }
+}

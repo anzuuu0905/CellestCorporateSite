@@ -1,0 +1,146 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.pagination{
+  margin-top: calc(50 / 375 * 100vw);
+  width: 100%;
+  @include pc{
+    margin-top: min(calc(35.5 / 1920 * 100vw), 3.55rem);
+  }
+}
+
+.nav-links ul{
+  display: flex;
+  justify-content: center;
+}
+
+.page-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1.4rem;
+  @include pc{
+    font-size: min(calc(18 / 1920 * 100vw), 1.8rem);
+  }
+}
+
+.page-numbers.current{
+  color: $gray5;
+}
+
+.page-numbers li .page-numbers{
+  margin-right: calc(14 / 375 * 100vw);
+  margin-left: calc(14 / 375 * 100vw);
+  @include pc{
+    margin-right: min(calc(32 / 1920 * 100vw), 3.2rem);
+    margin-left:  min(calc(32 / 1920 * 100vw), 3.2rem);
+  }
+}
+
+.page-numbers li .page-numbers.dots{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.page-numbers li .prev.page-numbers{
+  margin-left: 0;
+  // margin-right: auto;
+}
+.page-numbers li .next.page-numbers{
+  margin-right: 0;
+  // margin-left: auto;
+}
+
+.next, .prev{
+  width: min(calc(51.3 / 375 * 100vw),5.13rem);
+  height: min(calc(51.3 / 375 * 100vw),5.13rem);
+  border: 1px solid $black;
+  border-radius: 50%;
+  position: relative;
+  @include pc{
+    width: min(calc(60 / 1920 * 100vw),6rem);
+    height: min(calc(60 / 1920 * 100vw),6rem);
+  }
+}
+
+.next::after, 
+.prev::after{
+  content: '';
+  width: 55%;
+  height: 11%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-bottom: 1px solid $black;
+}
+
+.next::after{
+  transform: skew(60deg) translate(-50%, -50%);
+  border-right: 2px solid $black;
+}
+
+.prev::after{
+  transform: skew(-60deg) translate(-50%, -50%);
+  border-left: 2px solid $black;
+}
+
+
+.next-single a, .prev-single a{
+  display: block;
+  width: min(calc(51.3 / 375 * 100vw),5.13rem);
+  height: min(calc(51.3 / 375 * 100vw),5.13rem);
+  border: 1px solid $black;
+  border-radius: 50%;
+  position: relative;
+  font-size: 1.2rem;
+  @include pc{
+    width: min(calc(60 / 1920 * 100vw),6rem);
+    height: min(calc(60 / 1920 * 100vw),6rem);
+  }
+}
+
+.next-single a::after, 
+.prev-single a::after{
+  content: '';
+  width: 55%;
+  height: 11%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-bottom: 1px solid $black;
+}
+
+.next-single a::after{
+  transform: skew(60deg) translate(-50%, -50%);
+  border-right: 2px solid $black;
+ }
+
+.prev-single a::after{
+  transform: skew(-60deg) translate(-50%, -50%);
+  border-left: 2px solid $black;
+ }
+
+ .prev-single a::before{
+  position: absolute;
+  display: block;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  content:"次のトピックス";
+  @include pc{
+    // content: "";
+  }
+}
+
+.next-single a::before{
+  position: absolute;
+  display: block;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  content:"前のトピックス";
+  @include pc{
+    // content: "";
+  }
+}
+

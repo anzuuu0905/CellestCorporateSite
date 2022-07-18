@@ -1,0 +1,67 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-sns{
+	display: flex;
+	align-items: start;
+	width: 100%;
+	background: $gray2;
+	padding: calc(30 / 375 * 100vw);
+  @include pc{
+    padding: min(calc(47 / 1920 * 100vw), 4.7rem) min(calc(116 / 1920 * 100vw), 11.6rem);
+  }
+}
+
+.p-sns__container {
+	display: flex;
+	align-items: center;
+	// width: calc(172 / 375 * 100vw);
+}
+
+.p-sns__container a {
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	padding: calc(5 / 375 * 100vw) 0;
+}
+
+.p-sns__container a:hover {
+	opacity: 0.6;
+}
+
+.p-sns__iconwrapper{
+	display: flex;
+}
+
+.p-sns__icon{
+	margin-left: calc(21.5 / 375 * 100vw);
+	display: flex;
+	align-items: center;
+  @include pc{
+    margin-left: min(calc(57 / 1920 * 100vw), 5.7rem);
+  }
+}
+
+.p-sns__icon img{
+	width: calc(27.11 / 375 * 100vw);
+  @include pc{
+    width: min(calc(72 / 1920 * 100vw), 7.2rem);
+  }
+}
+
+.p-sns__text{
+	display: block;
+	display: flex;
+	text-align: top;
+	text-transform: uppercase;
+	font-family: futura-pt, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	color: $blue;
+	font-size: calc(14 / 375 * 100vw);
+	// margin-left: calc(23.1 / 375 * 100vw);
+	@include pc{
+		font-size: min(calc(30 / 1920 * 100vw), 3rem);
+		margin-left: min(calc(83 / 1920 * 100vw), 8.3rem);
+	}
+}

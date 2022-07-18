@@ -138,9 +138,9 @@
 
 
 <!-- TOPICS -->
-<section class="l-top-topics p-top-topics">
+<section class="l-top-topics p-com-topics p-top-topics">
   <div class="l-inner">
-    <h2 class="p-top-topics__title c-common-title">
+    <h2 class="p-com-topics__title c-common-title">
     Topics
     </h2>
     <div class="p-top-topics__items">
@@ -149,6 +149,9 @@
           array(
             'post_type'      => 'post',
             'posts_per_page' => 3,
+            'order'=>'DESC',
+            'orderby'=>'post_date'
+
           )
         );
       ?>
@@ -156,19 +159,26 @@
         <?php while ( $topics_query->have_posts() ) : ?>
           <?php $topics_query->the_post(); ?>
           <div>
-            <a href="<?php the_permalink(); ?>" class= "p-top-topics__item p-top-topic">
-              <div class="p-top-topic__img">
+            <a href="<?php the_permalink(); ?>" class= "p-com-topics__item p-com-topic">
+              <div class="p-com-topic__img">
                 <?php the_post_thumbnail('full'); ?>
               </div>
-              <div class="p-top-topic__wrapper">
-                <div class="p-top-topic__textbox">
-                  <time datetime="<?php the_time('c'); ?>" class="p-top-topic__date"><?php the_time('Y.m.d'); ?>
+              <div class="p-com-topic__wrapper">
+                <div class="p-com-topic__textbox">
+                  <time datetime="<?php the_time('c'); ?>" class="p-com-topic__date"><?php the_time('Y.m.d'); ?>
                   </time>
-                  <h3 class="p-top-topic__title"><?php the_title(); ?></h3>
-                  <div class="p-top-topic__text"><?php the_content(); ?></div>
+                  <h3 class="p-com-topic__title"><?php the_title(); ?></h3>
+                  <ul class="p-com-topic__categories">
+                    <?php 
+                        $categories = get_the_category();
+                        foreach( $categories as $category ){
+                          echo '<li class="p-com-topic__category">' .$category->name . '</li>';
+                        }
+                    ?>
+                  </ul>
                 </div>
                 <!-- ボタン -->
-                <div class="p-top-topic__btn c-btn-circle u-hidden-sp">
+                <div class="p-com-topic__btn c-btn-circle u-hidden-sp">
                   <div class="c-btn-circle__item"></div>
                 <!-- <a href="<?php //the_permalink(); ?>"></a> -->
                 </div>
@@ -181,7 +191,7 @@
     </div>
 
     <!-- ボタン -->
-    <div class="p-top-topics__btn c-btn">
+    <div class="p-com-topics__btn c-btn">
       <a href="<?php echo $topics ?>">VIEW MORE</a>
     </div>
 

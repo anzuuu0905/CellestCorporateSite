@@ -1,0 +1,28 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-com-topics{
+  // padding: 9rem 0;
+  // background: $light-gray;
+  border-radius: 4.8rem;
+}
+
+
+.p-com-topics__title{
+  display: flex;
+  justify-content: center;
+  @include pc{
+    // font-size: 10rem;
+    line-height: calc(135/100);
+  }
+}
+
+
+.p-com-topics__btn{
+  margin-top: 2.4rem;
+  display: flex;
+  justify-content: center;
+  @include pc{
+    margin-top: min(calc(85 / 1920 * 100vw), 8.5rem);
+  }
+}

@@ -193,11 +193,11 @@ function is_my_mobile()
  * WordPress のユーザー・一覧表示対策
  * 参考：https://www.webdesignleaves.com/pr/wp/wp_user_enumeration.html
 */
-function disable_author_archive_query() {
-  if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
-    wp_redirect( home_url('/404.php') );
-    exit;
-  }
-}
-add_action('init', 'disable_author_archive_query');
+// function disable_author_archive_query() {
+//   if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
+//     wp_redirect( home_url('/404.php') );
+//     exit;
+//   }
+// }
+// add_action('init', 'disable_author_archive_query');
 

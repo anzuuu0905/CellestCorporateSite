@@ -1,6 +1,15 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
-  .p-sub-topics__list{
-    margin-top: 6.4rem;
+.p-single-topic__textbox{
+  margin-top: calc(25 / 375 * 100vw);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-sub-topics__items{
+  margin-top: calc(26 / 375 * 100vw);
+  @include pc{
+    margin-top: min(calc(165 / 1920 * 100vw), 16.5rem);
   }
+}

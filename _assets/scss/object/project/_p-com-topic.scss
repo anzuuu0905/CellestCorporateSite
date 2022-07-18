@@ -1,7 +1,7 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
-.p-top-topic{
+.p-com-topic{
   display: block;
   position: relative;
   z-index: $z-index-hover;
@@ -22,15 +22,15 @@
   }
 }
 
-// .p-top-topic:nth-child(1){
+// .p-com-topic:nth-child(1){
 //   border-top: 1px solid $gray2;
 // }
 
-// .p-top-topic:nth-child(n+2){
+// .p-com-topic:nth-child(n+2){
 //   margin-top: min(calc(22 / 375 * 100vw), 2.2rem);
 // }
 
-.p-top-topic__wrapper{
+.p-com-topic__wrapper{
   @include pc{
     margin-left: min(calc(83 / 1680 * 100vw), 8.3rem);
     display: flex;
@@ -42,7 +42,7 @@
   }
 }
 
-.p-top-topic__img{
+.p-com-topic__img{
   border-radius: 48px;
   display: block;
   width: 100%;
@@ -57,13 +57,13 @@
   }
 }
 
-.p-top-topic__img::before{
+.p-com-topic__img::before{
   content: "";
   padding-top: 51.6%; //縦横比率を指定する
   display: block; //擬似要素はinline要素。高さを取れないためblock要素に変更
 }
 
-.p-top-topic__img img{
+.p-com-topic__img img{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,7 +79,7 @@
     border-radius: min(calc(48 / 1920 * 100vw), 4.8rem);
   }
 }
-.p-top-topic__img:hover img{
+.p-com-topic__img:hover img{
   // transition-duration: 0.3s;
   transform-origin:center center;
   top: 50%;
@@ -90,7 +90,7 @@
   height: 100%;
 
 }
-.p-top-topic__date{
+.p-com-topic__date{
   margin-top: calc(16 / 375 * 100vw);
   display: block;
   color: $blue;
@@ -103,7 +103,7 @@
   }
 }
 
-.p-top-topic__title{
+.p-com-topic__title{
   font-size: calc(15 / 375 * 100vw);
   font-weight: 700;
   line-height: calc(18/15);
@@ -114,11 +114,13 @@
   }
 }
 
-.p-top-topic__text{
+.p-com-topic__categories{
   font-size: calc(12 / 375 * 100vw);
   font-weight: 500;
   line-height: 1.1;
   margin-top: calc(13 / 375 * 100vw);
+  display: flex;
+  flex-wrap: wrap;
   // letter-spacing: -0.08em;
   @include pc{
     width: calc(800 / 1680 * 100vw);
@@ -126,19 +128,32 @@
     font-size: min(calc(13 / 1920 * 100vw), 1.3rem);
   }
 }
-.p-top-topic__textbox{
+
+.p-com-topic__category{
+  margin-right: 1.6rem;
+  line-height: 1.5;
+}
+
+.p-com-topic__category:last-child{
+  margin-right: 0;
+}
+
+.p-com-topic__textbox{
   @include pc{
     width: min(calc(851 / 1920 * 100vw), 85.1rem);
   }
 }
 
-.p-top-topic__btn{
+.p-com-topic__btn{
   margin-top: 3.5rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: calc(51.13 / 375 * 100vw);
+  height: calc(51.13 / 375 * 100vw);
+
   @include pc{
     margin-top: inherit;
     width: min(calc(60 / 1920 * 100vw) , 6rem);
