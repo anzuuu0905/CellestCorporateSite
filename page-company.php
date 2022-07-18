@@ -81,7 +81,7 @@
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-pc.png" width="242px" height="242px"
                         media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-sp.png" alt="" width="73px" height="73px"/>
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-sp.png" alt="セレクトショップ「ぞうとねこ」" width="73px" height="73px"/>
               </picture>
             </div>
           </div>
@@ -103,7 +103,7 @@
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-pc.png" width="299px" height="58px"
                         media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-sp.png" alt=""  width="90px" height="17px" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-sp.png" alt="株式会社Cellest"  width="90px" height="17px" />
               </picture>
             </div>
           </div>
@@ -117,7 +117,7 @@
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-pc.png" width="403px" height="106px"
                         media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-sp.png" alt="" width="130px" height="32px" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-sp.png" alt="アパレルブランド「ZOUTONEKO」" width="130px" height="32px" />
               </picture>
             </div>
           </div>
@@ -187,7 +187,7 @@
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-pc.png" width="305px" height="216px"
                         media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-sp.png" alt=""  width="92px" height="65px"/>
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-sp.png" alt="ライブコマースエージェント事務所「セレスト」"  width="92px" height="65px"/>
               </picture>
             </div>
           </div>

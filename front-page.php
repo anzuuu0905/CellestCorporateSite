@@ -32,7 +32,7 @@
       <picture>
         <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/live-commerce-pc.png"
                 media="(min-width: 768px)">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/live-commerce-sp.png" alt="" />
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/live-commerce-sp.png" alt="ライブコマースのインフラ化の実現" />
       </picture>
     </div>
     <div class="p-top-live__text">
@@ -71,7 +71,7 @@
         <picture>
           <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/about-pc.png"
                   media="(min-width: 768px)">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="About Us" />
         </picture>
       </div>
       <div class="p-top-about__text u-hidden-pc">
@@ -100,7 +100,7 @@
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-pc.png"
                     media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="ライブコマース販売事業" />
           <!-- </picture> -->
           <div class="p-top-service__mask">
             <div class="p-top-service__caption">View Details</div>
@@ -117,7 +117,7 @@
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-pc.png"
                     media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-sp.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-sp.png" alt="ライブコマースエージェント事務所" />
           </picture>
         <!-- </div> -->
         <div class="p-top-service__mask">

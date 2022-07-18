@@ -46,7 +46,7 @@
         <div class="p-footer__logo">
           <div class="p-footer__logobox">
             <a href="<?php echo $home ?>">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-white.png" alt="" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-white.png" alt="Cellestの企業ロゴ" loading="lazy">
             </a>
             <small>&copy; Cellest,Inc.All rights reserved.</small>
           </div>
@@ -74,7 +74,7 @@
       </div>
     </div>
 </footer>
-<div class="cursor"></div>
+<!-- <div class="cursor"></div> -->
 <div class="follower"></div>
 <?php wp_footer(); ?>
 </body>

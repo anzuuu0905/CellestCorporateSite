@@ -33,7 +33,7 @@
         <picture>
           <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-live-commerce-pc.png"
                   media="(min-width: 768px)">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-live-commerce-sp.png" alt="" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-live-commerce-sp.png" alt="ABOUT LIVE COMMERCE" />
         </picture>
       </div>
       <div class="p-sub-service__text u-hidden-pc">
@@ -55,7 +55,7 @@
               <picture>
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service1-pc.png"
                         media="(min-width: 768px)">
-                <img class="p-sub-service-item__img" src="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service1-sp.png" alt="" />
+                <img class="p-sub-service-item__img" src="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service1-sp.png" alt="LIVE COMMERCE SALES BUSINESS" />
               </picture>
             </div>
             <!-- <p class="p-sub-service-item__no">01</p> -->
@@ -83,13 +83,13 @@
               </div>
               <div class="p-sub-service-item__iconbox">
                 <a href="" class="">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-instagram.png" alt="" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-instagram.png" alt="instagram icon" />
                 </a>
                 <a href="" class="">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-tiktok.png" alt="" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-tiktok.png" alt="tiktok icon" />
                 </a>
                 <a href="" class="">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-sales.png" alt="" />
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-sales.png" alt="sales icon" />
                 </a>
               </div>
             </div>
@@ -98,7 +98,7 @@
             <picture>
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service2-pc.png"
                       media="(min-width: 768px)">
-              <img class="p-sub-service-item__img" src="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service2-sp.png" alt="" />
+              <img class="p-sub-service-item__img" src="<?php echo get_template_directory_uri() ?>/assets/img/common/sub-service2-sp.png" alt="LIVE COMMERCE AGENT OFFICE" />
             </picture>
             <!-- <p class="p-sub-service-item__no">02</p> -->
             <div class="p-sub-service-item__textbox">

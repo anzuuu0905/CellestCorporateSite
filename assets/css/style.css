@@ -2047,8 +2047,8 @@ input[type=radio]:checked + span::after {
 }
 
 .p-header.loaded {
-  -webkit-animation: fadeIn 2s forwards;
-          animation: fadeIn 2s forwards;
+  -webkit-animation: fadeIn 0.5s forwards;
+          animation: fadeIn 0.5s forwards;
 }
 
 @-webkit-keyframes fadeIn {
@@ -4689,7 +4689,7 @@ button {
   }
   .p-top-service__subtitle {
     margin-top: min(2.8125vw, 5.4rem);
-    font-size: min(2.0833333333vw, 4rem);
+    font-size: min(1.9791666667vw, 3.8rem);
   }
   .p-top-service__items {
     margin-top: min(3.90625vw, 7.5rem);

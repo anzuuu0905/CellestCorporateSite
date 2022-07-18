@@ -53,7 +53,7 @@
             <picture>
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-pc.png"
                       media="(min-width: 768px)">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-sp.png" alt="" />
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-sp.png" alt="Cellest企業ロゴ" />
             </picture>
           </a>
 
@@ -81,7 +81,7 @@
         <div class="p-header__logo">
           <a href="<?php echo $home ?>">
             <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.png"
-              alt="" loading="lazy">
+              alt="Cellest企業ロゴ">
           </a>
         </div>
         <div class="p-header__spbox">
@@ -100,7 +100,7 @@
           <div class="p-header__logo">
             <a href="<?php echo $home ?>">
               <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-white.png"
-                alt="" loading="lazy">
+                alt="Cellest企業ロゴ">
             </a>
           </div>
           <nav class="p-drawer-menu__menu">
@@ -161,7 +161,7 @@
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-pc.png"
                     media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="Cellest企業ロゴ" />
           </picture>
         </div>
         <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
