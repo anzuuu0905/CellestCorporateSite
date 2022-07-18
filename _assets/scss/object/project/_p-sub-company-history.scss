@@ -18,6 +18,14 @@
   }
 }
 
+.p-sub-company-history__contents-wrapper{
+  width: 100%;
+  @include pc{
+    max-width: 113.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .p-sub-company-history__title{
   text-align: center;
 }

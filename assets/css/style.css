@@ -900,7 +900,7 @@ select::-ms-expand {
 .c-common-title {
   color: #618ABE;
   text-transform: uppercase;
-  font-size: 2.4rem;
+  font-size: min(6.4vw, 2.4rem);
   font-family: futura-pt, sans-serif;
   font-weight: 500;
 }
@@ -1579,8 +1579,8 @@ input[type=radio]:checked + span::after {
   height: 100%;
   width: 100%;
   position: relative;
-  background: -webkit-gradient(linear, transparent, from(60%), to(#FFFFFF));
-  background: linear-gradient(to transparent, 60%, #FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%), to(#FFFFFF));
+  background: linear-gradient(to bottom, transparent, 50%, #FFFFFF);
 }
 
 .p-com-topic {
@@ -1814,30 +1814,30 @@ input[type=radio]:checked + span::after {
 .p-drawer-menu {
   width: 100%;
   height: 100vh;
-  border-radius: 100px;
   z-index: 9999;
   display: none;
   position: absolute;
-  padding-top: 4.3rem;
+  padding-top: 11.4666666667vw;
   top: 0;
   left: 0;
+  overflow-y: auto;
   will-change: clip-path;
   pointer-events: inherit;
 }
 
 .p-drawer-menu__menu {
-  margin-top: 5rem;
+  margin-top: 13.3333333333vw;
 }
 
 .p-drawer-menu__box {
-  padding-top: 4.3rem;
+  padding-top: 11.4666666667vw;
   margin-left: auto;
   margin-right: auto;
   width: 29.5rem;
 }
 
 .p-drawer-menu__items {
-  margin-top: 2rem;
+  margin-top: 5.3333333333vw;
 }
 
 .p-drawer-menu__item a {
@@ -1845,13 +1845,13 @@ input[type=radio]:checked + span::after {
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: min(9.3333333333vw, 3.5rem);
   color: #FFFFFF;
   display: block;
   width: 100%;
   text-decoration: none;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: min(3.2vw, 1.2rem);
+  padding-bottom: min(3.2vw, 1.2rem);
   line-height: 1;
 }
 
@@ -2134,8 +2134,8 @@ input[type=radio]:checked + span::after {
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(135);
-            transform: scale(135);
+    -webkit-transform: scale(500);
+            transform: scale(500);
   }
 }
 
@@ -2145,8 +2145,8 @@ input[type=radio]:checked + span::after {
             transform: scale(0);
   }
   100% {
-    -webkit-transform: scale(135);
-            transform: scale(135);
+    -webkit-transform: scale(500);
+            transform: scale(500);
   }
 }
 .p-header__spbox {
@@ -2726,6 +2726,10 @@ input[type=radio]:checked + span::after {
   margin-top: 9.0666666667vw;
 }
 
+.p-sub-company-history__contents-wrapper {
+  width: 100%;
+}
+
 .p-sub-company-history__title {
   text-align: center;
 }
@@ -2817,6 +2821,11 @@ input[type=radio]:checked + span::after {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 96vw;
+}
+
+.p-sub-contact__inner {
+  margin-top: 10.6666666667vw;
 }
 
 .p-sub-contact__title {
@@ -3113,7 +3122,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-top-live__title {
-  font-size: 3.8rem;
+  font-size: min(10.1333333333vw, 3.8rem);
   font-weight: 700;
   line-height: 1.2894736842;
   letter-spacing: -0.1em;
@@ -3645,51 +3654,6 @@ input[type=radio]:checked + span::after {
   color: #618ABE;
 }
 
-.follower {
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-
-.follower {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(112, 112, 112, 0.6);
-  z-index: 1000;
-  -webkit-transition: -webkit-transform ease 0.1s;
-  transition: -webkit-transform ease 0.1s;
-  transition: transform ease 0.1s;
-  transition: transform ease 0.1s, -webkit-transform ease 0.1s;
-  text-align: center;
-}
-.follower span {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-.follower.is-active {
-  background: #FFF;
-  -webkit-transform: scale(3);
-          transform: scale(3);
-  mix-blend-mode: difference;
-}
-
 .is-active {
   opacity: 1;
 }
@@ -3994,7 +3958,7 @@ button {
     margin-top: min(8.125vw, 15.6rem);
   }
   .l-sub-company {
-    margin-top: min(1.1979166667vw, 23rem);
+    margin-top: min(11.9791666667vw, 23rem);
   }
   .l-sub-contact {
     margin-top: min(11.9791666667vw, 23rem);
@@ -4445,6 +4409,11 @@ button {
   .p-sub-company-history__contents {
     margin-top: min(6.0416666667vw, 11.6rem);
   }
+  .p-sub-company-history__contents-wrapper {
+    max-width: 113.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .p-sub-company-history__contents {
     margin-top: min(6.25vw, 12rem);
     max-width: 116 rem;
@@ -4483,6 +4452,10 @@ button {
   }
   .p-sub-contact__wrapper {
     max-width: 82.8rem;
+    margin-top: 0;
+  }
+  .p-sub-contact__inner {
+    margin-top: min(6.09375vw, 17rem);
   }
   .p-sub-contact__content + .p-sub-contact__content {
     margin-top: min(2.34375vw, 4.5rem);
@@ -4720,6 +4693,49 @@ button {
   }
   .ball__box {
     height: 100vh;
+  }
+  .follower {
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  .follower {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(112, 112, 112, 0.6);
+    z-index: 1000;
+    -webkit-transition: -webkit-transform ease 0.1s;
+    transition: -webkit-transform ease 0.1s;
+    transition: transform ease 0.1s;
+    transition: transform ease 0.1s, -webkit-transform ease 0.1s;
+    text-align: center;
+  }
+  .follower span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .follower.is-active {
+    background: #FFF;
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    mix-blend-mode: difference;
   }
   .pagination {
     margin-top: min(1.8489583333vw, 3.55rem);

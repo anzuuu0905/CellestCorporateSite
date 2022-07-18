@@ -15,9 +15,9 @@
   <!-- <div class=""> -->
     <div class="p-sub-service__wrapper l-inner">
       <div class="p-sub-service__textwrapper">
-        <h2class="p-sub-service__title c-common-title">
+        <h2 class="p-sub-service__title c-common-title">
         ABOUT LIVE COMMERCE
-        </h2class=>
+        </h2>
         <p class="p-sub-service__subtitle c-common-subtitle">
           ネットショッピングで<br>
           イメージ通りの買い物ができる
@@ -82,13 +82,13 @@
                 </ul>
               </div>
               <div class="p-sub-service-item__iconbox">
-                <a href="" class="">
+                <a href="https://www.instagram.com/zoutoneko/?hl=ja" target="_blank" rel="noopener noreferrer" class="">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-instagram.png" alt="instagram icon" />
                 </a>
-                <a href="" class="">
+                <a href="" target="_blank" rel="noopener noreferrer" class="">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-tiktok.png" alt="tiktok icon" />
                 </a>
-                <a href="" class="">
+                <a href="https://zoutoneko-livecommerce.myshopify.com/" target="_blank" rel="noopener noreferrer" class="">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-sales.png" alt="sales icon" />
                 </a>
               </div>
@@ -116,7 +116,7 @@
               </div>
               <!-- ボタン -->
               <div class="p-sub-service-item__btn c-btn">
-                <a href="https://cellest.jp/live-commercer.html">VIEW MORE</a>
+                <a href="https://cellest.jp/live-commercer.html" target="_blank" rel="noopener noreferrer">VIEW MORE</a>
               </div>
             </div>
           </div>

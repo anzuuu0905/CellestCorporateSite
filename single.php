@@ -10,6 +10,17 @@
 
 </section>
 
+<?php
+    $home = esc_url(home_url('/'));
+    $about = esc_url(home_url('/about/'));
+    $service = esc_url(home_url('/service/'));
+    $company = esc_url(home_url('/company/'));
+    $topics = esc_url(home_url('/topics/'));
+    $career = esc_url(home_url('/career/'));
+    $contact = esc_url(home_url('/contact/'));    
+    $policy = esc_url(home_url('/policy/'));    
+  ?>
+
 <section class="l-signle-topics p-single-topics">
   <div class="l-inner">
     <div class="p-single-topics__inner">

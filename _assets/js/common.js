@@ -204,7 +204,7 @@ if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
   const follower = $(".follower");
   let cWidth = 8; //カーソルの大きさ
   let fWidth = 40; //フォロワーの大きさ
-  let delay = 10; //数字を大きくするとフォロワーがより遅れて来る
+  let delay = 5; //数字を大きくするとフォロワーがより遅れて来る
   let mouseX = 0; //マウスのX座標
   let mouseY = 0; //マウスのY座標
   let posX = 0; //フォロワーのX座標

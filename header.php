@@ -129,6 +129,7 @@
   </header>
   <?php if(is_page('contact')): ?>
     <div id="loader-bg" class="p-background--contact">
+    <!-- <div id="loader-bg" class="p-background"> -->
   <?php else: ?>
     <div id="loader-bg" class="p-background">
   <?php endif; ?>

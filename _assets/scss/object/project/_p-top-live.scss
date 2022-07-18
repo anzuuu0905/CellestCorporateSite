@@ -5,7 +5,7 @@
 }
 
 .p-top-live__title{
-  font-size: 3.8rem;
+  font-size: min(calc(38 / 375 * 100vw), 3.8rem);
   font-weight: 700;
   line-height: calc(49/38);
   letter-spacing: -0.1em;

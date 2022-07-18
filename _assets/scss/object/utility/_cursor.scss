@@ -5,11 +5,13 @@
 
 // .cursor,
 .follower {
+  @include pc{
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0; 
   pointer-events: none;
+  }
 }
 
 // .cursor {
@@ -20,6 +22,7 @@
 // }
 
 .follower {
+  @include pc{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,5 +42,6 @@
     background: #FFF;
     transform: scale(3);
     mix-blend-mode:difference;
+  }
   }
 }
