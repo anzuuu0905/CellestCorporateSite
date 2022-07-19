@@ -10,6 +10,7 @@
   // position: absolute;
   // background: $white;
   background: linear-gradient(to bottom, transparent,20%,transparent,35%, $white);
+  // isolation: isolate;
   // z-index: 9999;
 }
 
@@ -25,5 +26,6 @@
   // background: linear-gradient(to bottom, transparent,30%,transparent,60%, $white);
   // background: linear-gradient(to transparent,50%, $white);
   background: linear-gradient(to bottom, transparent ,50%, $white);
+  isolation: isolate;
   // z-index: 9999;
 }

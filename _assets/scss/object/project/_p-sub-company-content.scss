@@ -17,7 +17,7 @@
   position: relative;
   @include pc{
     font-size: min(calc(43 / 1920 * 100vw), 4.3rem);
-    width: min(calc(300 / 1920 * 100vw), 30rem);
+    width: min(calc(283 / 1920 * 100vw), 30rem);
     border-right: min(calc(5 / 1920 * 100vw), 0.5rem) solid $white;
   }
 }
@@ -53,9 +53,9 @@
   line-height: 1.17;
   @include pc{
     font-size: min(calc(29 / 1920 * 100vw), 2.9rem);
-    padding-left: min(calc(106 / 1920 * 100vw), 10.6rem);
+    padding-left: min(calc(88 / 1920 * 100vw), 10.6rem);
     padding-bottom: min(calc(130 / 1920 * 100vw), 13rem);
-    width: min(100% - calc(300 / 1920 * 100vw), 81.2rem);
+    width: min(100% - calc(283 / 1920 * 100vw), 85.3rem);
   }
 }
 

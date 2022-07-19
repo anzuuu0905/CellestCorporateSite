@@ -12,13 +12,13 @@
   </div>
 </section>
 
-<!-- policy -->
+<!-- contact -->
 <section class="l-sub-contact p-sub-contact">
-  <div class="p-sub-contact__wrapper">
+  <div class="p-sub-contact__inner l-inner">
     <h2 class="p-sub-contact__title c-common-title">
     CONTACT
     </h2>
-    <div class="p-sub-contact__inner l-inner">
+    <div class="p-sub-contact__wrapper">
       <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
           <?php the_content(); ?>

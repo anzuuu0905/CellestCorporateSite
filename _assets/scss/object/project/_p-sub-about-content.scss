@@ -2,9 +2,9 @@
 @use '../../setting/setting' as *;
 
 .p-sub-about-content:nth-child(2) .p-sub-about-content__subtitle{
-  font-size: calc(20 / 375 * 100vw);
+  font-size: calc(19 / 375 * 100vw);
   @include pc{
-    font-size: min(calc(77 / 1920 * 100vw), 7.7rem);
+    font-size: min(calc(67 / 1920 * 100vw), 6.7rem);
   }
 }
 

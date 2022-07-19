@@ -128,7 +128,7 @@
             <div class="p-sub-company-content__wrapper">
               <div class="p-sub-company-content__box">
                 <p class="p-sub-company-content__text"> 
-                  アミューズメントバー<br>
+                  アミューズメントバー<br class="u-hidden-pc">
                   「B-LUCK BERRY」開店</p>
               </div>
             </div>
@@ -146,7 +146,7 @@
             <div class="p-sub-company-content__wrapper">
               <div class="p-sub-company-content__box">
                 <p class="p-sub-company-content__text">
-                  アパレルブランド<br>
+                  アパレルブランド<br class="u-hidden-pc">
                   「CHÉNE DE MAISON」買収</p>
               </div>
             </div>
@@ -183,7 +183,7 @@
             <div class="p-sub-company-content__wrapper">
               <div class="p-sub-company-content__box">
                 <p class="p-sub-company-content__text">
-                  ライブコマースエージェント事務所<br>
+                  ライブコマースエージェント事務所<br class="u-hidden-pc">
                   「セレスト」</p>
                 <picture>
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-pc.png" width="305px" height="216px"

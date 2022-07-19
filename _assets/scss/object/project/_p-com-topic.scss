@@ -59,8 +59,11 @@
 
 .p-com-topic__img::before{
   content: "";
-  padding-top: 51.6%; //縦横比率を指定する
+  // padding-top: 51.6%; //縦横比率を指定する
+  // padding-top: 59.2%; //縦横比率を指定する
+  padding-top: 53.9%; //縦横比率を指定する
   display: block; //擬似要素はinline要素。高さを取れないためblock要素に変更
+
 }
 
 .p-com-topic__img img{
@@ -111,6 +114,7 @@
   // letter-spacing: -0.08em;
   @include pc{
     font-size: min(calc(24 / 1920 * 100vw), 2.4rem);
+    margin-top: min(calc(21 / 1920 * 100vw), 2.1rem);
   }
 }
 
@@ -125,6 +129,7 @@
   @include pc{
     width: calc(800 / 1680 * 100vw);
     max-width: 100%;
+    margin-top: min(calc(36 / 1920 * 100vw), 3.6rem);
     font-size: min(calc(13 / 1920 * 100vw), 1.3rem);
   }
 }

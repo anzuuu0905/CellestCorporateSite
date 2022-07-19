@@ -6,8 +6,8 @@
 	padding-top: calc(90 / 375 * 100vw);
 	padding-bottom: calc(90 / 375 * 100vw);
 	@include pc{
-		padding-top: min(calc(114 / 1920 * 100vw), 11.4rem) ;
-		padding-bottom: min(calc(114 / 1920 * 100vw), 11.4rem) ;
+		padding-top: min(calc(144 / 1920 * 100vw), 14.4rem) ;
+		padding-bottom: min(calc(246 / 1920 * 100vw), 24.6rem) ;
 	}
 }
 

@@ -10,6 +10,9 @@
 
 .p-single-topics__sns{
   margin-top: calc(100 / 375 * 100vw);
+  @include pc{
+    margin-top: min(calc(220 / 1920 * 100vw), 22rem);
+  }
 }
 
 .p-single-topics__btn{
