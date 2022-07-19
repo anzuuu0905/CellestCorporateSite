@@ -182,7 +182,10 @@ ScrollTrigger.create({
 // ローディング画面の読み込み
 window.onload = ()=>{
   const loader = document.getElementById('loader');
-  loader.classList.add('loaded');
+  console.log(loader);
+  if(loader !== null){
+    loader.classList.add('loaded');
+  }
   const header = document.getElementById('loader-header');
   header.classList.add('loaded');
 }

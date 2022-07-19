@@ -3,7 +3,8 @@
 
 .p-sub-company-history{
   // background: transparent;
-  background: rgba(240, 240, 240, 0.5);
+  // background: rgba(240, 240, 240, 0.5);
+  background-image: url(../img/common/background-img.png);
   border-radius: 4.8rem;
   padding: calc(90 / 375 * 100vw) 0;
   @include pc{

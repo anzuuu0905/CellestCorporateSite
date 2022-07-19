@@ -91,7 +91,8 @@
 .p-sub-service__contents{
   margin-top: calc(103 / 375 * 100vw);
   padding: calc(90 / 375 * 100vw) calc(16 / 375 * 100vw);
-  background-color: $gray2;
+  // background-color: $gray2;
+  background-image: url(../img/common/background-img.png);
   width: 100vw;
   margin-left: calc(50% - 50vw);
   border-radius: 48px;

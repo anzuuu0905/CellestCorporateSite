@@ -17,12 +17,12 @@
   }
 }
 
-.p-sub-contact__inner{
-  margin-top: calc(360 / 375 * 100vw);
-  @include pc{
-    margin-top: 0;
-  }
-}
+// .p-sub-contact__inner{
+//   margin-top: calc(360 / 375 * 100vw);
+//   @include pc{
+//     margin-top: 0;
+//   }
+// }
 
 .p-sub-contact__title{
   text-align: center;

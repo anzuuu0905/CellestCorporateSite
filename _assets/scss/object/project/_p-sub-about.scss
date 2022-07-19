@@ -3,7 +3,8 @@
 
 .p-sub-about{
   position: relative;
-  background: $gray2;
+  // background: $gray2;
+  background-image: url(../img/common/background-img.png);
   border-radius: 4.8rem;
   padding-top: calc(300/ 375 * 100vw);
   @include pc{

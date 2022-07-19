@@ -3,7 +3,8 @@
 
 .p-top-service{
   padding: 9rem 0;
-  background: $light-gray;
+  // background: $light-gray;
+  background-image: url(../img/common/background-img.png);
   border-radius: 4.8rem;
   @include pc{
     padding: min(calc(170 / 1920 * 100vw), 17rem) 0;

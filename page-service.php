@@ -85,7 +85,7 @@
                 <a href="https://www.instagram.com/zoutoneko/?hl=ja" target="_blank" rel="noopener noreferrer" class="">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-instagram.png" alt="instagram icon" />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" class="">
+                <a href="https://www.tiktok.com/@zoutoneko.official?_t=8U6XR9fskU5&_r=1" target="_blank" rel="noopener noreferrer" class="">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/icon-tiktok.png" alt="tiktok icon" />
                 </a>
                 <a href="https://zoutoneko-livecommerce.myshopify.com/" target="_blank" rel="noopener noreferrer" class="">

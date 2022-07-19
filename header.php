@@ -50,8 +50,10 @@
     $policy = esc_url(home_url('/policy/'));    
   ?>
     <!-- ローディング画面 -->
-    <div id="loader">
-  </div>
+    <?php if(!is_page('contact')) : ?>
+      <div id="loader">
+      </div>
+    <?php endif; ?>
 
   <header class="p-header" id="loader-header">
   <!-- ローディング画面 -->
