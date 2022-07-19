@@ -116,7 +116,7 @@
                 <p class="p-sub-company-content__text"> 
                   アパレルブランド「ZOUTONEKO」開始</p>
                 <picture>
-                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-pc.png" width="403px" height="106px"
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-pc.png" width="423px" height="106px"
                           media="(min-width: 768px)">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-sp.png" alt="アパレルブランド「ZOUTONEKO」" width="130px" height="32px" />
                 </picture>

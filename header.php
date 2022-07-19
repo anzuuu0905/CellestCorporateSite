@@ -9,7 +9,19 @@
   <meta name="format-detection" content="telephone=no">
   <!-- fontawesomを使用する -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<!-- AdobeFont -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'ouf7vfy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 <!-- TEST START -->
+<!-- 
 <script>
   (function(d) {
     var config = {
@@ -19,7 +31,7 @@
     },
     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
   })(document);
-</script>
+</script> -->
 <!-- TEST END -->
 
   <?php wp_head(); ?>
@@ -127,43 +139,43 @@
     </div>
 
   </header>
-  <?php if(is_page('contact')): ?>
+      <?php if(is_page('contact')): ?>
     <div id="loader-bg" class="p-background--contact">
-    <!-- <div id="loader-bg" class="p-background"> -->
-  <?php else: ?>
+      <!-- <div id="loader-bg" class="p-background"> -->
+      <?php else: ?>
     <div id="loader-bg" class="p-background">
-  <?php endif; ?>
-    <section class="p-mv">
-      <div class="p-mv__inner l-inner">
-        <div class="ball__box">
-          <div class="ball__wrapper">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
+      <?php endif; ?>
+      <section class="p-mv">
+        <div class="p-mv__inner l-inner">
+          <div class="ball__box">
+            <div class="ball__wrapper">
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+            </div>
+            <div class="ball__wrapper">
+              <div class="ball2"></div>
+              <div class="ball2"></div>
+              <div class="ball2"></div>
+              <div class="ball2"></div>
+            </div>
+            <svg>
+              <defs>
+                <filter id="filter">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+                  <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+                  <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+                </filter>
+              </defs>
+            </svg>
           </div>
-          <div class="ball__wrapper">
-            <div class="ball2"></div>
-            <div class="ball2"></div>
-            <div class="ball2"></div>
-            <div class="ball2"></div>
-          </div>
-          <svg>
-            <defs>
-              <filter id="filter">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-                <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
-                <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-              </filter>
-            </defs>
-          </svg>
-        </div>
 
-        <div class="p-mv__img">
-          <picture>
-            <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-pc.png"
-                    media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="Cellest企業ロゴ" />
-          </picture>
-        </div>
-        <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
+          <div class="p-mv__img">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-pc.png"
+                      media="(min-width: 768px)">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="Cellest企業ロゴ" />
+            </picture>
+          </div>
+          <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
       

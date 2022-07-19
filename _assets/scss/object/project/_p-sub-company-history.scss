@@ -42,7 +42,7 @@
   width: 100%;
   @include pc{
     margin-top: min(calc(120 / 1920 * 100vw), 12rem);
-    max-width: 116  rem;
+    // max-width: 116rem;
   }
   table{
     width: 100%;

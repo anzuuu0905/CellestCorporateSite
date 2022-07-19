@@ -14,7 +14,7 @@ button {
 
 html {
   color: #06070E;
-  background: #white;
+  background: #FFFFFF;
   font-size: 16px;
   font-size: 62.5%;
   line-height: 1.6;
@@ -1572,8 +1572,8 @@ input[type=radio]:checked + span::after {
   height: 100%;
   width: 100%;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%), color-stop(transparent), color-stop(35%), to(#FFFFFF));
-  background: linear-gradient(to bottom, transparent, 20%, transparent, 35%, #FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(20%), color-stop(rgba(255, 255, 255, 0)), color-stop(35%), to(#FFFFFF));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), 20%, rgba(255, 255, 255, 0), 35%, #FFFFFF);
 }
 
 .p-background--contact {
@@ -1583,9 +1583,8 @@ input[type=radio]:checked + span::after {
   height: 100%;
   width: 100%;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%), to(#FFFFFF));
-  background: linear-gradient(to bottom, transparent, 50%, #FFFFFF);
-  isolation: isolate;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%), to(#FFFFFF));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), 50%, #FFFFFF);
 }
 
 .p-com-topic {
@@ -2532,7 +2531,6 @@ input[type=radio]:checked + span::after {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  text-align: top;
   text-transform: uppercase;
   font-family: futura-pt, sans-serif;
   font-weight: 500;
@@ -4438,7 +4436,6 @@ button {
   }
   .p-sub-company-history__contents {
     margin-top: min(6.25vw, 12rem);
-    max-width: 116 rem;
   }
   .p-sub-company-history__contents th, .p-sub-company-history__contents td {
     font-size: min(1.25vw, 2.4rem);
