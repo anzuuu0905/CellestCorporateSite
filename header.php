@@ -154,9 +154,9 @@
               <div class="ball"></div>
             </div>
             <div class="ball__wrapper">
+              <div class="ball2 ball__circle"></div>
               <div class="ball2"></div>
-              <div class="ball2"></div>
-              <div class="ball2"></div>
+              <div class="ball2 ball__circle"></div>
               <div class="ball2"></div>
             </div>
             <svg>

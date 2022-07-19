@@ -3298,28 +3298,29 @@ input[type=radio]:checked + span::after {
           filter: blur(5vw);
 }
 .ball:nth-child(1) {
-  -webkit-animation: x-axis-1 30s infinite alternate ease-in-out;
-          animation: x-axis-1 30s infinite alternate ease-in-out;
+  -webkit-animation: x-axis-1 15s infinite alternate ease-in-out;
+          animation: x-axis-1 15s infinite alternate ease-in-out;
 }
 .ball:nth-child(1):before {
-  -webkit-animation: y-axis-1 30s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-1 30s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-1 15s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-1 15s infinite 0.1s alternate ease-in-out;
 }
 .ball:nth-child(2) {
-  -webkit-animation: x-axis-2 35s infinite alternate ease-in-out;
-          animation: x-axis-2 35s infinite alternate ease-in-out;
+  height: 50vw;
+  -webkit-animation: x-axis-2 17s infinite alternate ease-in-out;
+          animation: x-axis-2 17s infinite alternate ease-in-out;
 }
 .ball:nth-child(2):before {
-  -webkit-animation: y-axis-2 235s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-2 235s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-2 17s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-2 17s infinite 0.1s alternate ease-in-out;
 }
 .ball:nth-child(3) {
-  -webkit-animation: x-axis-3 11s infinite alternate ease-in-out;
-          animation: x-axis-3 11s infinite alternate ease-in-out;
+  -webkit-animation: x-axis-3 6s infinite alternate ease-in-out;
+          animation: x-axis-3 6s infinite alternate ease-in-out;
 }
 .ball:nth-child(3):before {
-  -webkit-animation: y-axis-3 11s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-3 11s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-3 6s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-3 6s infinite 0.1s alternate ease-in-out;
 }
 
 @-webkit-keyframes x-axis-1 {
@@ -3463,36 +3464,40 @@ input[type=radio]:checked + span::after {
           filter: blur(7vw);
 }
 .ball2:nth-child(1) {
-  -webkit-animation: x-axis-21 20s infinite alternate ease-in-out;
-          animation: x-axis-21 20s infinite alternate ease-in-out;
+  width: 16.6666666667vw;
+  height: 16.6666666667vw;
+  -webkit-animation: x-axis-21 10s infinite alternate ease-in-out;
+          animation: x-axis-21 10s infinite alternate ease-in-out;
 }
 .ball2:nth-child(1):before {
-  -webkit-animation: y-axis-21 20s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-21 20s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-21 10s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-21 10s infinite 0.1s alternate ease-in-out;
 }
 .ball2:nth-child(2) {
-  -webkit-animation: x-axis-22 25s infinite alternate ease-in-out;
-          animation: x-axis-22 25s infinite alternate ease-in-out;
+  -webkit-animation: x-axis-22 12s infinite alternate ease-in-out;
+          animation: x-axis-22 12s infinite alternate ease-in-out;
 }
 .ball2:nth-child(2):before {
-  -webkit-animation: y-axis-22 25s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-22 25s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-22 12s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-22 12s infinite 0.1s alternate ease-in-out;
 }
 .ball2:nth-child(3) {
-  -webkit-animation: x-axis-23 11s infinite alternate ease-in-out;
-          animation: x-axis-23 11s infinite alternate ease-in-out;
+  -webkit-animation: x-axis-23 6s infinite alternate ease-in-out;
+          animation: x-axis-23 6s infinite alternate ease-in-out;
 }
 .ball2:nth-child(3):before {
-  -webkit-animation: y-axis-23 11s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-23 11s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-23 6s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-23 6s infinite 0.1s alternate ease-in-out;
 }
 .ball2:nth-child(4) {
-  -webkit-animation: x-axis-24 10s infinite alternate ease-in-out;
-          animation: x-axis-24 10s infinite alternate ease-in-out;
+  width: 16.6666666667vw;
+  height: 16.6666666667vw;
+  -webkit-animation: x-axis-24 5s infinite alternate ease-in-out;
+          animation: x-axis-24 5s infinite alternate ease-in-out;
 }
 .ball2:nth-child(4):before {
-  -webkit-animation: y-axis-24 10s infinite 0.1s alternate ease-in-out;
-          animation: y-axis-24 10s infinite 0.1s alternate ease-in-out;
+  -webkit-animation: y-axis-24 5s infinite 0.1s alternate ease-in-out;
+          animation: y-axis-24 5s infinite 0.1s alternate ease-in-out;
 }
 
 @-webkit-keyframes x-axis-21 {

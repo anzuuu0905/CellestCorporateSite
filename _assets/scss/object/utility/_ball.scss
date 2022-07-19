@@ -59,24 +59,25 @@ $radius-y: 25vw;
   
 
   &:nth-child(1) {
-    animation: x-axis-1 30s infinite alternate ease-in-out;
+    animation: x-axis-1 15s infinite alternate ease-in-out;
     &:before {
-      animation: y-axis-1 30s infinite .1s alternate ease-in-out;
+      animation: y-axis-1 15s infinite .1s alternate ease-in-out;
     }
   }
 
   
   &:nth-child(2) {
-    animation: x-axis-2 35s infinite alternate ease-in-out;
+    height: $radius;  
+    animation: x-axis-2 17s infinite alternate ease-in-out;
     &:before {
-      animation: y-axis-2 235s infinite .1s alternate ease-in-out;
+      animation: y-axis-2 17s infinite .1s alternate ease-in-out;
     }
   }
   
   &:nth-child(3) {
-    animation: x-axis-3 11s infinite alternate ease-in-out;
+    animation: x-axis-3 6s infinite alternate ease-in-out;
     &:before {
-      animation: y-axis-3 11s infinite .1s alternate ease-in-out;
+      animation: y-axis-3 6s infinite .1s alternate ease-in-out;
     }
   }
 }
@@ -156,30 +157,34 @@ $radius-y: 25vw;
   // }
 
   &:nth-child(1) {
-    animation: x-axis-21 20s infinite alternate ease-in-out;
+    width: calc($radius-y * 2 / 3);
+    height: calc($radius-y * 2 / 3);
+    animation: x-axis-21 10s infinite alternate ease-in-out;
     &:before{
-      animation: y-axis-21 20s infinite .1s alternate ease-in-out;
+      animation: y-axis-21 10s infinite .1s alternate ease-in-out;
     }
   }
 
   
   &:nth-child(2) {
-    animation: x-axis-22 25s infinite alternate ease-in-out;
+    animation: x-axis-22 12s infinite alternate ease-in-out;
     &:before{
-      animation: y-axis-22 25s infinite .1s alternate ease-in-out;
+      animation: y-axis-22 12s infinite .1s alternate ease-in-out;
     }
   }
   
   &:nth-child(3) {
-    animation: x-axis-23 11s infinite alternate ease-in-out;
+    animation: x-axis-23 6s infinite alternate ease-in-out;
     &:before{
-      animation: y-axis-23 11s infinite .1s alternate ease-in-out;
+      animation: y-axis-23 6s infinite .1s alternate ease-in-out;
     }
   }
   &:nth-child(4) {
-    animation: x-axis-24 10s infinite alternate ease-in-out;
+    width: calc($radius-y * 2 / 3);
+    height: calc($radius-y * 2 / 3);
+    animation: x-axis-24 5s infinite alternate ease-in-out;
     &:before{
-      animation: y-axis-24 10s infinite .1s alternate ease-in-out;
+      animation: y-axis-24 5s infinite .1s alternate ease-in-out;
     }
   }
 
