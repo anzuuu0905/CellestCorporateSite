@@ -139,14 +139,24 @@
     </div>
 
   </header>
-      <?php if(is_page('contact')): ?>
+      <?php if(is_page('contact')) : ?>
     <div id="loader-bg" class="p-background--contact">
-      <!-- <div id="loader-bg" class="p-background"> -->
+    <?php elseif(is_page('company')) : ?>
+    <div id="loader-bg" class="p-background--company">
+      <?php elseif(is_single('')) : ?>
+    <div>
       <?php else: ?>
     <div id="loader-bg" class="p-background">
       <?php endif; ?>
+        <?php if(!is_single('')) : ?>
       <section class="p-mv">
         <div class="p-mv__inner l-inner">
+        <?php else: ?>
+          <section class="p-mv-single">
+            <div class="p-mv-single__inner l-inner">
+        <?php endif; ?>
+    
+        <?php if(!is_single('')) : ?>
           <div class="ball__box">
             <div class="ball__wrapper">
               <div class="ball"></div>
@@ -179,3 +189,4 @@
           </div>
           <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
       
+        <?php endif; ?>

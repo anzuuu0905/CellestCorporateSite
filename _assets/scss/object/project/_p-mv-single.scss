@@ -1,0 +1,12 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.p-mv-single{
+  height: 6rem;
+  width: 100vw;
+  position: relative;
+  @include pc{
+    height: 11rem;  
+  }
+}
+

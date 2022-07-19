@@ -2,8 +2,8 @@
 @use '../../setting/setting' as *;
 
 .l-signle-topics{
-  margin-top: 10.4rem;
+  margin-top: 11.2rem;
   @include pc{
-    margin-top: min(calc(230 / 1920 * 100vw),23rem);
+    margin-top: min(calc(145 / 1920 * 100vw),14.5rem);
   }
 }

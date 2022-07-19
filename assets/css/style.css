@@ -1278,7 +1278,7 @@ input[type=radio]:checked + span::after {
 }
 
 .l-signle-topics {
-  margin-top: 10.4rem;
+  margin-top: 11.2rem;
 }
 
 .l-single-topics {
@@ -1585,6 +1585,17 @@ input[type=radio]:checked + span::after {
   position: relative;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%), to(#FFFFFF));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), 50%, #FFFFFF);
+}
+
+.p-background--company {
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(10%), color-stop(rgba(255, 255, 255, 0)), color-stop(20%), to(#FFFFFF));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), 10%, rgba(255, 255, 255, 0), 20%, #FFFFFF);
 }
 
 .p-com-topic {
@@ -2207,6 +2218,12 @@ input[type=radio]:checked + span::after {
   margin-top: 1.6rem;
 }
 
+.p-mv-single {
+  height: 6rem;
+  width: 100vw;
+  position: relative;
+}
+
 .p-mv {
   height: 88.5vw;
   width: 100vw;
@@ -2720,7 +2737,7 @@ input[type=radio]:checked + span::after {
 }
 
 .p-sub-company-history {
-  background: transparent;
+  background: rgba(240, 240, 240, 0.5);
   border-radius: 4.8rem;
   padding: 24vw 0;
 }
@@ -3969,7 +3986,7 @@ button {
     margin-top: max(-8.3854166667vw, -16.1rem);
   }
   .l-signle-topics {
-    margin-top: min(11.9791666667vw, 23rem);
+    margin-top: min(7.5520833333vw, 14.5rem);
   }
   .l-single-topics {
     margin-top: min(11.9791666667vw, 23rem);
@@ -4201,6 +4218,9 @@ button {
   }
   .p-header__logo {
     width: min(9.8958333333vw, 19rem);
+  }
+  .p-mv-single {
+    height: 11rem;
   }
   .p-mv {
     height: 100vh;

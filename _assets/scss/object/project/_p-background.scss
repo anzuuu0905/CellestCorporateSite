@@ -22,3 +22,15 @@
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) ,50%, $white);
   // isolation: isolate;
 }
+
+.p-background--company{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  // background: linear-gradient(to transparent,50%, $white);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0),10%,rgba(255, 255, 255, 0),20%, $white);
+  // isolation: isolate;
+}
