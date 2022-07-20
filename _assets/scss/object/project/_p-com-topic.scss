@@ -145,7 +145,7 @@
 
 .p-com-topic__textbox{
   @include pc{
-    width: min(calc(851 / 1920 * 100vw), 85.1rem);
+    width: min(calc(820 / 1920 * 100vw), 82rem);
   }
 }
 
@@ -161,6 +161,7 @@
 
   @include pc{
     margin-top: inherit;
+    margin-right: 0;
     width: min(calc(60 / 1920 * 100vw) , 6rem);
     height: min(calc(60 / 1920 * 100vw) , 6rem);
   }

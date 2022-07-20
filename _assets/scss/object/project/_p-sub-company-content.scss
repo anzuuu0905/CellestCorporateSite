@@ -23,8 +23,10 @@
 }
 
 .p-sub-company-content:last-child .p-sub-company-content__year{
-  border-right: none;
-
+  border-right: calc(2 / 375 * 100vw) solid transparent;
+  @include pc{
+    border-right: min(calc(5 / 1920 * 100vw), 0.5rem) solid transparent;
+  }
 }
 
 .p-sub-company-content__year:after{
