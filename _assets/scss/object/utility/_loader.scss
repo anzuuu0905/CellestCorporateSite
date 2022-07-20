@@ -29,7 +29,7 @@
 #loader:after{
   // position: fixed;
   background-color: black;
-  background: url(../img/common/loader-pc.png);
+  // background: url(../img/common/loader-pc.png);
   position: absolute;
   content: "";
   top: 0;
@@ -49,5 +49,52 @@
 #loader.loaded {
   animation: fadeOut 1s forwards;
   // transition : all 0.5s;
+}
+
+#loader.loaded .loader__icon{
+  animation: fadeOut 1s forwards;
+  // display: none;
+  // transition : all 0.5s;
+}
+
+.loader__icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  // background-color: #03a9f4;
+  border-radius: 50%;
+  z-index: 11;
+  &:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    border: 0px solid white;
+    transform: translate(-50%, -50%);
+    animation: loading 1000ms ease-out forwards infinite;
+  }
+  
+}
+
+@keyframes loading {
+  0% {
+    border: 0px solid white;
+  }
+  
+  20% {
+    border: 8px solid white;
+    width: 0%;
+    height: 0%;
+  }
+  
+  100% {
+    border: 8px solid white;
+    width: 100%;
+    height: 100%;
+  }
 }
 

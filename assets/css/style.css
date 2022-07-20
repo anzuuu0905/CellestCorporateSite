@@ -3720,7 +3720,6 @@ input[type=radio]:checked + span::after {
 
 #loader:after {
   background-color: black;
-  background: url(../img/common/loader-pc.png);
   position: absolute;
   content: "";
   top: 0;
@@ -3739,6 +3738,66 @@ input[type=radio]:checked + span::after {
           animation: fadeOut 1s forwards;
 }
 
+#loader.loaded .loader__icon {
+  -webkit-animation: fadeOut 1s forwards;
+          animation: fadeOut 1s forwards;
+}
+
+.loader__icon {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 11;
+}
+.loader__icon:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  border: 0px solid white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: loading 1000ms ease-out forwards infinite;
+          animation: loading 1000ms ease-out forwards infinite;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    border: 0px solid white;
+  }
+  20% {
+    border: 8px solid white;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    border: 8px solid white;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes loading {
+  0% {
+    border: 0px solid white;
+  }
+  20% {
+    border: 8px solid white;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    border: 8px solid white;
+    width: 100%;
+    height: 100%;
+  }
+}
 .pagination {
   margin-top: 13.3333333333vw;
   width: 100%;

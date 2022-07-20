@@ -51,9 +51,17 @@
   ?>
     <!-- ローディング画面 -->
     <?php if(!is_page('contact')) : ?>
+      <!-- <div id="loader">
+      </div> -->
+      <!-- <div class="loader-wrapper"> -->
       <div id="loader">
+        <div class="loader__icon"></div>
       </div>
-    <?php endif; ?>
+      <!-- </div> -->
+</div>
+    
+    
+      <?php endif; ?>
 
   <header class="p-header" id="loader-header">
   <!-- ローディング画面 -->
