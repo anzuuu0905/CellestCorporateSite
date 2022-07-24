@@ -154,35 +154,34 @@ ScrollTrigger.create({
   trigger: ".p-sub-about__contents",
   // markers: true,
   start: "top bottom",
-  end: "bottom 90%",
+  end: "bottom 10%",
   toggleClass: { targets: ".p-sub-about-content__list", className: "is-active" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content1",
   // markers: true,
-  start: "top 90%",
-  end: "bottom 90%",
+  start: "top 50%",
+  end: "bottom 60%",
   toggleClass: { targets: ".js-sub-about-content__title1", className: "current" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content2",
   // markers: true,
-  start: "top 90%",
-  end: "bottom 90%",
+  start: "top 60%",
+  end: "bottom 70%",
   toggleClass: { targets: ".js-sub-about-content__title2", className: "current" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content3",
   // markers: true,
-  start: "top 90%",
-  end: "bottom 90%",
+  start: "top 70%",
+  end: "top 10%",
   toggleClass: { targets: ".js-sub-about-content__title3", className: "current" },
 });
 
 // ローディング画面の読み込み
 window.onload = ()=>{
   const loader = document.getElementById('loader');
-  console.log(loader);
   if(loader !== null){
     loader.classList.add('loaded');
   }

@@ -57,7 +57,6 @@
       <div id="loader">
         <div class="loader__icon"></div>
       </div>
-      <!-- </div> -->
 </div>
     
     

@@ -20,41 +20,31 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  // position: relative;
   background: initial;
   z-index: 11;
-  // z-index: $z-index-top - 1;
 }
 
 #loader:after{
-  // position: fixed;
-  background-color: black;
-  // background: url(../img/common/loader-pc.png);
+  background-color: white;
   position: absolute;
   content: "";
   top: 0;
   left: 0;
-  // transform: translate(-50%, -50%);
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   vertical-align: middle;
   width: 100vw;
   height: 100vh;
-  // display: block;
   z-index: 10;
-  // z-index: $z-index-top - 1;
 }
 
 #loader.loaded {
   animation: fadeOut 1s forwards;
-  // transition : all 0.5s;
 }
 
 #loader.loaded .loader__icon{
   animation: fadeOut 1s forwards;
-  // display: none;
-  // transition : all 0.5s;
 }
 
 .loader__icon {
@@ -64,7 +54,7 @@
   transform: translate(-50%, -50%);
   width: 50px;
   height: 50px;
-  // background-color: #03a9f4;
+  background-color: black;
   border-radius: 50%;
   z-index: 11;
   &:after {
@@ -76,8 +66,7 @@
     border: 0px solid white;
     transform: translate(-50%, -50%);
     animation: loading 1000ms ease-out forwards infinite;
-  }
-  
+  }  
 }
 
 @keyframes loading {
@@ -97,4 +86,3 @@
     height: 100%;
   }
 }
-
