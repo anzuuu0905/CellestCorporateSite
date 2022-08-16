@@ -3,7 +3,8 @@
 
 .c-btn{
   display: inline-block;
-  // position: relative;
+  position: relative;
+  z-index: $z-index-hover;
 }
 
 .c-btn a {
@@ -38,6 +39,8 @@
 
 .c-btn-circle{
   display: block;
+  z-index: $z-index-hover;
+  position: relative;
 
 }
 .c-btn-circle .c-btn-circle__item {

@@ -174,3 +174,17 @@ add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
 function wpcf7_autop_return_false() {
   return false;
 } 
+
+function is_my_mobile()
+{
+ $size = $_SESSION[windowSize];
+ if($size == 0)
+  {
+  if(is_mobile()){return 'xs';}
+  elseif(wp_is_mobile()){return 'sm';}
+  else{return 'pc';}
+  }
+ elseif($size <= 767){return 'xs';}
+ elseif(768 <= $size && $size <= 991){return 'sm';}
+ else{return 'pc';}
+}

@@ -46,6 +46,11 @@
     }
 }
 
+.p-top-service__item{
+  position: relative;
+  z-index: $z-index-hover;
+
+}
 
 .p-top-service__item:nth-child(n+2){
   margin-top: 4rem;
@@ -63,11 +68,16 @@
   display: block;
   overflow: hidden;
   border-radius: 4.8rem;
+  transition:		all 0.2s ease;
   @include pc{
     max-width: 59.2rem;
   }
 }
 
+.p-top-service__img img{
+  border-radius: 48px;
+
+}
 
 
 .p-top-service__img:before{
@@ -82,22 +92,29 @@
   transform: scale(1.1);/* 拡大 */
   transition-duration: 0.3s;
   filter: brightness(30%);
-  // opacity: 0.6;
+  border-radius: 48px;
+  will-change: transform;
+  z-index:1;
+  position: relative;
 }
 
 .p-top-service__img .p-top-service__mask {
 	width:			100%;
 	height:			100%;
+  border-radius: 48px;
+  will-change: transform;
 	position:		absolute;	/* 絶対位置指定 */
-	top:			0;
+  z-index:1;
+  top:			0;
 	left:			0;
 	opacity:		0;	/* マスクを表示しない */
 	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
-	transition:		all 0.2s ease;
+  transition:		all 0.2s ease;
 }
 
 .p-top-service__img:hover .p-top-service__mask {
 	opacity:		1;	/* マスクを表示する */
+  transition:		all 0.2s ease;
 }
 
 .p-top-service__img .p-top-service__caption {

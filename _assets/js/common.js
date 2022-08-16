@@ -260,3 +260,19 @@ ScrollTrigger.create({
   end: "bottom 90%",
   toggleClass: { targets: ".js-sub-about-content__title3", className: "current" },
 });
+
+// ローディング画面の読み込み
+window.onload = ()=>{
+  const loader = document.getElementById('loader');
+  loader.classList.add('loaded');
+  const header = document.getElementById('loader-header');
+  loader-header.classList.add('loaded');
+}
+
+/* GSAP警告メッセージを非表示にする
+ * 参考サイト：https://onedarling.site/programming/javascript/gsap-error/
+ */
+
+gsap.config({
+    nullTargetWarn: false,
+  });

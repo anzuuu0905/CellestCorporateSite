@@ -6,6 +6,7 @@
   height: 88.5vw;
   width: 100vw;
   position: relative;
+  // z-index: -10;
   @include pc{
     height: 100vh;
   }

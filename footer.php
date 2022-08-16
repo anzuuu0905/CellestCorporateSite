@@ -39,7 +39,7 @@
   </div>
   </a>
 </section>
-
+</div>
 <footer class="l-footer p-footer">
   <div class="p-footer__inner l-inner">
     <div class="p-footer__box ">

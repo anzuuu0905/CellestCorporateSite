@@ -8,8 +8,23 @@
 	width: 100%;
 	backdrop-filter: blur(15px);
 	z-index: 1000;
+	opacity: 0;
 }
-
+.p-header.loaded{
+	opacity: 1;
+}
+.p-header.loaded {
+  animation: fadeIn 5s forwards;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  
+  to {
+      opacity: 1;
+  }
+}
 // .p-header__box,
 // .p-header__sp
 // {
@@ -31,7 +46,7 @@
 	padding-bottom: 2.4rem;
 	width: 100%;
 	position: relative;
-	z-index: 10000;
+	z-index: $z-index-top;
 }
 
 .p-header__logo{
