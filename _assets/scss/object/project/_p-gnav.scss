@@ -2,7 +2,10 @@
 @use '../../setting/setting' as *;
 
 .p-gnav{
-  width: 100%;
+  // width: 100%;
+  width: calc(100% - 19rem);
+  max-width: 148.9rem;
+  width: min(77.55vw, calc(1489 / 1920 * 100vw));
   display: flex;
   justify-content: end;
 }
@@ -10,10 +13,16 @@
 .p-gnav__menu{
   // padding-top: 1rem;
   // padding-bottom: 1rem;
-  width: 124rem;
-  max-width: calc(100vw - 19rem);
-  width: min(75vw, calc(1489 / 1920 * 100vw));
-  max-width: 160rem;
+  // width: 124rem;
+
+
+  // max-width: calc(100vw - 19rem);
+  // width: min(75vw, calc(1489 / 1920 * 100vw));
+  
+  // max-width: 148.9rem;
+  // width: min(77.55vw, calc(1489 / 1920 * 100vw));
+  
+  // max-width: 140rem;
   // @include min(1920){
   //     width: 150rem;
   // }
@@ -22,18 +31,18 @@
 .p-gnav__items{
   display: flex;
   justify-content: end;
+  // width: calc(100% - 19rem);
   width: 100%;
-
 }
 
 .p-gnav__item{
   // font-size: 2rem;
-  font-size: calc(20 / 1920 * 100vw);
+  font-size: min(calc(20 / 1920 * 100vw), 2rem);
   // font-size: clamp(1rem, 1vw, 2rem); 
   // padding: 3.6rem 2.6vw 4.4rem 2.6vw ;
   // padding: 1.2rem clamp(1rem, 2.6vw, 5rem) 2rem clamp(1rem, 2.6vw, 5rem);
-  padding: 1.2rem clamp(1rem, calc(50 / 1920 * 100vw), 5rem) 2rem clamp(1rem, calc(50 / 1920 * 100vw), 5rem);
-
+  padding: 1.2rem clamp(0.2rem, calc(50 / 1920 * 100vw), 5rem) 2rem clamp(0.5rem, calc(50 / 1920 * 100vw), 5rem);
+  // padding: min(calc(50 / 1920 * 100vw), 5rem);
   text-align: center;
   color:$black;
   text-transform: uppercase;
@@ -42,6 +51,10 @@
 
   // }
 }
+.p-gnav__item:last-child{
+  padding-right: 0;
+}
+
 
 .p-gnav__item a{
   position: relative;

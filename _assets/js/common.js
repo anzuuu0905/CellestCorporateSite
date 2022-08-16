@@ -143,88 +143,6 @@ $('.p-slick').slick({
 });
 
 
-const cursor = $(".cursor")
-const follower = $(".follower");
-let cWidth = 8; //カーソルの大きさ
-let fWidth = 40; //フォロワーの大きさ
-let delay = 10; //数字を大きくするとフォロワーがより遅れて来る
-let mouseX = 0; //マウスのX座標
-let mouseY = 0; //マウスのY座標
-let posX = 0; //フォロワーのX座標
-let posY = 0; //フォロワーのX座標
-
-//カーソルの遅延アニメーション
-//ほんの少ーーーしだけ遅延させる 0.001秒
-TweenMax.to({}, 0.005, {
-  repeat: -1,
-  onRepeat: function() {
-    posX += (mouseX - posX) / delay;
-    posY += (mouseY - posY) / delay;
-    
-    TweenMax.set(follower, {
-        css: {    
-          left: posX - (fWidth / 2),
-          top: posY - (fWidth / 2)
-        }
-    });
-    
-    TweenMax.set(cursor, {
-        css: {    
-          left: mouseX - (cWidth / 2),
-          top: mouseY - (cWidth / 2)
-        }
-    });
-  }
-});
-
-//マウス座標を取得
-$(document).on("mousemove", function(e) {
-    mouseX = e.pageX;
-    mouseY = e.pageY;
-});
-
-$("a").on({
-  "mouseenter": function() {
-    cursor.addClass("is-active");
-    follower.addClass("is-active");
-  },
-  "mouseleave": function() {
-    cursor.removeClass("is-active");
-    follower.removeClass("is-active");
-  }
-});
-
-$("input").on({
-  "mouseenter": function() {
-    cursor.addClass("is-active");
-    follower.addClass("is-active");
-  },
-  "mouseleave": function() {
-    cursor.removeClass("is-active");
-    follower.removeClass("is-active");
-  }
-});
-
-const stalker = document.getElementById('mouse-stalker');
-let hovFlag = false;
-
-document.addEventListener('mousemove', function (e) {
-    stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-});
-
-const linkElem = document.querySelectorAll('a:not(.no_stick_)');
-for (let i = 0; i < linkElem.length; i++) {
-    linkElem[i].addEventListener('mouseover', function (e) {
-        hovFlag = true;
-        stalker.classList.add('is_active');
-    });
-    linkElem[i].addEventListener('mouseout', function (e) {
-        hovFlag = false;
-        stalker.classList.remove('is_active');
-    });
-}
-
-
 
 
 
@@ -236,37 +154,39 @@ ScrollTrigger.create({
   trigger: ".p-sub-about__contents",
   // markers: true,
   start: "top bottom",
-  end: "bottom 90%",
+  end: "bottom 10%",
   toggleClass: { targets: ".p-sub-about-content__list", className: "is-active" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content1",
   // markers: true,
-  start: "top 90%",
-  end: "bottom 90%",
+  start: "top 50%",
+  end: "bottom 60%",
   toggleClass: { targets: ".js-sub-about-content__title1", className: "current" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content2",
   // markers: true,
-  start: "top 90%",
-  end: "bottom 90%",
+  start: "top 60%",
+  end: "bottom 70%",
   toggleClass: { targets: ".js-sub-about-content__title2", className: "current" },
 });
 ScrollTrigger.create({
   trigger: ".js-sub-about-content3",
   // markers: true,
-  start: "top 90%",
-  end: "bottom 90%",
+  start: "top 70%",
+  end: "top 10%",
   toggleClass: { targets: ".js-sub-about-content__title3", className: "current" },
 });
 
 // ローディング画面の読み込み
 window.onload = ()=>{
   const loader = document.getElementById('loader');
-  loader.classList.add('loaded');
+  if(loader !== null){
+    loader.classList.add('loaded');
+  }
   const header = document.getElementById('loader-header');
-  loader-header.classList.add('loaded');
+  header.classList.add('loaded');
 }
 
 /* GSAP警告メッセージを非表示にする
@@ -276,3 +196,71 @@ window.onload = ()=>{
 gsap.config({
     nullTargetWarn: false,
   });
+
+// マウスストーカー
+// 一番最後に実行する
+// スマホの場合は除外する
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+
+  const cursor = $(".cursor")
+  const follower = $(".follower");
+  let cWidth = 8; //カーソルの大きさ
+  let fWidth = 40; //フォロワーの大きさ
+  let delay = 5; //数字を大きくするとフォロワーがより遅れて来る
+  let mouseX = 0; //マウスのX座標
+  let mouseY = 0; //マウスのY座標
+  let posX = 0; //フォロワーのX座標
+  let posY = 0; //フォロワーのX座標
+  
+  //カーソルの遅延アニメーション
+  //ほんの少ーーーしだけ遅延させる 0.001秒
+  TweenMax.to({}, 0.01, {
+    repeat: -1,
+    onRepeat: function() {
+      posX += (mouseX - posX) / delay;
+      posY += (mouseY - posY) / delay;
+      
+      TweenMax.set(follower, {
+          css: {    
+            left: posX - (fWidth / 2),
+            top: posY - (fWidth / 2)
+          }
+      });
+      
+      TweenMax.set(cursor, {
+          css: {    
+            left: mouseX - (cWidth / 2),
+            top: mouseY - (cWidth / 2)
+          }
+      });
+    }
+  });
+  
+  //マウス座標を取得
+  $(document).on("mousemove", function(e) {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+  });
+  
+  $("a").on({
+    "mouseenter": function() {
+      cursor.addClass("is-active");
+      follower.addClass("is-active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("is-active");
+      follower.removeClass("is-active");
+    }
+  });
+  
+  $("input").on({
+    "mouseenter": function() {
+      cursor.addClass("is-active");
+      follower.addClass("is-active");
+    },
+    "mouseleave": function() {
+      cursor.removeClass("is-active");
+      follower.removeClass("is-active");
+    }
+  });
+  }

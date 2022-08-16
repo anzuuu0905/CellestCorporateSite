@@ -46,16 +46,12 @@
         <div class="p-footer__logo">
           <div class="p-footer__logobox">
             <a href="<?php echo $home ?>">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-white.png" alt="" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-white.png" alt="Cellestの企業ロゴ" loading="lazy">
             </a>
             <small>&copy; Cellest,Inc.All rights reserved.</small>
           </div>
         </div>
 
-        <?php 
-          global $home;
-          global $policy;
-        ?>
         <div class="p-footer__linkbox">
           <div class="p-footer__nav p-fnav">
             <nav class="p-fnav__menu">
@@ -71,7 +67,7 @@
             </nav>
           </div>
           <div class="p-footer__policy">
-            <a href="<?php echo $policy ?>">Pryvacy Policy</a>
+            <a href="<?php echo $policy ?>">Privacy Policy</a>
             
           </div>
         </div>
@@ -81,6 +77,5 @@
 <!-- <div class="cursor"></div> -->
 <div class="follower"></div>
 <?php wp_footer(); ?>
-
 </body>
 </html>

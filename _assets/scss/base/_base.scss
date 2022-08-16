@@ -8,15 +8,17 @@ input,
 textarea,
 select,
 button {
-  font-family: 'Noto Sans JP', sans-serif;
+  // font-family: 'Noto Sans JP', sans-serif;
+  font-family: noto-sans-cjk-jp, sans-serif;
+  // font-family: sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
 
 
 html {
-  color: #000;
-  background: #fff;
+  color: $black;
+  background: $white;
   font-size: 16px;
   font-size: 62.5%;
   line-height: 1.6;
@@ -36,7 +38,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: $white;
   margin: 0;
   font-size: 1.6rem ;
   position: relative;
@@ -64,7 +66,7 @@ p {
 }
 
 a {
-  color: #000;
+  color: $black;
   text-decoration: none;
   transition: $transition01;
   @include pc {
@@ -170,77 +172,77 @@ dl,dt,dd {
 }
 
 //独自font-family読み込み
-@font-face {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../font/NotoSans-Regular.ttf");
-}
+// @font-face {
+//   font-family: "Noto Sans";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("../font/NotoSans-Regular.ttf");
+// }
 
-@font-face {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../font/NotoSans-Medium.ttf");
-}
+// @font-face {
+//   font-family: "Noto Sans";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-display: swap;
+//   src: url("../font/NotoSans-Medium.ttf");
+// }
 
-@font-face {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../font/NotoSans-Bold.ttf");
-}
+// @font-face {
+//   font-family: "Noto Sans";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-display: swap;
+//   src: url("../font/NotoSans-Bold.ttf");
+// }
 
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../font/NotoSansJP-Regular.otf");
-}
+// @font-face {
+//   font-family: "Noto Sans JP";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("../font/NotoSansJP-Regular.otf");
+// }
 
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../font/NotoSansJP-Medium.otf");
-}
+// @font-face {
+//   font-family: "Noto Sans JP";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-display: swap;
+//   src: url("../font/NotoSansJP-Medium.otf");
+// }
 
-@font-face {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../font/NotoSansJP-Bold.otf");
-}
+// @font-face {
+//   font-family: "Noto Sans JP";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-display: swap;
+//   src: url("../font/NotoSansJP-Bold.otf");
+// }
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../font/Roboto-Regular.ttf");
-}
+// @font-face {
+//   font-family: "Roboto";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-display: swap;
+//   src: url("../font/Roboto-Regular.ttf");
+// }
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("../font/Roboto-Medium.ttf");
-}
+// @font-face {
+//   font-family: "Roboto";
+//   font-style: normal;
+//   font-weight: 500;
+//   font-display: swap;
+//   src: url("../font/Roboto-Medium.ttf");
+// }
 
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../font/Roboto-Bold.ttf");
-}
+// @font-face {
+//   font-family: "Roboto";
+//   font-style: normal;
+//   font-weight: 700;
+//   font-display: swap;
+//   src: url("../font/Roboto-Bold.ttf");
+// }
 
 //SVGスプライトリセットCSS
 .c-svg {

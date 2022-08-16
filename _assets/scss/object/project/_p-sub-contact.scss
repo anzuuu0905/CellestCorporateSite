@@ -9,10 +9,20 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: calc(40 / 375 * 100vw);
   @include pc{
-    width: min(calc(828 / 1920 * 100vw), 82.8rem);
+    max-width:82.8rem;
+    margin-top: min(calc(117 / 1920 * 100vw), 17rem);
+    // width: min(calc(828 / 1920 * 100vw), 82.8rem);
   }
 }
+
+// .p-sub-contact__inner{
+//   margin-top: calc(360 / 375 * 100vw);
+//   @include pc{
+//     margin-top: 0;
+//   }
+// }
 
 .p-sub-contact__title{
   text-align: center;

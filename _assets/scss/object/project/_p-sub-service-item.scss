@@ -15,7 +15,7 @@
 .p-sub-service-item:nth-child(1){
   margin-top: calc(63 / 375 * 100vw);
   @include pc{
-    margin-top: min(calc(153 / 1920 * 100vw), 15.3rem);
+    margin-top: min(calc(10 / 1920 * 100vw), 1rem);
   }
 
 }
@@ -51,7 +51,7 @@
 }
 
 .p-sub-service-item__title{
-  font-size: calc(18 / 375 * 100vw);
+  font-size: calc(13 / 375 * 100vw);
   margin-top: calc(10 /375 * 100vw);
   font-weight: 700;
   color: $gray4;
@@ -78,6 +78,7 @@
 
 .p-sub-service-item__text{
   margin-top: calc(28 / 375 * 100vw);
+  text-align: left;
   @include pc{
     margin-top: min(calc(50 / 1920 * 100vw), 5rem);
   }
@@ -93,7 +94,9 @@
 
 .p-sub-service-item__iconbox{
   margin-top: calc(35 / 375 * 100vw);
+  margin-right: auto;
   display: flex;
+  text-align: left;
   @include pc{
     margin-top: min(calc(108 / 1920 * 100vw), 10.8rem);
   }
@@ -108,25 +111,35 @@
   }
 }
 
-.p-sub-service-item__iconbox a:nth-child(n+2){
-  margin-left: calc(9 / 375 * 100vw);
+// .p-sub-service-item__iconbox a:nth-of-type(1){
+  // margin-left: calc(9 / 375 * 100vw);
+  // @include pc{
+    // margin-left: min(calc(27 / 1920 * 100vw), 2.7rem);
+    // margin-left: auto;
+  // }
+// }
+
+.p-sub-service-item__iconbox a{
+  margin-right: calc(9 / 375 * 100vw);
   @include pc{
-    margin-left: min(calc(27 / 1920 * 100vw), 2.7rem);
+    margin-right: min(calc(27 / 1920 * 100vw), 2.7rem);
   }
 }
 
-.p-sub-service-item__textbox:nth-child(1){
+.p-sub-service-item:nth-of-type(1) .p-sub-service-item__textbox{
   @include pc{
-    width: min(calc(733 / 1920 * 100vw), 73.3rem);
-    margin-left: min(calc(398 /1920 * 100vw), 39.8rem);
+    width: min(calc(739 / 1920 * 100vw), 73.9rem);
+    margin-left: auto;
+    margin-top: min(calc(138 / 1920 * 100vw),13.8rem);
+    // margin-left: min(calc(398 /1920 * 100vw), 39.8rem);
   }
 }
-
-.p-sub-service-item .p-sub-service-item__textbox:nth-child(2){
+.p-sub-service-item:nth-of-type(2) .p-sub-service-item__textbox{
   @include pc{
-    width: min(calc(712 / 1920 * 100vw), 71.9rem);
-    margin-left: min(calc(260 /1920 * 100vw), 26rem);
+    width: min(calc(739 / 1920 * 100vw), 71.9rem);
+    // margin-left: min(calc(260 /1920 * 100vw), 26rem);
     margin-top:  min(calc(273 /1920 * 100vw), 27.3rem);
+    margin-left: auto;
   }
 }
 

@@ -5,10 +5,11 @@
   font-family: futura-pt, sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
-color: $gray;
+  color: $gray;
   // letter-spacing: -0.08em;
   position: absolute;
-  left: 11.5rem;
+  padding-left: $padding-pc;
+  left: 0;
   bottom: 230px;
   transform: rotate(90deg);
   text-transform: uppercase;
@@ -60,16 +61,16 @@ color: $gray;
 @keyframes pathmove{
   0%{
     width:0;
-    left:50px;
+    left:80px;
     opacity: 0;
   }
   30%{
-    width:200px;
+    width:100px;
     opacity: 1;
   }
   100%{
     width:0;
-    left:311px;
+    left:150px;
     opacity: 0;
   }
 }

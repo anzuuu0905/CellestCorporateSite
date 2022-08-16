@@ -4,6 +4,6 @@
 .l-top-service{
   margin-top: 10.5rem;
   @include pc{
-    margin-top: 23rem;
+    margin-top: min(calc(230 / 1920 * 100vw), 23rem);
   }
 }

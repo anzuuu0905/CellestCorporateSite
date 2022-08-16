@@ -5,11 +5,13 @@
 
 // .cursor,
 .follower {
+  @include pc{
   border-radius: 50%;
   position: absolute;
   top: 0;
   left: 0; 
   pointer-events: none;
+  }
 }
 
 // .cursor {
@@ -20,12 +22,13 @@
 // }
 
 .follower {
+  @include pc{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
-  background-color: rgba($black, .3);
+  background-color: rgba($gray, .6);
   z-index: 1000;
   transition: transform ease .1s;
   text-align: center;
@@ -39,5 +42,6 @@
     background: #FFF;
     transform: scale(3);
     mix-blend-mode:difference;
+  }
   }
 }

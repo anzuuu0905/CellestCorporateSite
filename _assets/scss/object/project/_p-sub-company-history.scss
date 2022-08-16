@@ -2,7 +2,9 @@
 @use '../../setting/setting' as *;
 
 .p-sub-company-history{
-  background: $gray2;
+  // background: transparent;
+  // background: rgba(240, 240, 240, 0.5);
+  background-image: url(../img/common/background-img.png);
   border-radius: 4.8rem;
   padding: calc(90 / 375 * 100vw) 0;
   @include pc{
@@ -17,6 +19,14 @@
   }
 }
 
+.p-sub-company-history__contents-wrapper{
+  width: 100%;
+  @include pc{
+    max-width: 113.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .p-sub-company-history__title{
   text-align: center;
 }
@@ -33,7 +43,7 @@
   width: 100%;
   @include pc{
     margin-top: min(calc(120 / 1920 * 100vw), 12rem);
-    max-width: 111.2rem;
+    // max-width: 116rem;
   }
   table{
     width: 100%;

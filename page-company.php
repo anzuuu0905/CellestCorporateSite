@@ -1,12 +1,13 @@
 <?php get_header(); ?>
-<div class="p-mv__titlebox">
-  <h1 class="p-mv__sub-title">
-    Company
-  </h1> 
-  <p class="p-mv__jp-title">
-  会社概要
-  </p>
-</div>
+    <div class="p-mv__titlebox">
+      <h1 class="p-mv__sub-title">
+        Company
+      </h1> 
+      <p class="p-mv__jp-title">
+      会社概要
+      </p>
+    </div>
+  </div>
 </section>
 
 <!-- Company -->
@@ -64,130 +65,132 @@
       History
       </h2>
       <div class="p-sub-company-history__contents l-inner">
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2017</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">ライブコマース開始</p>
+        <div class="p-sub-company-history__contents-wrapper">
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2017</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">ライブコマース開始</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2019.01</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">セレクトショップ「ぞうとねこ」開始</p>
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-pc.png" width="242px" height="242px"
-                        media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-sp.png" alt="" width="73px" height="73px"/>
-              </picture>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2019.01</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">セレクトショップ「ぞうとねこ」開始</p>
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-pc.png" width="242px" height="242px"
+                          media="(min-width: 768px)">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history1-sp.png" alt="セレクトショップ「ぞうとねこ」" width="73px" height="73px"/>
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2019.05</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">  起業コンサルティング事業開始</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2019.05</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">  起業コンサルティング事業開始</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2019.07</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text"> 
-              株式会社Cellest設立</p>
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-pc.png" width="299px" height="58px"
-                        media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-sp.png" alt=""  width="90px" height="17px" />
-              </picture>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2019.07</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text"> 
+                株式会社Cellest設立</p>
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-pc.png" width="299px" height="58px"
+                          media="(min-width: 768px)">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history2-sp.png" alt="株式会社Cellest"  width="90px" height="17px" />
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2020.07</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text"> 
-                アパレルブランド「ZOUTONEKO」開始</p>
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-pc.png" width="403px" height="106px"
-                        media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-sp.png" alt="" width="130px" height="32px" />
-              </picture>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2020.07</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text"> 
+                  アパレルブランド「ZOUTONEKO」開始</p>
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-pc.png" width="423px" height="106px"
+                          media="(min-width: 768px)">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history3-sp.png" alt="アパレルブランド「ZOUTONEKO」" width="130px" height="32px" />
+                </picture>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2020.07</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text"> 
-                アミューズメントバー<br>
-                「B-LUCK BERRY」開店</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2020.07</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text"> 
+                  アミューズメントバー<br class="u-hidden-pc">
+                  「B-LUCK BERRY」開店</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2020.10</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">アパレルブランド「COLAR」開始</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2020.10</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">アパレルブランド「COLAR」開始</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2021.02</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">
-                アパレルブランド<br>
-                「CHÉNE DE MAISON」買収</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2021.02</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">
+                  アパレルブランド<br class="u-hidden-pc">
+                  「CHÉNE DE MAISON」買収</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2021.04</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">
-                WEBデザイン事業開始</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2021.04</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">
+                  WEBデザイン事業開始</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2021.08</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">
-              French wine bar「UN」開店</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2021.08</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">
+                French wine bar「UN」開店</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2021.08</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">
-              貸切VIPルームBar「Eyeless」開店</p>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2021.08</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">
+                貸切VIPルームBar「Eyeless」開店</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="p-sub-company-history__content p-sub-company-content">
-          <div class="p-sub-company-content__year">2022.05</div>
-          <div class="p-sub-company-content__wrapper">
-            <div class="p-sub-company-content__box">
-              <p class="p-sub-company-content__text">
-                ライブコマースエージェント事務所<br>
-                「セレスト」</p>
-              <picture>
-                <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-pc.png" width="305px" height="216px"
-                        media="(min-width: 768px)">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-sp.png" alt=""  width="92px" height="65px"/>
-              </picture>
+          <div class="p-sub-company-history__content p-sub-company-content">
+            <div class="p-sub-company-content__year">2022.05</div>
+            <div class="p-sub-company-content__wrapper">
+              <div class="p-sub-company-content__box">
+                <p class="p-sub-company-content__text">
+                  ライブコマースエージェント事務所<br class="u-hidden-pc">
+                  「セレスト」</p>
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-pc.png" width="305px" height="216px"
+                          media="(min-width: 768px)">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/company-history4-sp.png" alt="ライブコマースエージェント事務所「セレスト」"  width="92px" height="65px"/>
+                </picture>
+              </div>
             </div>
           </div>
         </div>

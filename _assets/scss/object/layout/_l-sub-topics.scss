@@ -1,0 +1,9 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.l-sub-topics{
+  margin-top: calc(112 /375 * 100vw);
+  @include pc{
+    margin-top: min(calc(230 /1920 * 100vw), 23rem);
+  }
+}

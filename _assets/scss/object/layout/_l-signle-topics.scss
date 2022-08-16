@@ -1,0 +1,9 @@
+@use '../../mixin/mixin' as *;
+@use '../../setting/setting' as *;
+
+.l-signle-topics{
+  margin-top: 11.2rem;
+  @include pc{
+    margin-top: min(calc(145 / 1920 * 100vw),14.5rem);
+  }
+}

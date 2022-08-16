@@ -1,13 +1,25 @@
 <?php get_header(); ?>
 
-  <div class="p-mv__titlebox">
-    <h1 class="p-mv__top-title">
-      CREATING<br>
-      THE ENTERTAINMENT<br>
-      OF NEXT GENERATION 
-    </h1>
+    <div class="p-mv__titlebox">
+      <h1 class="p-mv__top-title">
+        CREATING<br>
+        THE ENTERTAINMENT<br>
+        OF NEXT GENERATION 
+      </h1>
+    </div>
   </div>
 </section>
+
+<?php
+    $home = esc_url(home_url('/'));
+    $about = esc_url(home_url('/about/'));
+    $service = esc_url(home_url('/service/'));
+    $company = esc_url(home_url('/company/'));
+    $topics = esc_url(home_url('/topics/'));
+    $career = esc_url(home_url('/career/'));
+    $contact = esc_url(home_url('/contact/'));    
+    $policy = esc_url(home_url('/policy/'));    
+  ?>
 
 <!-- ライブコマース -->
 <section class="l-top-live p-top-live">
@@ -20,7 +32,7 @@
       <picture>
         <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/live-commerce-pc.png"
                 media="(min-width: 768px)">
-        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/live-commerce-sp.png" alt="" />
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/live-commerce-sp.png" alt="ライブコマースのインフラ化の実現" />
       </picture>
     </div>
     <div class="p-top-live__text">
@@ -33,7 +45,7 @@
 
 <!-- About us -->
 <section class="l-top-about p-top-about">
-  <div class="l-inner">
+  <div class="p-top-about__inner l-inner">
     <div class="p-top-about__wrapper">
       <div class="p-top-about__textwrapper">
         <h2 class="p-top-about__title c-common-title">
@@ -59,7 +71,7 @@
         <picture>
           <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/about-pc.png"
                   media="(min-width: 768px)">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="" />
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/about-sp.png" alt="About Us" />
         </picture>
       </div>
       <div class="p-top-about__text u-hidden-pc">
@@ -83,16 +95,16 @@
     </h2>
     <div class="p-top-service__items">
       <div class="p-top-service__item">
-        <a href="" class="p-top-service__img">
+        <a href="<?php echo $service ?>/#live-commerce" class="p-top-service__img">
         <!-- <div class="p-top-service__img"> -->
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-pc.png"
                     media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="" />
-          </picture>
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service1-sp.png" alt="ライブコマース販売事業" />
+          <!-- </picture> -->
           <div class="p-top-service__mask">
-          <div class="p-top-service__caption">View Details</div>
-        </div>
+            <div class="p-top-service__caption">View Details</div>
+          </div>
         </a>
         <!-- </div> -->
         <h3 class="p-top-service__subtitle">
@@ -100,12 +112,12 @@
         </h3>
       </div>
       <div class="p-top-service__item">
-        <a href="" class="p-top-service__img">
+        <a href="<?php echo $service ?>/#live-agent" class="p-top-service__img">
         <!-- <div class="p-top-service__img"> -->
           <picture>
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-pc.png"
                     media="(min-width: 768px)">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-sp.png" alt="" />
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/service2-sp.png" alt="ライブコマースエージェント事務所" />
           </picture>
         <!-- </div> -->
         <div class="p-top-service__mask">
@@ -119,16 +131,16 @@
     </div>
     <!-- ボタン -->
     <div class="p-top-service__btn c-btn">
-      <a href="<?php echo $about ?>">VIEW MORE</a>
+      <a href="<?php echo $service ?>">VIEW MORE</a>
     </div>
   </div>
 </section>
 
 
 <!-- TOPICS -->
-<section class="l-top-topics p-top-topics">
+<section class="l-top-topics p-com-topics p-top-topics">
   <div class="l-inner">
-    <h2 class="p-top-topics__title c-common-title">
+    <h2 class="p-com-topics__title c-common-title">
     Topics
     </h2>
     <div class="p-top-topics__items">
@@ -137,6 +149,9 @@
           array(
             'post_type'      => 'post',
             'posts_per_page' => 3,
+            'order'=>'DESC',
+            'orderby'=>'post_date'
+
           )
         );
       ?>
@@ -144,19 +159,26 @@
         <?php while ( $topics_query->have_posts() ) : ?>
           <?php $topics_query->the_post(); ?>
           <div>
-            <a href="<?php the_permalink(); ?>" class= "p-top-topics__item p-top-topic">
-              <div class="p-top-topic__img">
+            <a href="<?php the_permalink(); ?>" class= "p-com-topics__item p-com-topic">
+              <div class="p-com-topic__img">
                 <?php the_post_thumbnail('full'); ?>
               </div>
-              <div class="p-top-topic__wrapper">
-                <div class="p-top-topic__textbox">
-                  <time datetime="<?php the_time('c'); ?>" class="p-top-topic__date"><?php the_time('Y.m.d'); ?>
+              <div class="p-com-topic__wrapper">
+                <div class="p-com-topic__textbox">
+                  <time datetime="<?php the_time('c'); ?>" class="p-com-topic__date"><?php the_time('Y.m.d'); ?>
                   </time>
-                  <h3 class="p-top-topic__title"><?php the_title(); ?></h3>
-                  <div class="p-top-topic__text"><?php the_content(); ?></div>
+                  <h3 class="p-com-topic__title"><?php the_title(); ?></h3>
+                  <ul class="p-com-topic__categories">
+                    <?php 
+                        $categories = get_the_category();
+                        foreach( $categories as $category ){
+                          echo '<li class="p-com-topic__category">' .$category->name . '</li>';
+                        }
+                    ?>
+                  </ul>
                 </div>
                 <!-- ボタン -->
-                <div class="p-top-topic__btn c-btn-circle u-hidden-sp">
+                <div class="p-com-topic__btn c-btn-circle u-hidden-sp">
                   <div class="c-btn-circle__item"></div>
                 <!-- <a href="<?php //the_permalink(); ?>"></a> -->
                 </div>
@@ -169,7 +191,7 @@
     </div>
 
     <!-- ボタン -->
-    <div class="p-top-topics__btn c-btn">
+    <div class="p-com-topics__btn c-btn">
       <a href="<?php echo $topics ?>">VIEW MORE</a>
     </div>
 

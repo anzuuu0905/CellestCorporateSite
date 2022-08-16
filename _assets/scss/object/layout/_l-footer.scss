@@ -2,7 +2,7 @@
 @use '../../setting/setting' as *;
 
 .l-footer{
-  margin-top: calc(-64 / 375 * 100vw);
+  margin-top: calc(-54 / 375 * 100vw);
   @include pc{
     margin-top: max(calc(-161 / 1920 * 100vw), -16.1rem);
   }

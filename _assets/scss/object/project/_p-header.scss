@@ -14,10 +14,13 @@
 	opacity: 1;
 }
 .p-header.loaded {
-  animation: fadeIn 5s forwards;
+  animation: fadeIn .5s forwards;
 }
 @keyframes fadeIn {
-  from {
+  0% {
+		opacity: 0;
+}
+  80% {
       opacity: 0;
   }
   
@@ -42,8 +45,8 @@
 .p-header__sp{
 	display: flex;
 	justify-content: space-between;
-	padding-top: 2.4rem;
-	padding-bottom: 2.4rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	width: 100%;
 	position: relative;
 	z-index: $z-index-top;
@@ -56,8 +59,8 @@
 	display: flex;
 	align-items: center;
 	@include pc{
+		width: min(calc(190 / 1920 * 100vw), 19rem);
 		// width: 19rem;
-		width: calc(190 / 1920 * 100vw);
 	}
 }
 
@@ -100,7 +103,7 @@
 // }
 @keyframes animationZoom1 {
 	0% { transform:scale(0)} 
-	100% { transform:scale(135)} 
+	100% { transform:scale(500)} 
 }
 
 .p-header__spbox{

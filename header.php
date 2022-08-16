@@ -9,8 +9,31 @@
   <meta name="format-detection" content="telephone=no">
   <!-- fontawesomを使用する -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://use.typekit.net/bgn4fum.css"> -->
-  <link rel="stylesheet" href="https://use.typekit.net/pql8zrv.css">
+<!-- AdobeFont -->
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'ouf7vfy',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<!-- TEST START -->
+<!-- 
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'rqn8hln',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script> -->
+<!-- TEST END -->
+
   <?php wp_head(); ?>
 </head>
 
@@ -27,8 +50,17 @@
     $policy = esc_url(home_url('/policy/'));    
   ?>
     <!-- ローディング画面 -->
-    <div id="loader">
-  </div>
+    <?php if(!is_page('contact')) : ?>
+      <!-- <div id="loader">
+      </div> -->
+      <!-- <div class="loader-wrapper"> -->
+      <div id="loader">
+        <div class="loader__icon"></div>
+      </div>
+</div>
+    
+    
+      <?php endif; ?>
 
   <header class="p-header" id="loader-header">
   <!-- ローディング画面 -->
@@ -39,8 +71,15 @@
       <div class="p-header__box l-inner u-hidden-sp">
         <div class="p-header__logo">
           <a href="<?php echo $home ?>">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.png" alt="" loading="lazy">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-pc.png"
+                      media="(min-width: 768px)">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-sp.png" alt="Cellest企業ロゴ" />
+            </picture>
           </a>
+
+
+
         </div>
         <!-- PCのみ表示 -->
         <div class="p-header__nav p-gnav ">
@@ -63,7 +102,7 @@
         <div class="p-header__logo">
           <a href="<?php echo $home ?>">
             <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo.png"
-              alt="" loading="lazy">
+              alt="Cellest企業ロゴ">
           </a>
         </div>
         <div class="p-header__spbox">
@@ -82,7 +121,7 @@
           <div class="p-header__logo">
             <a href="<?php echo $home ?>">
               <img class="c-logo" src="<?php echo get_template_directory_uri() ?>/assets/img/common/logo-white.png"
-                alt="" loading="lazy">
+                alt="Cellest企業ロゴ">
             </a>
           </div>
           <nav class="p-drawer-menu__menu">
@@ -109,39 +148,54 @@
     </div>
 
   </header>
-  <div class="p-background">
+      <?php if(is_page('contact')) : ?>
+    <div id="loader-bg" class="p-background--contact">
+    <?php elseif(is_page('company')) : ?>
+    <div id="loader-bg" class="p-background--company">
+      <?php elseif(is_single('')) : ?>
+    <div>
+      <?php else: ?>
+    <div id="loader-bg" class="p-background">
+      <?php endif; ?>
+        <?php if(!is_single('')) : ?>
+      <section class="p-mv">
+        <div class="p-mv__inner l-inner">
+        <?php else: ?>
+          <section class="p-mv-single">
+            <div class="p-mv-single__inner l-inner">
+        <?php endif; ?>
+    
+        <?php if(!is_single('')) : ?>
+          <div class="ball__box">
+            <div class="ball__wrapper">
+              <div class="ball"></div>
+              <div class="ball"></div>
+              <div class="ball"></div>
+            </div>
+            <div class="ball__wrapper">
+              <div class="ball2 ball__circle"></div>
+              <div class="ball2"></div>
+              <div class="ball2 ball__circle"></div>
+              <div class="ball2"></div>
+            </div>
+            <svg>
+              <defs>
+                <filter id="filter">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
+                  <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
+                  <feComposite in="SourceGraphic" in2="filter" operator="atop" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
 
-    <section class="p-mv">
-      <div class="ball__box">
-        <div class="ball__wrapper">
-          <div class="ball"></div>
-          <div class="ball"></div>
-          <div class="ball"></div>
-        </div>
-        <div class="ball__wrapper">
-          <div class="ball2"></div>
-          <div class="ball2"></div>
-          <div class="ball2"></div>
-          <div class="ball2"></div>
-        </div>
-        <svg>
-          <defs>
-            <filter id="filter">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="18" result="blur" />
-              <!-- <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" /> -->
-              <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 28 -10" result="filter" />
-              <feComposite in="SourceGraphic" in2="filter" operator="atop" />
-            </filter>
-          </defs>
-        </svg>
-      </div>
-
-      <div class="p-mv__img">
-        <picture>
-          <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-pc.png"
-                  media="(min-width: 768px)">
-          <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="" />
-        </picture>
-      </div>
-
-      <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
+          <div class="p-mv__img">
+            <picture>
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-pc.png"
+                      media="(min-width: 768px)">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/common/mv-logo-sp.png" alt="Cellest企業ロゴ" />
+            </picture>
+          </div>
+          <div class="c-scroll u-hidden-sp"><span>scroll</span></div>
+      
+        <?php endif; ?>

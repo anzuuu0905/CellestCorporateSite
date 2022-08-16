@@ -27,19 +27,32 @@
 
 .p-footer__logo{
   @include pc{
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
   }
 }
 
 .p-footer__logo small{
   display: block;
   font-size: calc(9 / 375 * 100vw);
-  margin-top: calc(8 / 375 * 100vw);
+  margin-top: calc(4 / 375 * 100vw);
+  font-family: futura-pt, sans-serif;
+	font-weight: 600;
+  // letter-spacing: -0.08em;
+  padding-left: 0.7rem;
+	font-style: normal;
   @include pc{
     margin-top: min(calc(28 / 1920 * 100vw), 2.8rem);
     font-size: min(calc(15 / 1920 * 100vw), 1.5rem);
     text-align: center;
+  }
+}
+
+.p-footer__logobox{
+  display: inline-block;
+  @include pc{
+    margin-top: 1.6rem;
+    padding-top: clamp(1rem, calc(50 / 1920 * 100vw), 5rem);
   }
 }
 
@@ -52,7 +65,7 @@
 }
 
 .p-footer__nav{
-  margin-top: calc(20 / 375 * 100vw);
+  margin-top: calc(38 / 375 * 100vw);
   @include pc{
     margin-top: 0;
   }
@@ -60,10 +73,12 @@
 
 .p-footer__policy{
   font-size: 2rem;
-  margin-top: calc(20 / 375 * 100vw);
+  margin-top: calc(16 / 375 * 100vw);
   font-family: futura-pt, sans-serif;
   font-weight: 600;
+  font-style: normal;
   @include pc{
+    font-size: min(calc(20 / 1920 * 100vw), 2rem);
     padding: min(calc(50 / 1920 * 100vw), 5rem);
     margin-top: min(calc(10 / 1920 * 100vw), 1rem);
 

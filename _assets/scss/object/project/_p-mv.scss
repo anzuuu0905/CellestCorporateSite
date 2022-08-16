@@ -12,41 +12,53 @@
   }
   // z-index: -1;
 }
-
+.p-mv::after{
+  content:"";
+  z-index: -10;
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .p-mv__img{
   position: absolute;
   right: 1.6rem;
+  // right: 0;
   top: calc(88 / 375 * 100vw);
   @include pc{
     top: calc(175 / 1920 * 100vw);
-    right: calc(120 / 1920 * 100vw);
-    // left: ;
+    // right: calc(120 / 1920 * 100vw);
+    right: 2.4rem;
   }
 }
 
 .p-mv__img img{
-  width: 19.65rem;
-  height: 19.16rem;
+  width: calc(196.5 / 375 * 100vw);
+  height: calc(191.6 / 375 * 100vw);
   opacity: 0.3;
   @include pc{
-    width: calc(852 / 1920 * 100vw);
-    height: calc(830 / 1920 * 100vw);
+    width: min(calc(852 / 1920 * 100vw), 85.2rem);
+    height: min(calc(830 / 1920 * 100vw), 83rem);
   }
 
 }
 
 
 .p-mv__titlebox{
-  color: white;
   position: absolute;
+  color: white;
   mix-blend-mode: difference;
   z-index: 10;
   text-transform: uppercase;
   top: calc(129 / 375 * 100vw);
-  left: calc(36 / 375 * 100vw);
+  left: calc(20 / 375 * 100vw);
   @include pc{
     top: calc(367 / 1920 * 100vw);
-    left: calc(256 / 1920 * 100vw);
+    left: min(calc(143 / 1920 * 100vw), 14.3rem);
+    // left: 0;
+
   }
 }
 
@@ -56,7 +68,7 @@
   font-style: normal;
   font-size: calc(30 / 375 * 100vw);
   line-height: 1.2;
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.05em;
   @include pc{
     left: calc(256 / 1920 * 100vw);
     line-height: 1.15;
@@ -70,7 +82,7 @@
   font-style: normal;
   font-size: calc(42 / 375 * 100vw);
   padding-top: calc(17 / 375 * 100vw);
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.05em;
   position: relative;
   @include pc{
     font-size: min(calc(124 / 1920 * 100vw), 12.4rem);
@@ -84,10 +96,17 @@
   font-style: normal;
   font-size: calc(22 / 375 * 100vw);
   // padding-top: calc(17 / 375 * 100vw);
-  letter-spacing: -0.05em;
+  // letter-spacing: -0.05em;
   @include pc{
     font-size: min(calc(62 / 1920 * 100vw), 6.2rem);
     // padding-top: calc(93 / 1920 * 100vw);
   }
 
+}
+
+.p-mv__inner{
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100%;
 }

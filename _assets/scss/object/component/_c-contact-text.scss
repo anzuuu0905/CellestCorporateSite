@@ -13,11 +13,17 @@
 }
 
 .c-contact-text input{
-	height: 60px;
+	height: 6rem;
+	@include pc{
+		height: min(calc(72 / 1920 * 100vw), 7.2rem);
+	}
 }
 
 .c-contact-textarea textarea{
-	height: 93px;
+	height: calc(93 / 375 * 100vw);
+	@include pc{
+		height: min(calc(221 / 1920 * 100vw), 22.1rem);
+	}
 }
 // .c-contact-text span{
 	// height: 60px !important;
