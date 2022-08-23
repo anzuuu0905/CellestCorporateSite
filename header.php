@@ -90,7 +90,8 @@
               <li class="p-gnav__item"><a <?php if( is_page('service')): ?>class="current-page"<?php endif; ?> href="<?php echo $service ?>">Service</a></li>
               <li class="p-gnav__item"><a <?php if( is_page('company')): ?>class="current-page"<?php endif; ?> href="<?php echo $company ?>">Company</a></li>
               <li class="p-gnav__item"><a <?php if( is_home() ) : ?>class="current-page"<?php endif; ?> href="<?php echo $topics ?>">Topics</a></li>
-              <li class="p-gnav__item"><a href="<?php echo $career ?>">Career</a></li>
+              <!-- <li class="p-gnav__item"><a href="<?php echo $career ?>">Career</a></li> -->
+              <li class="p-gnav__item"><a <?php if( is_page('career')): ?>class="current-page"<?php endif; ?> href="<?php echo $career ?>">Career</a></li>
               <li class="p-gnav__item"><a <?php if( is_page('contact')): ?>class="current-page"<?php endif; ?> href="<?php echo $contact ?>">Contact</a></li>
             </ul>
           </nav>

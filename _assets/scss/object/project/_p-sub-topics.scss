@@ -1,15 +1,59 @@
 @use '../../mixin/mixin' as *;
 @use '../../setting/setting' as *;
 
-.p-single-topic__textbox{
-  margin-top: calc(25 / 375 * 100vw);
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .p-sub-topics__items{
   margin-top: calc(26 / 375 * 100vw);
   @include pc{
     margin-top: min(calc(165 / 1920 * 100vw), 16.5rem);
+  }
+}
+
+.p-sub-topics__category{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(12 / 375 * 100vw);
+  // width: calc(343 / 375 * 100vw);
+  width: 100%;
+  max-width: 100%;
+  @include pc{
+    font-size: min(calc(24 / 1920 * 100vw), 2.4rem);
+    width: min(calc(686 / 1920 * 100vw), 68.6rem);
+  }
+  li{
+    position: relative;
+    width: calc(272 / 375 * 100vw);
+    background: #EFEFEF;
+    @include pc{
+      width: min(calc(544 / 1920 * 100vw), 54.4rem);
+    }    
+    &::after{
+      pointer-events: none; /*矢印部分をクリックを可能にする*/
+      position: absolute;
+      top: 50%;
+      right: calc(17 / 375 * 100vw);
+      transform: translateY(-50%); /*▼を上に移動*/
+      content: "";
+      background: url(../img/common/icon-down.svg) no-repeat;
+      width: calc(15 / 375 * 100vw);
+      height: calc(9 / 375 * 100vw);
+      background-size: contain;
+      @include pc{
+        right: min(calc(32 / 1920 * 100vw), 3.2rem);
+        width: min(calc(30 / 1920 * 100vw), 3rem);
+        height: min(calc(19 / 1920 * 100vw), 1.9rem);
+      }
+    }
+    .postform{
+      width: 100%;
+      padding: calc(11 / 375 * 100vw)  calc(16 / 375 * 100vw);
+      font-size : calc(12 / 375 * 100vw);
+      line-height: 1.25;
+      color: $black;
+      @include pc{
+        padding: min(calc(23 / 1920 * 100vw), 2.3rem);
+        font-size :min(calc(24 / 1920 * 100vw), 2.4rem);
+      }
+    }
   }
 }

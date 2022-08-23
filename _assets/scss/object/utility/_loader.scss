@@ -41,6 +41,7 @@
 
 #loader.loaded {
   animation: fadeOut 1s forwards;
+  pointer-events: none;
 }
 
 #loader.loaded .loader__icon{

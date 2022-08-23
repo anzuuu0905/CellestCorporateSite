@@ -2349,6 +2349,7 @@ input[type=radio]:checked + span::after {
           flex-wrap: wrap;
   padding-bottom: 29.8666666667vw;
   border-bottom: 1px solid #EFEFEF;
+  margin-top: 6.6666666667vw;
 }
 
 .p-single-topic__date {
@@ -3079,19 +3080,53 @@ input[type=radio]:checked + span::after {
   margin-top: 6.4rem;
 }
 
-.p-single-topic__textbox {
-  margin-top: 6.6666666667vw;
+.p-sub-topics__items {
+  margin-top: 6.9333333333vw;
+}
+
+.p-sub-topics__category {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.2vw;
+  width: 100%;
+  max-width: 100%;
 }
-
-.p-sub-topics__items {
-  margin-top: 6.9333333333vw;
+.p-sub-topics__category li {
+  position: relative;
+  width: 72.5333333333vw;
+  background: #EFEFEF;
+}
+.p-sub-topics__category li::after {
+  pointer-events: none;
+  /*矢印部分をクリックを可能にする*/
+  position: absolute;
+  top: 50%;
+  right: 4.5333333333vw;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /*▼を上に移動*/
+  content: "";
+  background: url(../img/common/icon-down.svg) no-repeat;
+  width: 4vw;
+  height: 2.4vw;
+  background-size: contain;
+}
+.p-sub-topics__category li .postform {
+  width: 100%;
+  padding: 2.9333333333vw 4.2666666667vw;
+  font-size: 3.2vw;
+  line-height: 1.25;
+  color: #06070E;
 }
 
 .p-tel {
@@ -3736,6 +3771,7 @@ input[type=radio]:checked + span::after {
 #loader.loaded {
   -webkit-animation: fadeOut 1s forwards;
           animation: fadeOut 1s forwards;
+  pointer-events: none;
 }
 
 #loader.loaded .loader__icon {
@@ -4701,6 +4737,22 @@ button {
   .p-sub-topics__items {
     margin-top: min(8.59375vw, 16.5rem);
   }
+  .p-sub-topics__category {
+    font-size: min(1.25vw, 2.4rem);
+    width: min(35.7291666667vw, 68.6rem);
+  }
+  .p-sub-topics__category li {
+    width: min(28.3333333333vw, 54.4rem);
+  }
+  .p-sub-topics__category li::after {
+    right: min(1.6666666667vw, 3.2rem);
+    width: min(1.5625vw, 3rem);
+    height: min(0.9895833333vw, 1.9rem);
+  }
+  .p-sub-topics__category li .postform {
+    padding: min(1.1979166667vw, 2.3rem);
+    font-size: min(1.25vw, 2.4rem);
+  }
   .p-top-about__wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4882,7 +4934,7 @@ button {
   input,
 select,
 textarea {
-    font-size: 16px !important;
+    font-size: 1.6rem;
   }
 
   .pc {
