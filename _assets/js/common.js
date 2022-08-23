@@ -264,3 +264,22 @@ if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
     }
   });
   }
+
+/* 
+ * カテゴリ検索機能の実装
+ * 参考サイト：https://wpdocs.osdn.jp/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%82%BF%E3%82%B0/wp_dropdown_categories#JavaScript_.E3.82.92.E7.94.A8.E3.81.84.E3.81.9F.E9.80.81.E4.BF.A1.E3.83.9C.E3.82.BF.E3.83.B3.E3.81.AA.E3.81.97.E3.83.89.E3.83.AD.E3.83.83.E3.83.97.E3.83.80.E3.82.A6.E3.83.B3.E3.83.A1.E3.83.8B.E3.83.A5.E3.83.BC
+ */
+    // var dropdown = document.getElementById("cat"); //選択されたカテゴリを取得
+    // var wp_home_url = tmp_path.home_url;  //tmp_path.home_urは、function.phpで定義
+
+    // function onCatChange() {
+    //   // カテゴリが変更された場合（value 0:全て、1以降：カテゴリの識別番号
+    //   if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+    //     location.href = wp_home_url + "/?cat=" + dropdown.options[dropdown.selectedIndex].value;
+
+    //   }else{ //全てが選択された場合
+    //     location.href = wp_home_url + "/topics";
+    //   }
+    // }
+    // // ドロップダウンの初期値を選択されたものにする
+    // dropdown.onchange = onCatChange;
